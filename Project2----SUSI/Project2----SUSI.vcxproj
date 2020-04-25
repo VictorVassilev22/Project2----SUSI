@@ -85,7 +85,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions); _CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -138,6 +138,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Group.hpp" />
+    <ClInclude Include="Program.hpp" />
+    <ClInclude Include="Specialty.hpp" />
+    <ClInclude Include="Student.hpp" />
+    <ClInclude Include="Subject.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Group.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Specialty.cpp" />
+    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

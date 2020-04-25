@@ -1,0 +1,6 @@
+﻿  Group.cpp
+C:\Users\VivoBook_X512DA\source\repos\Project2----SUSI\Project2----SUSI\Subject.hpp(14,31): warning C4227: anachronism used: qualifiers on reference are ignored
+  main.cpp
+C:\Users\VivoBook_X512DA\source\repos\Project2----SUSI\Project2----SUSI\Subject.hpp(14,31): warning C4227: anachronism used: qualifiers on reference are ignored
+  Generating Code...
+  Project2----SUSI.vcxproj -> C:\Users\VivoBook_X512DA\source\repos\Project2----SUSI\Debug\Project2----SUSI.exe
