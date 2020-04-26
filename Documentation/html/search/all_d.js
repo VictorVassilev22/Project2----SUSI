@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['search_5fspec_5fby_5fprogram_5fname_65',['search_Spec_By_Program_Name',['../main_8cpp.html#a8117491447a2648e6e63193980bffa1d',1,'main.cpp']]],
+  ['setname_66',['setName',['../class_student.html#aebe71e3678dd8fb6c42383f90922be4a',1,'Student']]],
+  ['setspecialties_67',['setSpecialties',['../main_8cpp.html#aea50961bca957711774dda4cab8d72a3',1,'main.cpp']]],
+  ['setstatus_68',['setStatus',['../class_student.html#a69ff1f8e547eb9c7562436dd78d0fb06',1,'Student']]],
+  ['specialty_69',['Specialty',['../class_specialty.html',1,'Specialty'],['../class_specialty.html#a5b2113cf9371151336a3add9c2619fe8',1,'Specialty::Specialty()'],['../class_specialty.html#a225f367475f86b6130381a5570bd2aa0',1,'Specialty::Specialty(const char name[], const char program_path[])']]],
+  ['specialty_2ecpp_70',['Specialty.cpp',['../_specialty_8cpp.html',1,'']]],
+  ['specialty_2ehpp_71',['Specialty.hpp',['../_specialty_8hpp.html',1,'']]],
+  ['specsubject_72',['SpecSubject',['../struct_spec_subject.html',1,'SpecSubject'],['../struct_spec_subject.html#a81a946720047578024d843f6cf19d740',1,'SpecSubject::SpecSubject()']]],
+  ['status_73',['status',['../class_student.html#a08071336409ac508f42cbb74f3f842dc',1,'Student']]],
+  ['status_5fmax_74',['STATUS_MAX',['../_student_8hpp.html#a7bbb584d417d0308b52d9e7ab87931d7',1,'Student.hpp']]],
+  ['stop_5fcmd_75',['STOP_CMD',['../main_8cpp.html#a7e259c6fe99b2eb4a097afe75fe42972',1,'main.cpp']]],
+  ['student_76',['Student',['../class_student.html',1,'Student'],['../class_student.html#af9168cedbfa5565cf0b20c1a9d3f5c9d',1,'Student::Student()'],['../class_student.html#a62a3cafd003dd6b51df9124faa2d3aa8',1,'Student::Student(char *name, unsigned f_num, unsigned group, unsigned year=1)'],['../class_student.html#a4f53fdab7c28cd2b9d8c2311c1b05275',1,'Student::Student(Student const &amp;other)']]],
+  ['student_2ecpp_77',['Student.cpp',['../_student_8cpp.html',1,'']]],
+  ['student_2ehpp_78',['Student.hpp',['../_student_8hpp.html',1,'']]],
+  ['students_79',['students',['../class_group.html#a277dbf5c1a4c8defcfe74f8e0ea63a08',1,'Group']]],
+  ['sub_80',['sub',['../struct_spec_subject.html#a1675a599435c5f4b55837ea58cde96c2',1,'SpecSubject::sub()'],['../struct_taken_subject.html#a46ca7e802497cc5146bab2393367bbd2',1,'TakenSubject::sub()']]],
+  ['subject_81',['Subject',['../class_subject.html',1,'Subject'],['../class_subject.html#ab468044832c824c6d6c2f46272655207',1,'Subject::Subject()'],['../class_subject.html#a2092d53c7c2e5132bc68e164c9f7c41e',1,'Subject::Subject(const char name[], bool isObl=false)'],['../class_subject.html#a52bf6398e0bb459a443a18294c089bf7',1,'Subject::Subject(Subject &amp;const other)']]],
+  ['subject_2ecpp_82',['Subject.cpp',['../_subject_8cpp.html',1,'']]],
+  ['subject_2ehpp_83',['Subject.hpp',['../_subject_8hpp.html',1,'']]],
+  ['subjects_84',['subjects',['../class_program.html#a79eb2d8198bb82d521d8ebb3eff6bbce',1,'Program::subjects()'],['../class_student.html#a0fedead505a8013d0ac36b1da49a236b',1,'Student::subjects()']]],
+  ['subjects_5fcapacity_85',['subjects_capacity',['../class_student.html#a389e0f97eb0c8eecf322f1be4706c53e',1,'Student']]],
+  ['subjects_5fsize_86',['subjects_size',['../class_student.html#aad52cbcd08ab43340cdc53d50cac06ff',1,'Student']]]
+];

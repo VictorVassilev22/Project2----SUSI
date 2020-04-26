@@ -1,9 +1,14 @@
 #include<iostream>
 #include"Specialty.hpp"
 using namespace std;
+
+///How many Specialties we want to have
 const size_t MAX_SPEC = 2;
+///Maximum symbols of a command
 const size_t MAX_COMMAND = 15;
+///maximum symbols for an option
 const size_t MAX_OPTION = 8;
+
 const char GROUP_OPT[] = "group" ;
 const char YEAR_OPT[] = "year" ;
 const char PROGRAM_OPT[] = "program" ;
@@ -14,6 +19,8 @@ const char CHANGE_CMD[] = "change";
 const char INTERRUPT_CMD[] = "interrupt";
 const char RESUME_CMD[] = "resume";
 
+
+///Template function to clear random type data from the heap
 template<typename T>
 void clear(T* data) {
 	if (data != nullptr) {
@@ -22,6 +29,7 @@ void clear(T* data) {
 	}
 }
 
+///Template function to check if data is dynamically located properly
 template<typename T>
 bool memCheck(T* data) {
 	if (data==nullptr) {
@@ -31,6 +39,7 @@ bool memCheck(T* data) {
 	return true;
 }
 
+///Used to manually input the name of the specialties and paths for their programs from the user form command line
 void setSpecialties(Specialty*& specialties) {
 	char program_name[MAX_NAME];
 	char program_path[MAX_FILE_PATH];
@@ -52,6 +61,7 @@ void setSpecialties(Specialty*& specialties) {
 	}
 }
 
+///searches Specialty by it's Program name
 int search_Spec_By_Program_Name(char name[], Specialty* specs, size_t size) {
 	for (size_t i = 0; i < size; i++)
 	{
@@ -62,6 +72,7 @@ int search_Spec_By_Program_Name(char name[], Specialty* specs, size_t size) {
 	return -1;
 }
 
+///Resizes dynamically located char* variable
 void resizeStr(char*& str, size_t& size, size_t& to) {
 	if (to == size) {
 		size *= 2;
@@ -81,6 +92,8 @@ void resizeStr(char*& str, size_t& size, size_t& to) {
 	}
 }
 
+
+///Reads as much as you want long name from the console of from a txt file
 void getName(char*& str, size_t& size, std::istream& in) {
 	char ch;
 	size_t i = 0;
@@ -100,6 +113,8 @@ void getName(char*& str, size_t& size, std::istream& in) {
 	}
 }
 
+///Reads faculty number, program and group and adds student.
+///@see Specialty::enrollStudent()
 void enroll(Specialty* specs) {
 	unsigned fn;
 	char program[MAX_NAME];
@@ -127,6 +142,11 @@ void enroll(Specialty* specs) {
 	cout << "Student successfuly added in first year in " << program << "!" << endl;
 }
 
+///Reads faculty number, finds the student,  deletes it from that year.
+///Creates new student with the same name (which was extracted) and advances it in year.
+///puts it in the same group.
+///@see Specialty::findStudent(unsigned, size_t&, size_t&, char*&) which extracts the name
+///@see Specialty::deleteStudent() Specialty::addStudent()
 void advance(Specialty* specs) {
 	unsigned fn;
 	cin >> fn;
@@ -156,6 +176,10 @@ void advance(Specialty* specs) {
 	cout << "Student not found, try again" << endl;
 }
 
+///Finds student by faculty number 
+///@param s extracts Student
+///@param i extracts index of the Specialty
+///@returns bool - is found or not
 bool findStudent(unsigned fn, Specialty* specs, Student& s, size_t& i) {
 	for (i = 0; i < MAX_SPEC; i++)
 	{
@@ -170,6 +194,7 @@ bool findStudent(unsigned fn, Specialty* specs, Student& s, size_t& i) {
 	return false;
 }
 
+/// Finds student deletes it from the current group and adds it to another.
 void changeGroup(Specialty* specs, unsigned fn, unsigned group) {
 	Student s;
 	size_t i = 0;
@@ -186,7 +211,9 @@ void changeGroup(Specialty* specs, unsigned fn, unsigned group) {
 	cout << "Student group changed to " << group << '!' << endl;
 }
 
-void change(Specialty* specs) { //changes only the group for now
+///changes only the group for now
+///@see changeGroup() is used
+void change(Specialty* specs) {
 	unsigned fn;
 	cin >> fn;
 
@@ -207,6 +234,8 @@ void change(Specialty* specs) { //changes only the group for now
 	}
 }
 
+///changes Students's status
+///@see Specialty::changeStudentStatus()
 bool changeStatus(Specialty* specs, unsigned fn, size_t index) {
 	for (size_t i = 0; i < MAX_SPEC; i++)
 	{
@@ -216,6 +245,8 @@ bool changeStatus(Specialty* specs, unsigned fn, size_t index) {
 	return false;
 }
 
+///interrupts student. Changes it's status to interrupted
+///@see changeStatus()
 void interrupt(Specialty* specs) {
 	unsigned fn;
 	cin >> fn;
@@ -225,6 +256,8 @@ void interrupt(Specialty* specs) {
 		cout << "Student interrupted!" << endl;
 }
 
+///resumes student. Changes it's status to joined
+///@see changeStatus()
 void resume(Specialty* specs) {
 	unsigned fn;
 	cin >> fn;
@@ -234,6 +267,9 @@ void resume(Specialty* specs) {
 		cout << "Student resumed!" << endl;
 }
 
+
+///command controller is used to execute commends from the command line
+///@returns bool - if the command was STOP_CMD or not
 bool commandController(char command[MAX_COMMAND], Specialty* specs) {
 
 	if (strcmp(command, STOP_CMD) == 0)
@@ -252,6 +288,8 @@ bool commandController(char command[MAX_COMMAND], Specialty* specs) {
 	return true;
 }
 
+///Gets commands while commandController() returns true
+///@see commandController().
 void openCommandLine(Specialty* specs) {
 	std::cout << "Command line is open (enroll, advance): " << std::endl;
 	char command[MAX_COMMAND];
@@ -263,6 +301,10 @@ void openCommandLine(Specialty* specs) {
 
 }
 
+///Sets specialties, opens command controller, clears specialties
+///@see setSpecialties() is used
+///@see openCommandLine() is used
+///@see clear() is used
 int  main() {
 
 	Specialty* specialties = nullptr;

@@ -1,0 +1,152 @@
+\hypertarget{class_program}{}\doxysection{Program Class Reference}
+\label{class_program}\index{Program@{Program}}
+
+
+{\ttfamily \#include $<$Program.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_program_aaefaa0df08f3484476fc4d61e97acbdc}{Program}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor initializes both member variables with \char`\"{}\char`\"{}(invalid values) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_program_a753853ba69b2be9a385e1b7b7f2e096b}{Program}} (const char \mbox{\hyperlink{class_program_abcaf57d31941fd42befd84499b489cb3}{name}}\mbox{[}$\,$\mbox{]}, const char \mbox{\hyperlink{class_program_a89c022e6ee6f0a1c38540e4cfde16987}{path}}\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Constructor initializes member variables with hopefully valid values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_program_a5675677389fea841e9a7361a69aa0012}{Program}} (\mbox{\hyperlink{class_program}{Program}} const \&)
+\item 
+\mbox{\hyperlink{class_program}{Program}} \& \mbox{\hyperlink{class_program_af05441a6da696c82ae0e632822638289}{operator=}} (\mbox{\hyperlink{class_program}{Program}} const \&)
+\begin{DoxyCompactList}\small\item\em Operator = is copies data from other \mbox{\hyperlink{class_program}{Program}} to this only if they are different (their address). \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_program_a4e9e86e1412a87fcbf9288e2390f0230}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Copies \mbox{\hyperlink{class_program_abcaf57d31941fd42befd84499b489cb3}{Program\+::name}} in heap and returns the pointer of the copy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_program_a9f371193d6f262ed2a7aafe3f01898ca}{copy}} (\mbox{\hyperlink{class_program}{Program}} const \&other)
+\item 
+void \mbox{\hyperlink{class_program_ab264011cf42755143c6f438072814b7e}{copy\+Subjects}} (\mbox{\hyperlink{struct_spec_subject}{Spec\+Subject}} dest\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_spec_subject}{Spec\+Subject}} const src\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_program_abcaf57d31941fd42befd84499b489cb3}{name}} \mbox{[}\mbox{\hyperlink{_program_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_program}{Program}}\textquotesingle{}s name. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_program_a89c022e6ee6f0a1c38540e4cfde16987}{path}} \mbox{[}\mbox{\hyperlink{_program_8hpp_ac83d6fbbc153c74d89853e80ede3f89c}{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+P\+A\+TH}}\mbox{]}
+\item 
+\mbox{\hyperlink{struct_spec_subject}{Spec\+Subject}} \mbox{\hyperlink{class_program_a79eb2d8198bb82d521d8ebb3eff6bbce}{subjects}} \mbox{[}\mbox{\hyperlink{_program_8hpp_a6ece0cc64083c7c0a4e331019c9e3b4f}{M\+A\+X\+\_\+\+S\+U\+B\+J\+E\+C\+TS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Realization of \mbox{\hyperlink{class_program}{Program}} class This class is intended to store info about a specefic \mbox{\hyperlink{class_program}{Program}} of studying. It has Subjects and a name. It also has a variable to indicate the path to the file where the subjects will be stored. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_program_aaefaa0df08f3484476fc4d61e97acbdc}\label{class_program_aaefaa0df08f3484476fc4d61e97acbdc}} 
+\index{Program@{Program}!Program@{Program}}
+\index{Program@{Program}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Program\+::\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor initializes both member variables with \char`\"{}\char`\"{}(invalid values) 
+
+\mbox{\Hypertarget{class_program_a753853ba69b2be9a385e1b7b7f2e096b}\label{class_program_a753853ba69b2be9a385e1b7b7f2e096b}} 
+\index{Program@{Program}!Program@{Program}}
+\index{Program@{Program}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Program\+::\+Program (\begin{DoxyParamCaption}\item[{const char}]{name\mbox{[}$\,$\mbox{]},  }\item[{const char}]{path\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Constructor initializes member variables with hopefully valid values. 
+
+\mbox{\Hypertarget{class_program_a5675677389fea841e9a7361a69aa0012}\label{class_program_a5675677389fea841e9a7361a69aa0012}} 
+\index{Program@{Program}!Program@{Program}}
+\index{Program@{Program}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Program\+::\+Program (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_program}{Program}} const \&}]{other }\end{DoxyParamCaption})}
+
+Copy constructor \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_program_a9f371193d6f262ed2a7aafe3f01898ca}{Program\+::copy()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_program_a9f371193d6f262ed2a7aafe3f01898ca}\label{class_program_a9f371193d6f262ed2a7aafe3f01898ca}} 
+\index{Program@{Program}!copy@{copy}}
+\index{copy@{copy}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily void Program\+::copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_program}{Program}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Help function used to copy data from another \mbox{\hyperlink{class_program}{Program}} to this. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_program_a5675677389fea841e9a7361a69aa0012}{Program\+::\+Program(\+Program const\&)}} \mbox{\hyperlink{class_program_af05441a6da696c82ae0e632822638289}{operator=()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_program_ab264011cf42755143c6f438072814b7e}\label{class_program_ab264011cf42755143c6f438072814b7e}} 
+\index{Program@{Program}!copySubjects@{copySubjects}}
+\index{copySubjects@{copySubjects}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{copySubjects()}{copySubjects()}}
+{\footnotesize\ttfamily void Program\+::copy\+Subjects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spec_subject}{Spec\+Subject}}}]{dest\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_spec_subject}{Spec\+Subject}} const}]{src\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Copies all subjects from 
+\begin{DoxyParams}{Parameters}
+{\em src} & to \\
+\hline
+{\em dest} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_program_a4e9e86e1412a87fcbf9288e2390f0230}\label{class_program_a4e9e86e1412a87fcbf9288e2390f0230}} 
+\index{Program@{Program}!getName@{getName}}
+\index{getName@{getName}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily char $\ast$ Program\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Copies \mbox{\hyperlink{class_program_abcaf57d31941fd42befd84499b489cb3}{Program\+::name}} in heap and returns the pointer of the copy. 
+
+\mbox{\Hypertarget{class_program_af05441a6da696c82ae0e632822638289}\label{class_program_af05441a6da696c82ae0e632822638289}} 
+\index{Program@{Program}!operator=@{operator=}}
+\index{operator=@{operator=}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_program}{Program}} \& Program\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_program}{Program}} const \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Operator = is copies data from other \mbox{\hyperlink{class_program}{Program}} to this only if they are different (their address). 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_program_abcaf57d31941fd42befd84499b489cb3}\label{class_program_abcaf57d31941fd42befd84499b489cb3}} 
+\index{Program@{Program}!name@{name}}
+\index{name@{name}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char Program\+::name\mbox{[}\mbox{\hyperlink{_program_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_program}{Program}}\textquotesingle{}s name. 
+
+\mbox{\Hypertarget{class_program_a89c022e6ee6f0a1c38540e4cfde16987}\label{class_program_a89c022e6ee6f0a1c38540e4cfde16987}} 
+\index{Program@{Program}!path@{path}}
+\index{path@{path}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily char Program\+::path\mbox{[}\mbox{\hyperlink{_program_8hpp_ac83d6fbbc153c74d89853e80ede3f89c}{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+P\+A\+TH}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Stores path to the file with the subjects. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_program_8hpp_ac83d6fbbc153c74d89853e80ede3f89c}{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+P\+A\+TH}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_program_a79eb2d8198bb82d521d8ebb3eff6bbce}\label{class_program_a79eb2d8198bb82d521d8ebb3eff6bbce}} 
+\index{Program@{Program}!subjects@{subjects}}
+\index{subjects@{subjects}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{subjects}{subjects}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_spec_subject}{Spec\+Subject}} Program\+::subjects\mbox{[}\mbox{\hyperlink{_program_8hpp_a6ece0cc64083c7c0a4e331019c9e3b4f}{M\+A\+X\+\_\+\+S\+U\+B\+J\+E\+C\+TS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Array of subjects. Will get written from a file \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_program_a89c022e6ee6f0a1c38540e4cfde16987}{Program\+::path}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_program_8hpp}{Program.\+hpp}}\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_program_8cpp}{Program.\+cpp}}\end{DoxyCompactItemize}

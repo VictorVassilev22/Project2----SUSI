@@ -1,0 +1,180 @@
+\hypertarget{class_specialty}{}\doxysection{Specialty Class Reference}
+\label{class_specialty}\index{Specialty@{Specialty}}
+
+
+{\ttfamily \#include $<$Specialty.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_specialty_a5b2113cf9371151336a3add9c2619fe8}{Specialty}} ()
+\item 
+\mbox{\hyperlink{class_specialty_a225f367475f86b6130381a5570bd2aa0}{Specialty}} (const char name\mbox{[}$\,$\mbox{]}, const char program\+\_\+path\mbox{[}$\,$\mbox{]})
+\item 
+char $\ast$ \mbox{\hyperlink{class_specialty_a02231e365a120a088237886479c79594}{get\+Program\+Name}} ()
+\item 
+bool \mbox{\hyperlink{class_specialty_a3b334f6aed28e4bb10a28c070db22c6b}{enroll\+Student}} (\mbox{\hyperlink{class_student}{Student}} const \&s, size\+\_\+t group\+Num)
+\item 
+bool \mbox{\hyperlink{class_specialty_abadf2874ea834418d31cd93d155c6745}{add\+Student}} (\mbox{\hyperlink{class_student}{Student}} const \&s, size\+\_\+t year, size\+\_\+t group\+Num)
+\item 
+void \mbox{\hyperlink{class_specialty_aa1a2128242274db6bd0e38f0af5c5898}{delete\+Student}} (unsigned fn, size\+\_\+t year, size\+\_\+t group\+Num)
+\item 
+bool \mbox{\hyperlink{class_specialty_a4f350879065084245b0c37507872ce22}{find\+Student}} (unsigned fn, size\+\_\+t \&year, size\+\_\+t \&group\+Num, char $\ast$\&name) const
+\item 
+\mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_specialty_a7be71e80f1fcf1d8b7b32dfc18b31080}{find\+Student}} (unsigned fn) const
+\item 
+bool \mbox{\hyperlink{class_specialty_ace4a4e6ca67d87489b6ff5c0f53c6034}{change\+Student\+Status}} (unsigned fn, size\+\_\+t index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_program}{Program}} \mbox{\hyperlink{class_specialty_ab3a3421ce5ba5907c508679ddc6a0a90}{program}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_program}{Program}} of Subjects for this specialty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_group}{Group}} \mbox{\hyperlink{class_specialty_a13eab871332225faf87f07928fab5f5e}{groups}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8d225eb052cc05d13282cfdf4918ec31}{M\+A\+X\+\_\+\+Y\+E\+A\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_group_8hpp_aa6ace081de212a863f6d8444d791d242}{M\+A\+X\+\_\+\+G\+R\+O\+U\+PS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Matrix of Groups(of Students). M\+A\+X\+\_\+\+Y\+E\+A\+RS rows indicating which year Students are currently studying, with M\+A\+X\+\_\+\+G\+R\+O\+U\+PS in each. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Realization of \mbox{\hyperlink{class_specialty}{Specialty}} class
+
+A specialty stores students in a matrix of Groups, and has it\textquotesingle{}s own \mbox{\hyperlink{class_program}{Program}} of Subjects to follow. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_specialty_a5b2113cf9371151336a3add9c2619fe8}\label{class_specialty_a5b2113cf9371151336a3add9c2619fe8}} 
+\index{Specialty@{Specialty}!Specialty@{Specialty}}
+\index{Specialty@{Specialty}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{Specialty()}{Specialty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Specialty\+::\+Specialty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. Sets invalid (\char`\"{}\char`\"{}) values for the \mbox{\hyperlink{class_specialty_ab3a3421ce5ba5907c508679ddc6a0a90}{Specialty\+::program}} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_program_aaefaa0df08f3484476fc4d61e97acbdc}{Program\+::\+Program()}} is used 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_specialty_a225f367475f86b6130381a5570bd2aa0}\label{class_specialty_a225f367475f86b6130381a5570bd2aa0}} 
+\index{Specialty@{Specialty}!Specialty@{Specialty}}
+\index{Specialty@{Specialty}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{Specialty()}{Specialty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Specialty\+::\+Specialty (\begin{DoxyParamCaption}\item[{const char}]{name\mbox{[}$\,$\mbox{]},  }\item[{const char}]{program\+\_\+path\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Constructor sets name of the \mbox{\hyperlink{class_specialty_ab3a3421ce5ba5907c508679ddc6a0a90}{Specialty\+::program}} an it\textquotesingle{}s path \begin{DoxySeeAlso}{See also}
+program\+::\+Program(const char, const char); is used 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_specialty_abadf2874ea834418d31cd93d155c6745}\label{class_specialty_abadf2874ea834418d31cd93d155c6745}} 
+\index{Specialty@{Specialty}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily bool Specialty\+::add\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} const \&}]{s,  }\item[{size\+\_\+t}]{year,  }\item[{size\+\_\+t}]{group\+Num }\end{DoxyParamCaption})}
+
+Adds student in desired group and desired year. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_group_afeb879fad4d77e1b69f270a6b72106a3}{Group\+::add\+Student()}} is used 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_specialty_ace4a4e6ca67d87489b6ff5c0f53c6034}\label{class_specialty_ace4a4e6ca67d87489b6ff5c0f53c6034}} 
+\index{Specialty@{Specialty}!changeStudentStatus@{changeStudentStatus}}
+\index{changeStudentStatus@{changeStudentStatus}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{changeStudentStatus()}{changeStudentStatus()}}
+{\footnotesize\ttfamily bool Specialty\+::change\+Student\+Status (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Sets status of a student 
+\begin{DoxyParams}{Parameters}
+{\em index} & indicates which status to assign \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_student_a08071336409ac508f42cbb74f3f842dc}{Student\+::status}} \mbox{\hyperlink{class_student_a69ff1f8e547eb9c7562436dd78d0fb06}{Student\+::set\+Status()}} 
+
+\mbox{\hyperlink{class_group_ab35b93236324637f63467ea730d46e6e}{Group\+::change\+Student\+Status()}} is used 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_specialty_aa1a2128242274db6bd0e38f0af5c5898}\label{class_specialty_aa1a2128242274db6bd0e38f0af5c5898}} 
+\index{Specialty@{Specialty}!deleteStudent@{deleteStudent}}
+\index{deleteStudent@{deleteStudent}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{deleteStudent()}{deleteStudent()}}
+{\footnotesize\ttfamily void Specialty\+::delete\+Student (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{size\+\_\+t}]{year,  }\item[{size\+\_\+t}]{group\+Num }\end{DoxyParamCaption})}
+
+Deletes student found by faculty number. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_group_a8a5a7427bcb6a1a450eb4b0923868a2f}{Group\+::delete\+Student()}} is used 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_specialty_a3b334f6aed28e4bb10a28c070db22c6b}\label{class_specialty_a3b334f6aed28e4bb10a28c070db22c6b}} 
+\index{Specialty@{Specialty}!enrollStudent@{enrollStudent}}
+\index{enrollStudent@{enrollStudent}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{enrollStudent()}{enrollStudent()}}
+{\footnotesize\ttfamily bool Specialty\+::enroll\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} const \&}]{s,  }\item[{size\+\_\+t}]{group\+Num }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool if the student is successfully enrolled Adds a new \mbox{\hyperlink{class_student}{Student}} in year 1 in \mbox{\hyperlink{class_group}{Group}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Num} & Adds in Group\+::groups in position \mbox{[}0\mbox{]}\mbox{[}group\+Num -\/1\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_group_afeb879fad4d77e1b69f270a6b72106a3}{Group\+::add\+Student()}} is used 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_specialty_a7be71e80f1fcf1d8b7b32dfc18b31080}\label{class_specialty_a7be71e80f1fcf1d8b7b32dfc18b31080}} 
+\index{Specialty@{Specialty}!findStudent@{findStudent}}
+\index{findStudent@{findStudent}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{findStudent()}{findStudent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} Specialty\+::find\+Student (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption}) const}
+
+Creates variable \mbox{\hyperlink{class_student}{Student}} s; assignes found student to it and returns it \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_group_a296a1e53258946ffdd7c34a405411e89}{Group\+::find\+Student()}} is used 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_student}{Student}} s; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_specialty_a4f350879065084245b0c37507872ce22}\label{class_specialty_a4f350879065084245b0c37507872ce22}} 
+\index{Specialty@{Specialty}!findStudent@{findStudent}}
+\index{findStudent@{findStudent}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{findStudent()}{findStudent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Specialty\+::find\+Student (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{size\+\_\+t \&}]{year,  }\item[{size\+\_\+t \&}]{group\+Num,  }\item[{char $\ast$\&}]{name }\end{DoxyParamCaption}) const}
+
+Searches through all the years and their groups to find a student. 
+\begin{DoxyParams}{Parameters}
+{\em name} & Used to extract \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s name in it \\
+\hline
+{\em year} & Used to extract \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s year in it \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_group_a9493dcaf99d44287d9a44521a88ad921}{Group\+::is\+Student\+In\+Group()}} is used 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_specialty_a02231e365a120a088237886479c79594}\label{class_specialty_a02231e365a120a088237886479c79594}} 
+\index{Specialty@{Specialty}!getProgramName@{getProgramName}}
+\index{getProgramName@{getProgramName}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{getProgramName()}{getProgramName()}}
+{\footnotesize\ttfamily char$\ast$ Specialty\+::get\+Program\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_program_a4e9e86e1412a87fcbf9288e2390f0230}{Program\+::get\+Name()}} for the current \mbox{\hyperlink{class_specialty_ab3a3421ce5ba5907c508679ddc6a0a90}{Specialty\+::program}} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_specialty_a13eab871332225faf87f07928fab5f5e}\label{class_specialty_a13eab871332225faf87f07928fab5f5e}} 
+\index{Specialty@{Specialty}!groups@{groups}}
+\index{groups@{groups}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_group}{Group}} Specialty\+::groups\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8d225eb052cc05d13282cfdf4918ec31}{M\+A\+X\+\_\+\+Y\+E\+A\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_group_8hpp_aa6ace081de212a863f6d8444d791d242}{M\+A\+X\+\_\+\+G\+R\+O\+U\+PS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Matrix of Groups(of Students). M\+A\+X\+\_\+\+Y\+E\+A\+RS rows indicating which year Students are currently studying, with M\+A\+X\+\_\+\+G\+R\+O\+U\+PS in each. 
+
+\mbox{\Hypertarget{class_specialty_ab3a3421ce5ba5907c508679ddc6a0a90}\label{class_specialty_ab3a3421ce5ba5907c508679ddc6a0a90}} 
+\index{Specialty@{Specialty}!program@{program}}
+\index{program@{program}!Specialty@{Specialty}}
+\doxysubsubsection{\texorpdfstring{program}{program}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_program}{Program}} Specialty\+::program\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A \mbox{\hyperlink{class_program}{Program}} of Subjects for this specialty. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_specialty_8hpp}{Specialty.\+hpp}}\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_specialty_8cpp}{Specialty.\+cpp}}\end{DoxyCompactItemize}

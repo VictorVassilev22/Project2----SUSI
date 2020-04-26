@@ -1,0 +1,147 @@
+\hypertarget{class_group}{}\doxysection{Group Class Reference}
+\label{class_group}\index{Group@{Group}}
+
+
+{\ttfamily \#include $<$Group.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_group_a7b74f9ac68e0504ccf2e2854b7355ff1}{Group}} ()
+\item 
+bool \mbox{\hyperlink{class_group_afeb879fad4d77e1b69f270a6b72106a3}{add\+Student}} (\mbox{\hyperlink{class_student}{Student}} const \&s)
+\begin{DoxyCompactList}\small\item\em If the array isn\textquotesingle{}t full, sets a \mbox{\hyperlink{class_student}{Student}} at the last available position of the array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_group_a8a5a7427bcb6a1a450eb4b0923868a2f}{delete\+Student}} (size\+\_\+t fn)
+\item 
+bool \mbox{\hyperlink{class_group_a9493dcaf99d44287d9a44521a88ad921}{is\+Student\+In\+Group}} (size\+\_\+t fn, char $\ast$\&name) const
+\item 
+\mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_group_a296a1e53258946ffdd7c34a405411e89}{find\+Student}} (size\+\_\+t fn) const
+\item 
+bool \mbox{\hyperlink{class_group_ab35b93236324637f63467ea730d46e6e}{change\+Student\+Status}} (size\+\_\+t fn, size\+\_\+t status)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{class_group_a6996c62c122ab1202f87cd637cbadb12}{number}}
+\begin{DoxyCompactList}\small\item\em Indicates the number of the \mbox{\hyperlink{class_group}{Group}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_group_a277dbf5c1a4c8defcfe74f8e0ea63a08}{students}} \mbox{[}\mbox{\hyperlink{_group_8hpp_a28892dbb1f338e5e7688781c03bfb104}{M\+A\+X\+\_\+\+S\+T\+U\+D\+E\+N\+TS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Stores all students in this \mbox{\hyperlink{class_group}{Group}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Realization of \mbox{\hyperlink{class_group}{Group}} class. Stores a bunch of students in a group. \begin{DoxyNote}{Note}
+Due to exessive use of linear search, I consider moving it to it\textquotesingle{}s own function. 
+
+Maybe remove this class altogether and use unly \mbox{\hyperlink{class_student_a579cb0583df0335f8cede1dd1d4dd490}{Student\+::group}} to indicate \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s group. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_group_a7b74f9ac68e0504ccf2e2854b7355ff1}\label{class_group_a7b74f9ac68e0504ccf2e2854b7355ff1}} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor sets the number of the group \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_group_8hpp_a71949e1ecfe1e6695f52feea31daef35}{group\+\_\+num}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_group_afeb879fad4d77e1b69f270a6b72106a3}\label{class_group_afeb879fad4d77e1b69f270a6b72106a3}} 
+\index{Group@{Group}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily bool Group\+::add\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} const \&}]{s }\end{DoxyParamCaption})}
+
+
+
+If the array isn\textquotesingle{}t full, sets a \mbox{\hyperlink{class_student}{Student}} at the last available position of the array. 
+
+\mbox{\Hypertarget{class_group_ab35b93236324637f63467ea730d46e6e}\label{class_group_ab35b93236324637f63467ea730d46e6e}} 
+\index{Group@{Group}!changeStudentStatus@{changeStudentStatus}}
+\index{changeStudentStatus@{changeStudentStatus}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{changeStudentStatus()}{changeStudentStatus()}}
+{\footnotesize\ttfamily bool Group\+::change\+Student\+Status (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{fn,  }\item[{size\+\_\+t}]{status }\end{DoxyParamCaption})}
+
+Uses linear search to find student and changes it\textquotesingle{}s status to desired. 
+\begin{DoxyParams}{Parameters}
+{\em status} & Indicates which status we want to set to the \mbox{\hyperlink{class_student}{Student}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_student_a08071336409ac508f42cbb74f3f842dc}{Student\+::status}} \mbox{\hyperlink{class_student_a69ff1f8e547eb9c7562436dd78d0fb06}{Student\+::set\+Status()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_group_a8a5a7427bcb6a1a450eb4b0923868a2f}\label{class_group_a8a5a7427bcb6a1a450eb4b0923868a2f}} 
+\index{Group@{Group}!deleteStudent@{deleteStudent}}
+\index{deleteStudent@{deleteStudent}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{deleteStudent()}{deleteStudent()}}
+{\footnotesize\ttfamily void Group\+::delete\+Student (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{fn }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & This parameter is used to search the \mbox{\hyperlink{class_student}{Student}} by it\textquotesingle{}s \mbox{\hyperlink{class_student_a33b9fc53d027a39df5aaed647762cfdf}{Student\+::f\+\_\+num}} If \mbox{\hyperlink{class_student}{Student}} with such faculy number exists rewrites it with a default member variables. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student\+::\+Student()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_group_a296a1e53258946ffdd7c34a405411e89}\label{class_group_a296a1e53258946ffdd7c34a405411e89}} 
+\index{Group@{Group}!findStudent@{findStudent}}
+\index{findStudent@{findStudent}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{findStudent()}{findStudent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} Group\+::find\+Student (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{fn }\end{DoxyParamCaption}) const}
+
+Uses linear search to find a student. \begin{DoxyReturn}{Returns}
+Object \mbox{\hyperlink{class_student}{Student}} equal to student we are searching. If not found, returns default(invalid) \mbox{\hyperlink{class_student}{Student}}. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student\+::\+Student()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_group_a9493dcaf99d44287d9a44521a88ad921}\label{class_group_a9493dcaf99d44287d9a44521a88ad921}} 
+\index{Group@{Group}!isStudentInGroup@{isStudentInGroup}}
+\index{isStudentInGroup@{isStudentInGroup}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{isStudentInGroup()}{isStudentInGroup()}}
+{\footnotesize\ttfamily bool Group\+::is\+Student\+In\+Group (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{fn,  }\item[{char $\ast$\&}]{name }\end{DoxyParamCaption}) const}
+
+Uses linear search to find student by it\textquotesingle{}s faculty number. 
+\begin{DoxyParams}{Parameters}
+{\em name} & It\textquotesingle{}s pointer is passed by reference, because it is thought to be extracted from the search. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool value which indicates if the student is found and if it\textquotesingle{}s name is extracted properly. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_student_a084b69da372ef24c9b2292eb847b14af}{Student\+::get\+Name()}} \mbox{\hyperlink{class_specialty_a4f350879065084245b0c37507872ce22}{Specialty\+::find\+Student()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_group_a6996c62c122ab1202f87cd637cbadb12}\label{class_group_a6996c62c122ab1202f87cd637cbadb12}} 
+\index{Group@{Group}!number@{number}}
+\index{number@{number}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily unsigned Group\+::number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicates the number of the \mbox{\hyperlink{class_group}{Group}}. 
+
+\mbox{\Hypertarget{class_group_a277dbf5c1a4c8defcfe74f8e0ea63a08}\label{class_group_a277dbf5c1a4c8defcfe74f8e0ea63a08}} 
+\index{Group@{Group}!students@{students}}
+\index{students@{students}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{students}{students}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} Group\+::students\mbox{[}\mbox{\hyperlink{_group_8hpp_a28892dbb1f338e5e7688781c03bfb104}{M\+A\+X\+\_\+\+S\+T\+U\+D\+E\+N\+TS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores all students in this \mbox{\hyperlink{class_group}{Group}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_group_8hpp}{Group.\+hpp}}\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_group_8cpp}{Group.\+cpp}}\end{DoxyCompactItemize}

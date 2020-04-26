@@ -1,0 +1,119 @@
+\hypertarget{class_subject}{}\doxysection{Subject Class Reference}
+\label{class_subject}\index{Subject@{Subject}}
+
+
+{\ttfamily \#include $<$Subject.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_subject_ab468044832c824c6d6c2f46272655207}{Subject}} ()
+\begin{DoxyCompactList}\small\item\em Default constuctor initializes \mbox{\hyperlink{class_subject}{Subject}} with invalid variable \char`\"{}\char`\"{} for name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_subject_a2092d53c7c2e5132bc68e164c9f7c41e}{Subject}} (const char \mbox{\hyperlink{class_subject_af0e959d83c4efa176c10cf7970d20dd2}{name}}\mbox{[}$\,$\mbox{]}, bool is\+Obl=false)
+\begin{DoxyCompactList}\small\item\em Contructor sets \mbox{\hyperlink{class_subject_af0e959d83c4efa176c10cf7970d20dd2}{Subject\+::name}} and \mbox{\hyperlink{class_subject_addcde86de70dab492c8b1ade2f27e0bb}{Subject\+::is\+Obligatory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_subject_a52bf6398e0bb459a443a18294c089bf7}{Subject}} (\mbox{\hyperlink{class_subject}{Subject}} \&const other)
+\item 
+\mbox{\hyperlink{class_subject}{Subject}} \& \mbox{\hyperlink{class_subject_a4f8a123bd002248b324de164d345c4a8}{operator=}} (\mbox{\hyperlink{class_subject}{Subject}} const \&other)
+\begin{DoxyCompactList}\small\item\em Operator = copies with \mbox{\hyperlink{class_subject_af91b2964483aa11fd967d2d389b6d8a5}{Subject\+::copy()}} if this and other are not the same. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_subject_af91b2964483aa11fd967d2d389b6d8a5}{copy}} (\mbox{\hyperlink{class_subject}{Subject}} const \&)
+\begin{DoxyCompactList}\small\item\em Help function used in \mbox{\hyperlink{class_subject_a52bf6398e0bb459a443a18294c089bf7}{Subject\+::\+Subject(\+Subject\& const)}} and \mbox{\hyperlink{class_subject_a4f8a123bd002248b324de164d345c4a8}{Subject\+::operator=()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_subject_af0e959d83c4efa176c10cf7970d20dd2}{name}} \mbox{[}\mbox{\hyperlink{_subject_8hpp_a428c11c69de3da60e4ab7ab5b60d3819}{M\+A\+X\+\_\+\+S\+U\+B\+\_\+\+N\+A\+ME}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Indicates the name of the \mbox{\hyperlink{class_subject}{Subject}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_subject_addcde86de70dab492c8b1ade2f27e0bb}{is\+Obligatory}}
+\begin{DoxyCompactList}\small\item\em Indicates if a \mbox{\hyperlink{class_subject}{Subject}} is obligatory or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Realization of \mbox{\hyperlink{class_subject}{Subject}} class This class stores information for a \mbox{\hyperlink{class_subject}{Subject}} -\/ it\textquotesingle{}s name and if it is obligatory. Some functionality. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_subject_ab468044832c824c6d6c2f46272655207}\label{class_subject_ab468044832c824c6d6c2f46272655207}} 
+\index{Subject@{Subject}!Subject@{Subject}}
+\index{Subject@{Subject}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Subject()}{Subject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Subject\+::\+Subject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constuctor initializes \mbox{\hyperlink{class_subject}{Subject}} with invalid variable \char`\"{}\char`\"{} for name. 
+
+\mbox{\Hypertarget{class_subject_a2092d53c7c2e5132bc68e164c9f7c41e}\label{class_subject_a2092d53c7c2e5132bc68e164c9f7c41e}} 
+\index{Subject@{Subject}!Subject@{Subject}}
+\index{Subject@{Subject}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Subject()}{Subject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Subject\+::\+Subject (\begin{DoxyParamCaption}\item[{const char}]{name\mbox{[}$\,$\mbox{]},  }\item[{bool}]{is\+Obl = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Contructor sets \mbox{\hyperlink{class_subject_af0e959d83c4efa176c10cf7970d20dd2}{Subject\+::name}} and \mbox{\hyperlink{class_subject_addcde86de70dab492c8b1ade2f27e0bb}{Subject\+::is\+Obligatory}}. 
+
+\mbox{\Hypertarget{class_subject_a52bf6398e0bb459a443a18294c089bf7}\label{class_subject_a52bf6398e0bb459a443a18294c089bf7}} 
+\index{Subject@{Subject}!Subject@{Subject}}
+\index{Subject@{Subject}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Subject()}{Subject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Subject\+::\+Subject (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_subject}{Subject}} \&const}]{other }\end{DoxyParamCaption})}
+
+Copy constructor \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_subject_af91b2964483aa11fd967d2d389b6d8a5}{Subject\+::copy()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_subject_af91b2964483aa11fd967d2d389b6d8a5}\label{class_subject_af91b2964483aa11fd967d2d389b6d8a5}} 
+\index{Subject@{Subject}!copy@{copy}}
+\index{copy@{copy}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily void Subject\+::copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_subject}{Subject}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Help function used in \mbox{\hyperlink{class_subject_a52bf6398e0bb459a443a18294c089bf7}{Subject\+::\+Subject(\+Subject\& const)}} and \mbox{\hyperlink{class_subject_a4f8a123bd002248b324de164d345c4a8}{Subject\+::operator=()}} 
+
+\mbox{\Hypertarget{class_subject_a4f8a123bd002248b324de164d345c4a8}\label{class_subject_a4f8a123bd002248b324de164d345c4a8}} 
+\index{Subject@{Subject}!operator=@{operator=}}
+\index{operator=@{operator=}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_subject}{Subject}} \& Subject\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_subject}{Subject}} const \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Operator = copies with \mbox{\hyperlink{class_subject_af91b2964483aa11fd967d2d389b6d8a5}{Subject\+::copy()}} if this and other are not the same. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_subject_addcde86de70dab492c8b1ade2f27e0bb}\label{class_subject_addcde86de70dab492c8b1ade2f27e0bb}} 
+\index{Subject@{Subject}!isObligatory@{isObligatory}}
+\index{isObligatory@{isObligatory}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{isObligatory}{isObligatory}}
+{\footnotesize\ttfamily bool Subject\+::is\+Obligatory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicates if a \mbox{\hyperlink{class_subject}{Subject}} is obligatory or not. 
+
+\mbox{\Hypertarget{class_subject_af0e959d83c4efa176c10cf7970d20dd2}\label{class_subject_af0e959d83c4efa176c10cf7970d20dd2}} 
+\index{Subject@{Subject}!name@{name}}
+\index{name@{name}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char Subject\+::name\mbox{[}\mbox{\hyperlink{_subject_8hpp_a428c11c69de3da60e4ab7ab5b60d3819}{M\+A\+X\+\_\+\+S\+U\+B\+\_\+\+N\+A\+ME}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicates the name of the \mbox{\hyperlink{class_subject}{Subject}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_subject_8hpp}{Subject.\+hpp}}\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_subject_8cpp}{Subject.\+cpp}}\end{DoxyCompactItemize}

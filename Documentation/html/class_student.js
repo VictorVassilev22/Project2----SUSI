@@ -1,0 +1,27 @@
+var class_student =
+[
+    [ "Student", "class_student.html#af9168cedbfa5565cf0b20c1a9d3f5c9d", null ],
+    [ "Student", "class_student.html#a62a3cafd003dd6b51df9124faa2d3aa8", null ],
+    [ "Student", "class_student.html#a4f53fdab7c28cd2b9d8c2311c1b05275", null ],
+    [ "~Student", "class_student.html#a54a8ea060d6cd04222c3a2f89829f105", null ],
+    [ "clear", "class_student.html#afa83a6bf22d9810822f0985e4e51cd7d", null ],
+    [ "copy", "class_student.html#a6293c83b991793958386bb24a386340c", null ],
+    [ "copyStatus", "class_student.html#af5182526ef4819908ac77c07efc2c9c6", null ],
+    [ "copySubjects", "class_student.html#a73172a8c5625bdc33c78d226c5e3f52d", null ],
+    [ "getFn", "class_student.html#af455f519c8b01a8b5b75b7e35ab26117", null ],
+    [ "getGroup", "class_student.html#a1608064f49b3e35536a820c8229cb82d", null ],
+    [ "getName", "class_student.html#a084b69da372ef24c9b2292eb847b14af", null ],
+    [ "getYear", "class_student.html#ac4d89290f874aeabde8cea5650da9872", null ],
+    [ "operator=", "class_student.html#ab8da6ee8345e8b23ea3703e53953c06f", null ],
+    [ "setName", "class_student.html#aebe71e3678dd8fb6c42383f90922be4a", null ],
+    [ "setStatus", "class_student.html#a69ff1f8e547eb9c7562436dd78d0fb06", null ],
+    [ "avarege_grade", "class_student.html#a6caf904e589557bc906802dc03c75f4e", null ],
+    [ "f_num", "class_student.html#a33b9fc53d027a39df5aaed647762cfdf", null ],
+    [ "group", "class_student.html#a579cb0583df0335f8cede1dd1d4dd490", null ],
+    [ "name", "class_student.html#a7bff7ff985757c54c997bd970bbb63c8", null ],
+    [ "status", "class_student.html#a08071336409ac508f42cbb74f3f842dc", null ],
+    [ "subjects", "class_student.html#a0fedead505a8013d0ac36b1da49a236b", null ],
+    [ "subjects_capacity", "class_student.html#a389e0f97eb0c8eecf322f1be4706c53e", null ],
+    [ "subjects_size", "class_student.html#aad52cbcd08ab43340cdc53d50cac06ff", null ],
+    [ "year", "class_student.html#a0f1f9d65c8b42f2b87dab6bfdc536616", null ]
+];
