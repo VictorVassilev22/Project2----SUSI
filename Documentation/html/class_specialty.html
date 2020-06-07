@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.bmp"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUSI
-   &#160;<span id="projectnumber">Първа защита</span>
+   &#160;<span id="projectnumber">Втора защите</span>
    </div>
    <div id="projectbrief">My second project for OOP class in FMI</div>
   </td>
@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('class_specialty.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_specialty-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,40 +108,107 @@ $(document).ready(function(){initNavTree('class_specialty.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae39a4757fc99b5e39c545f03aa9dcea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#ae39a4757fc99b5e39c545f03aa9dcea1">Specialty</a> (char const *<a class="el" href="class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c">name</a>, const unsigned <a class="el" href="class_specialty.html#a503f9e4d320025a3a1d288c667d2b5f0">required</a>[], size_t size_r, const unsigned <a class="el" href="class_specialty.html#a156da9b1d0f5c77f4e4410b597d79c42">electives</a>[], size_t size_e)</td></tr>
+<tr class="separator:ae39a4757fc99b5e39c545f03aa9dcea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2113cf9371151336a3add9c2619fe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a5b2113cf9371151336a3add9c2619fe8">Specialty</a> ()</td></tr>
 <tr class="separator:a5b2113cf9371151336a3add9c2619fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a225f367475f86b6130381a5570bd2aa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a225f367475f86b6130381a5570bd2aa0">Specialty</a> (const char name[], const char program_path[])</td></tr>
-<tr class="separator:a225f367475f86b6130381a5570bd2aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02231e365a120a088237886479c79594"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a02231e365a120a088237886479c79594">getProgramName</a> ()</td></tr>
-<tr class="separator:a02231e365a120a088237886479c79594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b334f6aed28e4bb10a28c070db22c6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a3b334f6aed28e4bb10a28c070db22c6b">enrollStudent</a> (<a class="el" href="class_student.html">Student</a> const &amp;s, size_t groupNum)</td></tr>
-<tr class="separator:a3b334f6aed28e4bb10a28c070db22c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abadf2874ea834418d31cd93d155c6745"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#abadf2874ea834418d31cd93d155c6745">addStudent</a> (<a class="el" href="class_student.html">Student</a> const &amp;s, size_t year, size_t groupNum)</td></tr>
-<tr class="separator:abadf2874ea834418d31cd93d155c6745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a2128242274db6bd0e38f0af5c5898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#aa1a2128242274db6bd0e38f0af5c5898">deleteStudent</a> (unsigned fn, size_t year, size_t groupNum)</td></tr>
-<tr class="separator:aa1a2128242274db6bd0e38f0af5c5898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f350879065084245b0c37507872ce22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a4f350879065084245b0c37507872ce22">findStudent</a> (unsigned fn, size_t &amp;year, size_t &amp;groupNum, char *&amp;name) const</td></tr>
-<tr class="separator:a4f350879065084245b0c37507872ce22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be71e80f1fcf1d8b7b32dfc18b31080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_student.html">Student</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a7be71e80f1fcf1d8b7b32dfc18b31080">findStudent</a> (unsigned fn) const</td></tr>
-<tr class="separator:a7be71e80f1fcf1d8b7b32dfc18b31080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace4a4e6ca67d87489b6ff5c0f53c6034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#ace4a4e6ca67d87489b6ff5c0f53c6034">changeStudentStatus</a> (unsigned fn, size_t index)</td></tr>
-<tr class="separator:ace4a4e6ca67d87489b6ff5c0f53c6034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b48d43b5b48a22badffc920dc6cd1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#aa0b48d43b5b48a22badffc920dc6cd1e">Specialty</a> (<a class="el" href="class_specialty.html">Specialty</a> const &amp;other)</td></tr>
+<tr class="separator:aa0b48d43b5b48a22badffc920dc6cd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df3452846f482ddf6ef1fef20450594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a3df3452846f482ddf6ef1fef20450594">~Specialty</a> ()</td></tr>
+<tr class="separator:a3df3452846f482ddf6ef1fef20450594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86583cecb7771b1e8cef84592ae19276"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a86583cecb7771b1e8cef84592ae19276">getSubjectYear</a> (bool isRequired, size_t index) const</td></tr>
+<tr class="separator:a86583cecb7771b1e8cef84592ae19276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb909a0d52ac9cd3609100bc822edbe"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a5cb909a0d52ac9cd3609100bc822edbe">getName</a> () const</td></tr>
+<tr class="memdesc:a5cb909a0d52ac9cd3609100bc822edbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies the name into another string  <a href="class_specialty.html#a5cb909a0d52ac9cd3609100bc822edbe">More...</a><br /></td></tr>
+<tr class="separator:a5cb909a0d52ac9cd3609100bc822edbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0421b74b32e00997285cff21f7ebe8df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a0421b74b32e00997285cff21f7ebe8df">hasSubject</a> (unsigned sub, bool isRequired=true) const</td></tr>
+<tr class="memdesc:a0421b74b32e00997285cff21f7ebe8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the program has a desired subject  <a href="class_specialty.html#a0421b74b32e00997285cff21f7ebe8df">More...</a><br /></td></tr>
+<tr class="separator:a0421b74b32e00997285cff21f7ebe8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdcb962774043aa45a38440300fa263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_specialty.html">Specialty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#afcdcb962774043aa45a38440300fa263">operator=</a> (<a class="el" href="class_specialty.html">Specialty</a> const &amp;other)</td></tr>
+<tr class="separator:afcdcb962774043aa45a38440300fa263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefa3681b0fd98ef04e18eae63ea9831"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#abefa3681b0fd98ef04e18eae63ea9831">getSubjectName</a> (size_t i, bool isRequired=true) const</td></tr>
+<tr class="separator:abefa3681b0fd98ef04e18eae63ea9831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0efd60344f953fe31bb465925d7336"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#aef0efd60344f953fe31bb465925d7336">getRequiredSubject</a> (const char *<a class="el" href="class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c">name</a>) const</td></tr>
+<tr class="separator:aef0efd60344f953fe31bb465925d7336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad202275e80396c40ef9ea16c158473bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#ad202275e80396c40ef9ea16c158473bb">getElectiveSubject</a> (const char *<a class="el" href="class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c">name</a>) const</td></tr>
+<tr class="separator:ad202275e80396c40ef9ea16c158473bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8784b678490fb6ab20075c6e90914050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a8784b678490fb6ab20075c6e90914050">setRequired</a> (const unsigned origin[], size_t size)</td></tr>
+<tr class="memdesc:a8784b678490fb6ab20075c6e90914050"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting the required courses for the program  <a href="class_specialty.html#a8784b678490fb6ab20075c6e90914050">More...</a><br /></td></tr>
+<tr class="separator:a8784b678490fb6ab20075c6e90914050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9400eb91c623ace2f3396c308ff259ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a9400eb91c623ace2f3396c308ff259ab">setElectives</a> (const unsigned origin[], size_t size)</td></tr>
+<tr class="memdesc:a9400eb91c623ace2f3396c308ff259ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting the elective courses for the program  <a href="class_specialty.html#a9400eb91c623ace2f3396c308ff259ab">More...</a><br /></td></tr>
+<tr class="separator:a9400eb91c623ace2f3396c308ff259ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89236c019907dca0f3640d969cd999f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a89236c019907dca0f3640d969cd999f3">setName</a> (char const *other)</td></tr>
+<tr class="memdesc:a89236c019907dca0f3640d969cd999f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies a string and sets this name to it  <a href="class_specialty.html#a89236c019907dca0f3640d969cd999f3">More...</a><br /></td></tr>
+<tr class="separator:a89236c019907dca0f3640d969cd999f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac084dce21c54881e508b0160648c53b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#ac084dce21c54881e508b0160648c53b6">copy</a> (<a class="el" href="class_specialty.html">Specialty</a> const &amp;other)</td></tr>
+<tr class="memdesc:ac084dce21c54881e508b0160648c53b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">used by the copy constructor and operator = to copy data from other  <a href="class_specialty.html#ac084dce21c54881e508b0160648c53b6">More...</a><br /></td></tr>
+<tr class="separator:ac084dce21c54881e508b0160648c53b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab3a3421ce5ba5907c508679ddc6a0a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program.html">Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90">program</a></td></tr>
-<tr class="memdesc:ab3a3421ce5ba5907c508679ddc6a0a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_program.html">Program</a> of Subjects for this specialty.  <a href="class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90">More...</a><br /></td></tr>
-<tr class="separator:ab3a3421ce5ba5907c508679ddc6a0a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13eab871332225faf87f07928fab5f5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_group.html">Group</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a13eab871332225faf87f07928fab5f5e">groups</a> [<a class="el" href="_specialty_8hpp.html#a8d225eb052cc05d13282cfdf4918ec31">MAX_YEARS</a>][<a class="el" href="_group_8hpp.html#aa6ace081de212a863f6d8444d791d242">MAX_GROUPS</a>]</td></tr>
-<tr class="memdesc:a13eab871332225faf87f07928fab5f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix of Groups(of Students). MAX_YEARS rows indicating which year Students are currently studying, with MAX_GROUPS in each.  <a href="class_specialty.html#a13eab871332225faf87f07928fab5f5e">More...</a><br /></td></tr>
-<tr class="separator:a13eab871332225faf87f07928fab5f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77b6a29d49b4be7910ed380623a1b5c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c">name</a></td></tr>
+<tr class="memdesc:ae77b6a29d49b4be7910ed380623a1b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the program  <a href="class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c">More...</a><br /></td></tr>
+<tr class="separator:ae77b6a29d49b4be7910ed380623a1b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503f9e4d320025a3a1d288c667d2b5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a503f9e4d320025a3a1d288c667d2b5f0">required</a> [<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>] = {false, }</td></tr>
+<tr class="memdesc:a503f9e4d320025a3a1d288c667d2b5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">all af the required courses  <a href="class_specialty.html#a503f9e4d320025a3a1d288c667d2b5f0">More...</a><br /></td></tr>
+<tr class="separator:a503f9e4d320025a3a1d288c667d2b5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156da9b1d0f5c77f4e4410b597d79c42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html#a156da9b1d0f5c77f4e4410b597d79c42">electives</a> [<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = {false, }</td></tr>
+<tr class="memdesc:a156da9b1d0f5c77f4e4410b597d79c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">all of the elective courses  <a href="class_specialty.html#a156da9b1d0f5c77f4e4410b597d79c42">More...</a><br /></td></tr>
+<tr class="separator:a156da9b1d0f5c77f4e4410b597d79c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Realization of <a class="el" href="class_specialty.html">Specialty</a> class</p>
-<p>A specialty stores students in a matrix of Groups, and has it's own <a class="el" href="class_program.html">Program</a> of Subjects to follow. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae39a4757fc99b5e39c545f03aa9dcea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae39a4757fc99b5e39c545f03aa9dcea1">&#9670;&nbsp;</a></span>Specialty() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Specialty::Specialty </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>required</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>electives</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size_e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5b2113cf9371151336a3add9c2619fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b2113cf9371151336a3add9c2619fe8">&#9670;&nbsp;</a></span>Specialty() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2113cf9371151336a3add9c2619fe8">&#9670;&nbsp;</a></span>Specialty() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,12 +221,11 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor. Sets invalid ("") values for the <a class="el" href="class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90" title="A Program of Subjects for this specialty.">Specialty::program</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_program.html#aaefaa0df08f3484476fc4d61e97acbdc" title="Default constructor initializes both member variables with &quot;&quot;(invalid values)">Program::Program()</a> is used </dd></dl>
 
 </div>
 </div>
-<a id="a225f367475f86b6130381a5570bd2aa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a225f367475f86b6130381a5570bd2aa0">&#9670;&nbsp;</a></span>Specialty() <span class="overload">[2/2]</span></h2>
+<a id="aa0b48d43b5b48a22badffc920dc6cd1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0b48d43b5b48a22badffc920dc6cd1e">&#9670;&nbsp;</a></span>Specialty() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,73 +233,184 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Specialty::Specialty </td>
           <td>(</td>
-          <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>name</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="class_specialty.html">Specialty</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>program_path</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor sets name of the <a class="el" href="class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90" title="A Program of Subjects for this specialty.">Specialty::program</a> an it's path </p><dl class="section see"><dt>See also</dt><dd>program::Program(const char, const char); is used </dd></dl>
+
+</div>
+</div>
+<a id="a3df3452846f482ddf6ef1fef20450594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df3452846f482ddf6ef1fef20450594">&#9670;&nbsp;</a></span>~Specialty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Specialty::~Specialty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abadf2874ea834418d31cd93d155c6745"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abadf2874ea834418d31cd93d155c6745">&#9670;&nbsp;</a></span>addStudent()</h2>
+<a id="ac084dce21c54881e508b0160648c53b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac084dce21c54881e508b0160648c53b6">&#9670;&nbsp;</a></span>copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Specialty::copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_specialty.html">Specialty</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>used by the copy constructor and operator = to copy data from other </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>the other program</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad202275e80396c40ef9ea16c158473bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad202275e80396c40ef9ea16c158473bb">&#9670;&nbsp;</a></span>getElectiveSubject()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Specialty::addStudent </td>
+          <td class="memname">int Specialty::getElectiveSubject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_student.html">Student</a> const &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>by entered name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the elective course / -1 if not found</dd></dl>
+
+</div>
+</div>
+<a id="a5cb909a0d52ac9cd3609100bc822edbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb909a0d52ac9cd3609100bc822edbe">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * Specialty::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>copies the name into another string </p>
+<dl class="section return"><dt>Returns</dt><dd>the pointer to the copy, should get deleted every time after calling it</dd></dl>
+
+</div>
+</div>
+<a id="aef0efd60344f953fe31bb465925d7336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0efd60344f953fe31bb465925d7336">&#9670;&nbsp;</a></span>getRequiredSubject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Specialty::getRequiredSubject </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>by entered name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the course / -1 if not found</dd></dl>
+
+</div>
+</div>
+<a id="abefa3681b0fd98ef04e18eae63ea9831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abefa3681b0fd98ef04e18eae63ea9831">&#9670;&nbsp;</a></span>getSubjectName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Specialty::getSubjectName </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>year</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>groupNum</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds student in desired group and desired year. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_group.html#afeb879fad4d77e1b69f270a6b72106a3" title="If the array isn&#39;t full, sets a Student at the last available position of the array.">Group::addStudent()</a> is used </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index</td></tr>
+    <tr><td class="paramname">isRequired</td><td>if it is required</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the course</dd></dl>
 
 </div>
 </div>
-<a id="ace4a4e6ca67d87489b6ff5c0f53c6034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace4a4e6ca67d87489b6ff5c0f53c6034">&#9670;&nbsp;</a></span>changeStudentStatus()</h2>
+<a id="a86583cecb7771b1e8cef84592ae19276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86583cecb7771b1e8cef84592ae19276">&#9670;&nbsp;</a></span>getSubjectYear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Specialty::changeStudentStatus </td>
+          <td class="memname">unsigned Specialty::getSubjectYear </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -243,142 +421,40 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets status of a student </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>indicates which status to assign </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_student.html#a08071336409ac508f42cbb74f3f842dc" title="Only one of the following elements is true (0 - joined, 1-interrupted, 2-graduated)">Student::status</a> <a class="el" href="class_student.html#a69ff1f8e547eb9c7562436dd78d0fb06" title="Sets Students::status true and position &quot;index&quot;. Nullifies at all other positions.">Student::setStatus()</a> </dd>
-<dd>
-<a class="el" href="class_group.html#ab35b93236324637f63467ea730d46e6e">Group::changeStudentStatus()</a> is used </dd></dl>
 
-</div>
-</div>
-<a id="aa1a2128242274db6bd0e38f0af5c5898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1a2128242274db6bd0e38f0af5c5898">&#9670;&nbsp;</a></span>deleteStudent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Specialty::deleteStudent </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>year</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>groupNum</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deletes student found by faculty number. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_group.html#a8a5a7427bcb6a1a450eb4b0923868a2f">Group::deleteStudent()</a> is used </dd></dl>
-
-</div>
-</div>
-<a id="a3b334f6aed28e4bb10a28c070db22c6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b334f6aed28e4bb10a28c070db22c6b">&#9670;&nbsp;</a></span>enrollStudent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Specialty::enrollStudent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_student.html">Student</a> const &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>groupNum</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>bool if the student is successfully enrolled Adds a new <a class="el" href="class_student.html">Student</a> in year 1 in <a class="el" href="class_group.html">Group</a></dd></dl>
+<p></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">groupNum</td><td>Adds in Group::groups in position [0][groupNum -1] </td></tr>
+    <tr><td class="paramname">isRequired</td><td>if the course is required or elective</td></tr>
+    <tr><td class="paramname">index</td><td>ithe index of the course</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_group.html#afeb879fad4d77e1b69f270a6b72106a3" title="If the array isn&#39;t full, sets a Student at the last available position of the array.">Group::addStudent()</a> is used </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the year in which the course should be taken</dd></dl>
 
 </div>
 </div>
-<a id="a7be71e80f1fcf1d8b7b32dfc18b31080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7be71e80f1fcf1d8b7b32dfc18b31080">&#9670;&nbsp;</a></span>findStudent() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_student.html">Student</a> Specialty::findStudent </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>fn</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Creates variable <a class="el" href="class_student.html">Student</a> s; assignes found student to it and returns it </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_group.html#a296a1e53258946ffdd7c34a405411e89">Group::findStudent()</a> is used </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_student.html">Student</a> s; </dd></dl>
-
-</div>
-</div>
-<a id="a4f350879065084245b0c37507872ce22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f350879065084245b0c37507872ce22">&#9670;&nbsp;</a></span>findStudent() <span class="overload">[2/2]</span></h2>
+<a id="a0421b74b32e00997285cff21f7ebe8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0421b74b32e00997285cff21f7ebe8df">&#9670;&nbsp;</a></span>hasSubject()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Specialty::findStudent </td>
+          <td class="memname">bool Specialty::hasSubject </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
+          <td class="paramname"><em>sub</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>year</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>groupNum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&amp;&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -387,19 +463,39 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches through all the years and their groups to find a student. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>checks if the program has a desired subject </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Used to extract <a class="el" href="class_student.html">Student</a>'s name in it </td></tr>
-    <tr><td class="paramname">year</td><td>Used to extract <a class="el" href="class_student.html">Student</a>'s year in it </td></tr>
+    <tr><td class="paramname">sub</td><td>the index of the subject</td></tr>
+    <tr><td class="paramname">isRequired</td><td>if the course is required or not</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_group.html#a9493dcaf99d44287d9a44521a88ad921">Group::isStudentInGroup()</a> is used </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>if the program has such course</dd></dl>
 
 </div>
 </div>
-<a id="a02231e365a120a088237886479c79594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02231e365a120a088237886479c79594">&#9670;&nbsp;</a></span>getProgramName()</h2>
+<a id="afcdcb962774043aa45a38440300fa263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdcb962774043aa45a38440300fa263">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_specialty.html">Specialty</a> &amp; Specialty::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_specialty.html">Specialty</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9400eb91c623ace2f3396c308ff259ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9400eb91c623ace2f3396c308ff259ab">&#9670;&nbsp;</a></span>setElectives()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,25 +504,123 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* Specialty::getProgramName </td>
+          <td class="memname">void Specialty::setElectives </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>origin</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setting the elective courses for the program </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>contains the indexes of the courses for the program</td></tr>
+    <tr><td class="paramname">size</td><td>the size of the array</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89236c019907dca0f3640d969cd999f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89236c019907dca0f3640d969cd999f3">&#9670;&nbsp;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Specialty::setName </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_program.html#a4e9e86e1412a87fcbf9288e2390f0230" title="Copies Program::name in heap and returns the pointer of the copy.">Program::getName()</a> for the current <a class="el" href="class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90" title="A Program of Subjects for this specialty.">Specialty::program</a> </dd></dl>
+
+<p>copies a string and sets this name to it </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>the other passed name</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8784b678490fb6ab20075c6e90914050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8784b678490fb6ab20075c6e90914050">&#9670;&nbsp;</a></span>setRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Specialty::setRequired </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>origin</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setting the required courses for the program </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>contains the indexes of the courses for the program</td></tr>
+    <tr><td class="paramname">size</td><td>the size of the array</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a13eab871332225faf87f07928fab5f5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13eab871332225faf87f07928fab5f5e">&#9670;&nbsp;</a></span>groups</h2>
+<a id="a156da9b1d0f5c77f4e4410b597d79c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156da9b1d0f5c77f4e4410b597d79c42">&#9670;&nbsp;</a></span>electives</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,7 +629,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_group.html">Group</a> Specialty::groups[<a class="el" href="_specialty_8hpp.html#a8d225eb052cc05d13282cfdf4918ec31">MAX_YEARS</a>][<a class="el" href="_group_8hpp.html#aa6ace081de212a863f6d8444d791d242">MAX_GROUPS</a>]</td>
+          <td class="memname">bool Specialty::electives[<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = {false, }</td>
         </tr>
       </table>
   </td>
@@ -445,12 +639,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Matrix of Groups(of Students). MAX_YEARS rows indicating which year Students are currently studying, with MAX_GROUPS in each. </p>
+<p>all of the elective courses </p>
 
 </div>
 </div>
-<a id="ab3a3421ce5ba5907c508679ddc6a0a90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3a3421ce5ba5907c508679ddc6a0a90">&#9670;&nbsp;</a></span>program</h2>
+<a id="ae77b6a29d49b4be7910ed380623a1b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77b6a29d49b4be7910ed380623a1b5c">&#9670;&nbsp;</a></span>name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,7 +653,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_program.html">Program</a> Specialty::program</td>
+          <td class="memname">char* Specialty::name</td>
         </tr>
       </table>
   </td>
@@ -469,7 +663,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A <a class="el" href="class_program.html">Program</a> of Subjects for this specialty. </p>
+<p>name of the program </p>
+
+</div>
+</div>
+<a id="a503f9e4d320025a3a1d288c667d2b5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503f9e4d320025a3a1d288c667d2b5f0">&#9670;&nbsp;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Specialty::required[<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>] = {false, }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>all af the required courses </p>
 
 </div>
 </div>

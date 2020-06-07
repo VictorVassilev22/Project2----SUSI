@@ -1,0 +1,209 @@
+\hypertarget{_user_interface_8hpp}{}\doxysection{Project2-\/-\/-\/-\/\+S\+U\+S\+I/\+User\+Interface.hpp File Reference}
+\label{_user_interface_8hpp}\index{Project2-\/-\/-\/-\/SUSI/UserInterface.hpp@{Project2-\/-\/-\/-\/SUSI/UserInterface.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}S\+U\+S\+I.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_user_interface}{User\+Interface}}
+\begin{DoxyCompactList}\small\item\em implementation of user interface, this is in charge of communigation between the user and class \mbox{\hyperlink{class_s_u_s_i}{S\+U\+SI}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{_user_interface_8hpp_aa419daec89d4e9d827cf539e449a4522}{read\+Str\+S\+U\+SI}} (std\+::istream \&in, bool has\+Spaces, size\+\_\+t size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \mbox{\hyperlink{_user_interface_8hpp_af1df77c325cd61874d65c5d224904f55}{M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+ND}} = 15
+\begin{DoxyCompactList}\small\item\em Maximum symbols of a command. \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{_user_interface_8hpp_a2d35d29ec35bb4d4135d65bb7b9955f7}{M\+A\+X\+\_\+\+O\+P\+T\+I\+ON}} = 8
+\begin{DoxyCompactList}\small\item\em maximum symbols for an option \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{_user_interface_8hpp_a175063dc65fb130f6777d51335e30295}{M\+A\+X\+\_\+\+L\+I\+NE}} = 100
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a308725d435524b00d307c6ac7c4acb09}{G\+R\+O\+U\+P\+\_\+\+O\+PT}} \mbox{[}$\,$\mbox{]} = \char`\"{}group\char`\"{}
+\begin{DoxyCompactList}\small\item\em This and the following const char arrays are constats of command which the user enters \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_aaf0664e6b8bc06093c1e8d363177f8f7}{Y\+E\+A\+R\+\_\+\+O\+PT}} \mbox{[}$\,$\mbox{]} = \char`\"{}year\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_afce438671c698f9ce52afb6f8df46830}{P\+R\+O\+G\+R\+A\+M\+\_\+\+O\+PT}} \mbox{[}$\,$\mbox{]} = \char`\"{}program\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a7e259c6fe99b2eb4a097afe75fe42972}{S\+T\+O\+P\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}close\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_af5b27f36226debc94ef4925a4857daa6}{E\+N\+R\+O\+L\+L\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}enroll\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_abe335312529630aadec7c374cef19662}{A\+D\+V\+A\+N\+C\+E\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}advance\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_afff1d791bda8bafebfad1410a1407c62}{C\+H\+A\+N\+G\+E\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}change\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_ad6b58d9c352856e4ac44478340a204b6}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}interrupt\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_aaacb3b6276bc2ca16fd66e9b5dc04da9}{R\+E\+S\+U\+M\+E\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}resume\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_ad727510c419bd0936db3f53d88172084}{P\+R\+I\+N\+T\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}print\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_aa50f3748a938fcccf980d50ccb882b74}{P\+R\+I\+N\+T\+A\+L\+L\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}printall\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a9d7fde5aa26cb1b784558e4aae883b35}{E\+N\+R\+O\+L\+L\+I\+N\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}enrollin\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_ae415b7a73b0bfa5ebe0d23727de8f052}{A\+D\+D\+G\+R\+A\+D\+E\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}addgrade\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_af39d4cd11615c54f406cbcb6c1f6082b}{P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}protocol\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a51d6f45e6a1a9165bbcf9cae7e8a87dd}{R\+E\+P\+O\+R\+T\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}report\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a9eb38177bc538b2cf9c7e5e2320077ed}{S\+A\+V\+E\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}save\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a714ed9bfa109afd3ab0d5f9c49ac5113}{S\+A\+V\+E\+A\+S\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}saveas\char`\"{}
+\item 
+const char \mbox{\hyperlink{_user_interface_8hpp_a8479473afb3d7d83c2548f6c5b871faf}{H\+E\+L\+P\+\_\+\+C\+MD}} \mbox{[}$\,$\mbox{]} = \char`\"{}help\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_user_interface_8hpp_aa419daec89d4e9d827cf539e449a4522}\label{_user_interface_8hpp_aa419daec89d4e9d827cf539e449a4522}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!readStrSUSI@{readStrSUSI}}
+\index{readStrSUSI@{readStrSUSI}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{readStrSUSI()}{readStrSUSI()}}
+{\footnotesize\ttfamily char$\ast$ read\+Str\+S\+U\+SI (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{bool}]{has\+Spaces,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_user_interface_8hpp_ae415b7a73b0bfa5ebe0d23727de8f052}\label{_user_interface_8hpp_ae415b7a73b0bfa5ebe0d23727de8f052}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!ADDGRADE\_CMD@{ADDGRADE\_CMD}}
+\index{ADDGRADE\_CMD@{ADDGRADE\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{ADDGRADE\_CMD}{ADDGRADE\_CMD}}
+{\footnotesize\ttfamily const char A\+D\+D\+G\+R\+A\+D\+E\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}addgrade\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_abe335312529630aadec7c374cef19662}\label{_user_interface_8hpp_abe335312529630aadec7c374cef19662}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!ADVANCE\_CMD@{ADVANCE\_CMD}}
+\index{ADVANCE\_CMD@{ADVANCE\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{ADVANCE\_CMD}{ADVANCE\_CMD}}
+{\footnotesize\ttfamily const char A\+D\+V\+A\+N\+C\+E\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}advance\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_afff1d791bda8bafebfad1410a1407c62}\label{_user_interface_8hpp_afff1d791bda8bafebfad1410a1407c62}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!CHANGE\_CMD@{CHANGE\_CMD}}
+\index{CHANGE\_CMD@{CHANGE\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{CHANGE\_CMD}{CHANGE\_CMD}}
+{\footnotesize\ttfamily const char C\+H\+A\+N\+G\+E\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}change\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_af5b27f36226debc94ef4925a4857daa6}\label{_user_interface_8hpp_af5b27f36226debc94ef4925a4857daa6}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!ENROLL\_CMD@{ENROLL\_CMD}}
+\index{ENROLL\_CMD@{ENROLL\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{ENROLL\_CMD}{ENROLL\_CMD}}
+{\footnotesize\ttfamily const char E\+N\+R\+O\+L\+L\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}enroll\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a9d7fde5aa26cb1b784558e4aae883b35}\label{_user_interface_8hpp_a9d7fde5aa26cb1b784558e4aae883b35}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!ENROLLIN\_CMD@{ENROLLIN\_CMD}}
+\index{ENROLLIN\_CMD@{ENROLLIN\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{ENROLLIN\_CMD}{ENROLLIN\_CMD}}
+{\footnotesize\ttfamily const char E\+N\+R\+O\+L\+L\+I\+N\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}enrollin\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a308725d435524b00d307c6ac7c4acb09}\label{_user_interface_8hpp_a308725d435524b00d307c6ac7c4acb09}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!GROUP\_OPT@{GROUP\_OPT}}
+\index{GROUP\_OPT@{GROUP\_OPT}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{GROUP\_OPT}{GROUP\_OPT}}
+{\footnotesize\ttfamily const char G\+R\+O\+U\+P\+\_\+\+O\+PT\mbox{[}$\,$\mbox{]} = \char`\"{}group\char`\"{}}
+
+
+
+This and the following const char arrays are constats of command which the user enters 
+
+\mbox{\Hypertarget{_user_interface_8hpp_a8479473afb3d7d83c2548f6c5b871faf}\label{_user_interface_8hpp_a8479473afb3d7d83c2548f6c5b871faf}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!HELP\_CMD@{HELP\_CMD}}
+\index{HELP\_CMD@{HELP\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{HELP\_CMD}{HELP\_CMD}}
+{\footnotesize\ttfamily const char H\+E\+L\+P\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}help\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_ad6b58d9c352856e4ac44478340a204b6}\label{_user_interface_8hpp_ad6b58d9c352856e4ac44478340a204b6}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!INTERRUPT\_CMD@{INTERRUPT\_CMD}}
+\index{INTERRUPT\_CMD@{INTERRUPT\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{INTERRUPT\_CMD}{INTERRUPT\_CMD}}
+{\footnotesize\ttfamily const char I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}interrupt\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_af1df77c325cd61874d65c5d224904f55}\label{_user_interface_8hpp_af1df77c325cd61874d65c5d224904f55}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!MAX\_COMMAND@{MAX\_COMMAND}}
+\index{MAX\_COMMAND@{MAX\_COMMAND}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_COMMAND}{MAX\_COMMAND}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+ND = 15}
+
+
+
+Maximum symbols of a command. 
+
+\mbox{\Hypertarget{_user_interface_8hpp_a175063dc65fb130f6777d51335e30295}\label{_user_interface_8hpp_a175063dc65fb130f6777d51335e30295}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!MAX\_LINE@{MAX\_LINE}}
+\index{MAX\_LINE@{MAX\_LINE}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_LINE}{MAX\_LINE}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+L\+I\+NE = 100}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a2d35d29ec35bb4d4135d65bb7b9955f7}\label{_user_interface_8hpp_a2d35d29ec35bb4d4135d65bb7b9955f7}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!MAX\_OPTION@{MAX\_OPTION}}
+\index{MAX\_OPTION@{MAX\_OPTION}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_OPTION}{MAX\_OPTION}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+O\+P\+T\+I\+ON = 8}
+
+
+
+maximum symbols for an option 
+
+\mbox{\Hypertarget{_user_interface_8hpp_ad727510c419bd0936db3f53d88172084}\label{_user_interface_8hpp_ad727510c419bd0936db3f53d88172084}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!PRINT\_CMD@{PRINT\_CMD}}
+\index{PRINT\_CMD@{PRINT\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{PRINT\_CMD}{PRINT\_CMD}}
+{\footnotesize\ttfamily const char P\+R\+I\+N\+T\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}print\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_aa50f3748a938fcccf980d50ccb882b74}\label{_user_interface_8hpp_aa50f3748a938fcccf980d50ccb882b74}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!PRINTALL\_CMD@{PRINTALL\_CMD}}
+\index{PRINTALL\_CMD@{PRINTALL\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{PRINTALL\_CMD}{PRINTALL\_CMD}}
+{\footnotesize\ttfamily const char P\+R\+I\+N\+T\+A\+L\+L\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}printall\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_afce438671c698f9ce52afb6f8df46830}\label{_user_interface_8hpp_afce438671c698f9ce52afb6f8df46830}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!PROGRAM\_OPT@{PROGRAM\_OPT}}
+\index{PROGRAM\_OPT@{PROGRAM\_OPT}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{PROGRAM\_OPT}{PROGRAM\_OPT}}
+{\footnotesize\ttfamily const char P\+R\+O\+G\+R\+A\+M\+\_\+\+O\+PT\mbox{[}$\,$\mbox{]} = \char`\"{}program\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_af39d4cd11615c54f406cbcb6c1f6082b}\label{_user_interface_8hpp_af39d4cd11615c54f406cbcb6c1f6082b}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!PROTOCOL\_CMD@{PROTOCOL\_CMD}}
+\index{PROTOCOL\_CMD@{PROTOCOL\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{PROTOCOL\_CMD}{PROTOCOL\_CMD}}
+{\footnotesize\ttfamily const char P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}protocol\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a51d6f45e6a1a9165bbcf9cae7e8a87dd}\label{_user_interface_8hpp_a51d6f45e6a1a9165bbcf9cae7e8a87dd}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!REPORT\_CMD@{REPORT\_CMD}}
+\index{REPORT\_CMD@{REPORT\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{REPORT\_CMD}{REPORT\_CMD}}
+{\footnotesize\ttfamily const char R\+E\+P\+O\+R\+T\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}report\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_aaacb3b6276bc2ca16fd66e9b5dc04da9}\label{_user_interface_8hpp_aaacb3b6276bc2ca16fd66e9b5dc04da9}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!RESUME\_CMD@{RESUME\_CMD}}
+\index{RESUME\_CMD@{RESUME\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{RESUME\_CMD}{RESUME\_CMD}}
+{\footnotesize\ttfamily const char R\+E\+S\+U\+M\+E\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}resume\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a9eb38177bc538b2cf9c7e5e2320077ed}\label{_user_interface_8hpp_a9eb38177bc538b2cf9c7e5e2320077ed}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!SAVE\_CMD@{SAVE\_CMD}}
+\index{SAVE\_CMD@{SAVE\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{SAVE\_CMD}{SAVE\_CMD}}
+{\footnotesize\ttfamily const char S\+A\+V\+E\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}save\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a714ed9bfa109afd3ab0d5f9c49ac5113}\label{_user_interface_8hpp_a714ed9bfa109afd3ab0d5f9c49ac5113}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!SAVEAS\_CMD@{SAVEAS\_CMD}}
+\index{SAVEAS\_CMD@{SAVEAS\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{SAVEAS\_CMD}{SAVEAS\_CMD}}
+{\footnotesize\ttfamily const char S\+A\+V\+E\+A\+S\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}saveas\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_a7e259c6fe99b2eb4a097afe75fe42972}\label{_user_interface_8hpp_a7e259c6fe99b2eb4a097afe75fe42972}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!STOP\_CMD@{STOP\_CMD}}
+\index{STOP\_CMD@{STOP\_CMD}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{STOP\_CMD}{STOP\_CMD}}
+{\footnotesize\ttfamily const char S\+T\+O\+P\+\_\+\+C\+MD\mbox{[}$\,$\mbox{]} = \char`\"{}close\char`\"{}}
+
+\mbox{\Hypertarget{_user_interface_8hpp_aaf0664e6b8bc06093c1e8d363177f8f7}\label{_user_interface_8hpp_aaf0664e6b8bc06093c1e8d363177f8f7}} 
+\index{UserInterface.hpp@{UserInterface.hpp}!YEAR\_OPT@{YEAR\_OPT}}
+\index{YEAR\_OPT@{YEAR\_OPT}!UserInterface.hpp@{UserInterface.hpp}}
+\doxysubsubsection{\texorpdfstring{YEAR\_OPT}{YEAR\_OPT}}
+{\footnotesize\ttfamily const char Y\+E\+A\+R\+\_\+\+O\+PT\mbox{[}$\,$\mbox{]} = \char`\"{}year\char`\"{}}
+

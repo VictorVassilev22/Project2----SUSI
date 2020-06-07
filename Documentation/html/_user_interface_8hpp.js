@@ -1,0 +1,26 @@
+var _user_interface_8hpp =
+[
+    [ "UserInterface", "class_user_interface.html", "class_user_interface" ],
+    [ "readStrSUSI", "_user_interface_8hpp.html#aa419daec89d4e9d827cf539e449a4522", null ],
+    [ "ADDGRADE_CMD", "_user_interface_8hpp.html#ae415b7a73b0bfa5ebe0d23727de8f052", null ],
+    [ "ADVANCE_CMD", "_user_interface_8hpp.html#abe335312529630aadec7c374cef19662", null ],
+    [ "CHANGE_CMD", "_user_interface_8hpp.html#afff1d791bda8bafebfad1410a1407c62", null ],
+    [ "ENROLL_CMD", "_user_interface_8hpp.html#af5b27f36226debc94ef4925a4857daa6", null ],
+    [ "ENROLLIN_CMD", "_user_interface_8hpp.html#a9d7fde5aa26cb1b784558e4aae883b35", null ],
+    [ "GROUP_OPT", "_user_interface_8hpp.html#a308725d435524b00d307c6ac7c4acb09", null ],
+    [ "HELP_CMD", "_user_interface_8hpp.html#a8479473afb3d7d83c2548f6c5b871faf", null ],
+    [ "INTERRUPT_CMD", "_user_interface_8hpp.html#ad6b58d9c352856e4ac44478340a204b6", null ],
+    [ "MAX_COMMAND", "_user_interface_8hpp.html#af1df77c325cd61874d65c5d224904f55", null ],
+    [ "MAX_LINE", "_user_interface_8hpp.html#a175063dc65fb130f6777d51335e30295", null ],
+    [ "MAX_OPTION", "_user_interface_8hpp.html#a2d35d29ec35bb4d4135d65bb7b9955f7", null ],
+    [ "PRINT_CMD", "_user_interface_8hpp.html#ad727510c419bd0936db3f53d88172084", null ],
+    [ "PRINTALL_CMD", "_user_interface_8hpp.html#aa50f3748a938fcccf980d50ccb882b74", null ],
+    [ "PROGRAM_OPT", "_user_interface_8hpp.html#afce438671c698f9ce52afb6f8df46830", null ],
+    [ "PROTOCOL_CMD", "_user_interface_8hpp.html#af39d4cd11615c54f406cbcb6c1f6082b", null ],
+    [ "REPORT_CMD", "_user_interface_8hpp.html#a51d6f45e6a1a9165bbcf9cae7e8a87dd", null ],
+    [ "RESUME_CMD", "_user_interface_8hpp.html#aaacb3b6276bc2ca16fd66e9b5dc04da9", null ],
+    [ "SAVE_CMD", "_user_interface_8hpp.html#a9eb38177bc538b2cf9c7e5e2320077ed", null ],
+    [ "SAVEAS_CMD", "_user_interface_8hpp.html#a714ed9bfa109afd3ab0d5f9c49ac5113", null ],
+    [ "STOP_CMD", "_user_interface_8hpp.html#a7e259c6fe99b2eb4a097afe75fe42972", null ],
+    [ "YEAR_OPT", "_user_interface_8hpp.html#aaf0664e6b8bc06093c1e8d363177f8f7", null ]
+];

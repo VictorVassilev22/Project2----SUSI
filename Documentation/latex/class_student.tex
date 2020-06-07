@@ -9,12 +9,12 @@
 \item 
 \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}} ()
 \item 
-\mbox{\hyperlink{class_student_a62a3cafd003dd6b51df9124faa2d3aa8}{Student}} (char $\ast$\mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{name}}, unsigned \mbox{\hyperlink{class_student_a33b9fc53d027a39df5aaed647762cfdf}{f\+\_\+num}}, unsigned \mbox{\hyperlink{class_student_a579cb0583df0335f8cede1dd1d4dd490}{group}}, unsigned \mbox{\hyperlink{class_student_a0f1f9d65c8b42f2b87dab6bfdc536616}{year}}=1)
+\mbox{\hyperlink{class_student_a2f7521d3684837b6533abe13ed16ce40}{Student}} (const char $\ast$\mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{name}}, unsigned \mbox{\hyperlink{class_student_a33b9fc53d027a39df5aaed647762cfdf}{f\+\_\+num}}, size\+\_\+t \mbox{\hyperlink{class_student_a579cb0583df0335f8cede1dd1d4dd490}{group}}, \mbox{\hyperlink{class_specialty}{Specialty}} \&sp, unsigned \mbox{\hyperlink{class_student_a0f1f9d65c8b42f2b87dab6bfdc536616}{year}}=1)
 \item 
 \mbox{\hyperlink{class_student_a4f53fdab7c28cd2b9d8c2311c1b05275}{Student}} (\mbox{\hyperlink{class_student}{Student}} const \&other)
 \item 
 \mbox{\hyperlink{class_student_a54a8ea060d6cd04222c3a2f89829f105}{$\sim$\+Student}} ()
-\begin{DoxyCompactList}\small\item\em Deletes dynamically located memory reom the heap. (\mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}}, \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Deletes dynamically located memory reom the heap. (\mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}}, Student\+::subjects) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_student}{Student}} \& \mbox{\hyperlink{class_student_ab8da6ee8345e8b23ea3703e53953c06f}{operator=}} (\mbox{\hyperlink{class_student}{Student}} const \&other)
 \item 
 unsigned \mbox{\hyperlink{class_student_af455f519c8b01a8b5b75b7e35ab26117}{get\+Fn}} () const
@@ -25,42 +25,92 @@ unsigned \mbox{\hyperlink{class_student_a1608064f49b3e35536a820c8229cb82d}{get\+
 \item 
 void \mbox{\hyperlink{class_student_a69ff1f8e547eb9c7562436dd78d0fb06}{set\+Status}} (size\+\_\+t index)
 \begin{DoxyCompactList}\small\item\em Sets Students\+::status true and position \char`\"{}index\char`\"{}. Nullifies at all other positions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a0f489757d54250ff6ca19a58d4dd03df}{has\+Interrupted}} () const
+\item 
+bool \mbox{\hyperlink{class_student_ac8760008499a682d4f05de61c205f1c1}{has\+Year\+For\+Course}} (unsigned sub, bool is\+Required=true)
+\item 
 char $\ast$ \mbox{\hyperlink{class_student_a084b69da372ef24c9b2292eb847b14af}{get\+Name}} () const
-\end{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_specialty}{Specialty}} \& \mbox{\hyperlink{class_student_ad3ae514fdaa1babcc62b46ce179f4192}{get\+Specialty}} () const
+\item 
+char $\ast$ \mbox{\hyperlink{class_student_a7ba305457dcfe987007e4691cf70d99e}{get\+Spec\+Name}} () const
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{Returns}
+the name of the program the student has taken
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_student_a7da08c4b8533512d0b78dffdbe462aa0}{get\+Grade}} (unsigned i, bool is\+Required=true) const
+\item 
+double \mbox{\hyperlink{class_student_a5fa02280d692358fa8378765f07f6aa6}{get\+Average\+Grade}} () const
+\begin{DoxyCompactList}\small\item\em calculates the average grade of the student \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a6f19f67544a0b9613ed18f7e405b40b7}{print\+Status}} () const
+\begin{DoxyCompactList}\small\item\em 0-\/studying 1-\/interrupted 2-\/graduated \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_student_a73ccb8c563d4220dbc5b1e03c9f13b4d}{get\+Status}} () const
+\item 
+void \mbox{\hyperlink{class_student_a3261b9188bf1122b5fba5cbd4ac322eb}{report}} () const
+\item 
+void \mbox{\hyperlink{class_student_abdbb14cd83ef23c09f811bd1e30ddd4f}{print}} () const
+\item 
+bool \mbox{\hyperlink{class_student_af34492643a249fd5923789c8cfa2fc55}{enrollin\+Elective}} (unsigned index)
+\item 
+bool \mbox{\hyperlink{class_student_aae093b4b2bac09013c15527b33e9b36c}{enrollin\+Required}} (unsigned index)
+\item 
+void \mbox{\hyperlink{class_student_ac56659cf5bb55f051fe63acff24423d1}{add\+Grade}} (double grade, size\+\_\+t subject, bool is\+Required=true)
+\item 
+bool \mbox{\hyperlink{class_student_acb30312a58d3e5833f25b5939b593689}{has\+Required}} (unsigned sub) const
+\item 
+bool \mbox{\hyperlink{class_student_afc7ac4b6599ab6c946dfdd26f0f87a03}{has\+Elective}} (unsigned sub) const
+\item 
+void \mbox{\hyperlink{class_student_a6217cd7c790c0b320365a4b347ffc4d4}{print\+Protocol\+Course}} (unsigned sub, bool is\+Required=true) const
+\begin{DoxyCompactList}\small\item\em prints protocol for that student given a course \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_student_af5182526ef4819908ac77c07efc2c9c6}{copy\+Status}} (bool const src\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em copies the values of \mbox{\hyperlink{class_student_a08071336409ac508f42cbb74f3f842dc}{Student\+::status}} to a new bool array \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_student_a73172a8c5625bdc33c78d226c5e3f52d}{copy\+Subjects}} (\mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}} const $\ast$src)
-\begin{DoxyCompactList}\small\item\em copies the values of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}} to a new \mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}} list \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_student_a6293c83b991793958386bb24a386340c}{copy}} (\mbox{\hyperlink{class_student}{Student}} const \&other)
-\begin{DoxyCompactList}\small\item\em Help function used in copy constructors. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_student_afa83a6bf22d9810822f0985e4e51cd7d}{clear}} (T $\ast$str)
+\begin{DoxyCompactList}\small\item\em copies the values of Student\+::subjects to a new Taken\+Subject list \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_student_af060c99d055c3f8b2f9b7f1205cf5a47}{clear}} (T $\ast$\&str)
 \begin{DoxyCompactList}\small\item\em A template function which clears dynamically located data from heap of a random type object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_student_aebe71e3678dd8fb6c42383f90922be4a}{set\+Name}} (const char $\ast$other\+\_\+name)
-\begin{DoxyCompactList}\small\item\em Sets \mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}}, deletes and allocates it\textquotesingle{}s memory first. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets \mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}}, deletes and allocates it\textquotesingle{}s memory first. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a60363d8c57d556d2af4822415813b59a}{change\+Group}} (size\+\_\+t new\+\_\+group)
+\begin{DoxyCompactList}\small\item\em changes Sudent\+::group \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a9aa0d0dffc4ae6d36aad584279dbdcfb}{change\+Year}} (unsigned new\+\_\+year)
+\begin{DoxyCompactList}\small\item\em Changes year. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a5eb2e03a15c86f6b5b9198b2c8d2f373}{check\+If\+Passed}} (unsigned subject, bool is\+Required=true)
+\item 
+bool \mbox{\hyperlink{class_student_a41ce9cccf4517305961ee083a2338d57}{is\+Qualified\+For\+Specialty}} (\mbox{\hyperlink{class_specialty}{Specialty}} const \&spec)
+\item 
+void \mbox{\hyperlink{class_student_a0d3c6ebe0baac797b555ca673f2d6974}{copy\+Required}} ()
+\begin{DoxyCompactList}\small\item\em copies required courses from the program to this \mbox{\hyperlink{class_student_a09dc126e77054d9210d4e2917b379b4b}{Student\+::required}}\mbox{[}M\+A\+X\+\_\+\+R\+\_\+\+S\+UB\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 char $\ast$ \mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{name}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s personal name. \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_student_a33b9fc53d027a39df5aaed647762cfdf}{f\+\_\+num}}
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s faculty number. \end{DoxyCompactList}\item 
+\item 
 size\+\_\+t \mbox{\hyperlink{class_student_a579cb0583df0335f8cede1dd1d4dd490}{group}}
 \begin{DoxyCompactList}\small\item\em Indicates what group the student has joined. \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_student_a0f1f9d65c8b42f2b87dab6bfdc536616}{year}}
 \begin{DoxyCompactList}\small\item\em Indicates what year of university the student is studying. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_student_a08071336409ac508f42cbb74f3f842dc}{status}} \mbox{[}\mbox{\hyperlink{_student_8hpp_a7bbb584d417d0308b52d9e7ab87931d7}{S\+T\+A\+T\+U\+S\+\_\+\+M\+AX}}\mbox{]}
 \begin{DoxyCompactList}\small\item\em Only one of the following elements is true (0 -\/ joined, 1-\/interrupted, 2-\/graduated) \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{class_student_a6caf904e589557bc906802dc03c75f4e}{avarege\+\_\+grade}}
-\begin{DoxyCompactList}\small\item\em Avarege grade of all taken exams. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}} $\ast$ \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{subjects}}
-\begin{DoxyCompactList}\small\item\em All subjects the student has taken ever. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_student_a389e0f97eb0c8eecf322f1be4706c53e}{subjects\+\_\+capacity}}
-\begin{DoxyCompactList}\small\item\em Capacity of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}}. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_student_aad52cbcd08ab43340cdc53d50cac06ff}{subjects\+\_\+size}}
-\begin{DoxyCompactList}\small\item\em current count of elements of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_specialty}{Specialty}} \mbox{\hyperlink{class_student_a4b1a1438aaa7d59534c2a7d99c2739ad}{specialty}}
+\item 
+bool \mbox{\hyperlink{class_student_a1cad59cb49c74c7a2c00b7d9d24787cd}{electives}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]} = \{ false, \}
+\begin{DoxyCompactList}\small\item\em Elective subjects for that student. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a09dc126e77054d9210d4e2917b379b4b}{required}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]} = \{ false, \}
+\begin{DoxyCompactList}\small\item\em Elective subjects for that student. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_student_a9cd85e355f7c51731785c9a32125af10}{required\+\_\+grades}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]} = \{ 0.\+0, \}
+\item 
+double \mbox{\hyperlink{class_student_adb0c153a57432bff60f90233db6728c2}{elective\+\_\+grades}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]} = \{ 0.\+0, \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_student_aa678dcfbe00efe5fd516c6b133e6b17b}{S\+U\+SI}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -78,11 +128,11 @@ Stores needful information about the student.
 Default constructor initializes \mbox{\hyperlink{class_student}{Student}} with initial values. View source code. \begin{DoxyNote}{Note}
 We assume if \mbox{\hyperlink{class_student_a33b9fc53d027a39df5aaed647762cfdf}{Student\+::f\+\_\+num}} is 0, there is no such \mbox{\hyperlink{class_student}{Student}}. 
 \end{DoxyNote}
-\mbox{\Hypertarget{class_student_a62a3cafd003dd6b51df9124faa2d3aa8}\label{class_student_a62a3cafd003dd6b51df9124faa2d3aa8}} 
+\mbox{\Hypertarget{class_student_a2f7521d3684837b6533abe13ed16ce40}\label{class_student_a2f7521d3684837b6533abe13ed16ce40}} 
 \index{Student@{Student}!Student@{Student}}
 \index{Student@{Student}!Student@{Student}}
 \doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{unsigned}]{f\+\_\+num,  }\item[{unsigned}]{group,  }\item[{unsigned}]{year = {\ttfamily 1} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{unsigned}]{f\+\_\+num,  }\item[{size\+\_\+t}]{group,  }\item[{\mbox{\hyperlink{class_specialty}{Specialty}} \&}]{sp,  }\item[{unsigned}]{year = {\ttfamily 1} }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_student_a4f53fdab7c28cd2b9d8c2311c1b05275}\label{class_student_a4f53fdab7c28cd2b9d8c2311c1b05275}} 
 \index{Student@{Student}!Student@{Student}}
@@ -101,17 +151,57 @@ Copy constructor. \begin{DoxySeeAlso}{See also}
 
 
 
-Deletes dynamically located memory reom the heap. (\mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}}, \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}}) 
+Deletes dynamically located memory reom the heap. (\mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}}, Student\+::subjects) 
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_student_afa83a6bf22d9810822f0985e4e51cd7d}\label{class_student_afa83a6bf22d9810822f0985e4e51cd7d}} 
+\mbox{\Hypertarget{class_student_ac56659cf5bb55f051fe63acff24423d1}\label{class_student_ac56659cf5bb55f051fe63acff24423d1}} 
+\index{Student@{Student}!addGrade@{addGrade}}
+\index{addGrade@{addGrade}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{addGrade()}{addGrade()}}
+{\footnotesize\ttfamily void Student\+::add\+Grade (\begin{DoxyParamCaption}\item[{double}]{grade,  }\item[{size\+\_\+t}]{subject,  }\item[{bool}]{is\+Required = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_a60363d8c57d556d2af4822415813b59a}\label{class_student_a60363d8c57d556d2af4822415813b59a}} 
+\index{Student@{Student}!changeGroup@{changeGroup}}
+\index{changeGroup@{changeGroup}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{changeGroup()}{changeGroup()}}
+{\footnotesize\ttfamily void Student\+::change\+Group (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{new\+\_\+group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+changes Sudent\+::group 
+
+\mbox{\Hypertarget{class_student_a9aa0d0dffc4ae6d36aad584279dbdcfb}\label{class_student_a9aa0d0dffc4ae6d36aad584279dbdcfb}} 
+\index{Student@{Student}!changeYear@{changeYear}}
+\index{changeYear@{changeYear}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{changeYear()}{changeYear()}}
+{\footnotesize\ttfamily bool Student\+::change\+Year (\begin{DoxyParamCaption}\item[{unsigned}]{new\+\_\+year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Changes year. 
+
+\begin{DoxyReturn}{Returns}
+false if year is not the next year. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a5eb2e03a15c86f6b5b9198b2c8d2f373}\label{class_student_a5eb2e03a15c86f6b5b9198b2c8d2f373}} 
+\index{Student@{Student}!checkIfPassed@{checkIfPassed}}
+\index{checkIfPassed@{checkIfPassed}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{checkIfPassed()}{checkIfPassed()}}
+{\footnotesize\ttfamily bool Student\+::check\+If\+Passed (\begin{DoxyParamCaption}\item[{unsigned}]{subject,  }\item[{bool}]{is\+Required = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Returns}
+true if the subject is not taken, 
+
+true if the subject is taken and has grade $>$3.\+00 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_af060c99d055c3f8b2f9b7f1205cf5a47}\label{class_student_af060c99d055c3f8b2f9b7f1205cf5a47}} 
 \index{Student@{Student}!clear@{clear}}
 \index{clear@{clear}!Student@{Student}}
 \doxysubsubsection{\texorpdfstring{clear()}{clear()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-void Student\+::clear (\begin{DoxyParamCaption}\item[{T $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+void Student\+::clear (\begin{DoxyParamCaption}\item[{T $\ast$\&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -125,7 +215,17 @@ A template function which clears dynamically located data from heap of a random 
 
 
 
-Help function used in copy constructors. 
+copies the values of Student\+::subjects to a new Taken\+Subject list 
+
+Help function used in copy constructors. \mbox{\Hypertarget{class_student_a0d3c6ebe0baac797b555ca673f2d6974}\label{class_student_a0d3c6ebe0baac797b555ca673f2d6974}} 
+\index{Student@{Student}!copyRequired@{copyRequired}}
+\index{copyRequired@{copyRequired}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{copyRequired()}{copyRequired()}}
+{\footnotesize\ttfamily void Student\+::copy\+Required (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+copies required courses from the program to this \mbox{\hyperlink{class_student_a09dc126e77054d9210d4e2917b379b4b}{Student\+::required}}\mbox{[}M\+A\+X\+\_\+\+R\+\_\+\+S\+UB\mbox{]} 
 
 \mbox{\Hypertarget{class_student_af5182526ef4819908ac77c07efc2c9c6}\label{class_student_af5182526ef4819908ac77c07efc2c9c6}} 
 \index{Student@{Student}!copyStatus@{copyStatus}}
@@ -137,16 +237,31 @@ Help function used in copy constructors.
 
 copies the values of \mbox{\hyperlink{class_student_a08071336409ac508f42cbb74f3f842dc}{Student\+::status}} to a new bool array 
 
-\mbox{\Hypertarget{class_student_a73172a8c5625bdc33c78d226c5e3f52d}\label{class_student_a73172a8c5625bdc33c78d226c5e3f52d}} 
-\index{Student@{Student}!copySubjects@{copySubjects}}
-\index{copySubjects@{copySubjects}!Student@{Student}}
-\doxysubsubsection{\texorpdfstring{copySubjects()}{copySubjects()}}
-{\footnotesize\ttfamily void Student\+::copy\+Subjects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}} const $\ast$}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_student_af34492643a249fd5923789c8cfa2fc55}\label{class_student_af34492643a249fd5923789c8cfa2fc55}} 
+\index{Student@{Student}!enrollinElective@{enrollinElective}}
+\index{enrollinElective@{enrollinElective}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{enrollinElective()}{enrollinElective()}}
+{\footnotesize\ttfamily bool Student\+::enrollin\+Elective (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_aae093b4b2bac09013c15527b33e9b36c}\label{class_student_aae093b4b2bac09013c15527b33e9b36c}} 
+\index{Student@{Student}!enrollinRequired@{enrollinRequired}}
+\index{enrollinRequired@{enrollinRequired}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{enrollinRequired()}{enrollinRequired()}}
+{\footnotesize\ttfamily bool Student\+::enrollin\+Required (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_a5fa02280d692358fa8378765f07f6aa6}\label{class_student_a5fa02280d692358fa8378765f07f6aa6}} 
+\index{Student@{Student}!getAverageGrade@{getAverageGrade}}
+\index{getAverageGrade@{getAverageGrade}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getAverageGrade()}{getAverageGrade()}}
+{\footnotesize\ttfamily double Student\+::get\+Average\+Grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
-copies the values of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}} to a new \mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}} list 
+calculates the average grade of the student 
 
+\begin{DoxyReturn}{Returns}
+double
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_student_af455f519c8b01a8b5b75b7e35ab26117}\label{class_student_af455f519c8b01a8b5b75b7e35ab26117}} 
 \index{Student@{Student}!getFn@{getFn}}
 \index{getFn@{getFn}!Student@{Student}}
@@ -155,6 +270,20 @@ copies the values of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49
 
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{class_student_a33b9fc53d027a39df5aaed647762cfdf}{Student\+::f\+\_\+num}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a7da08c4b8533512d0b78dffdbe462aa0}\label{class_student_a7da08c4b8533512d0b78dffdbe462aa0}} 
+\index{Student@{Student}!getGrade@{getGrade}}
+\index{getGrade@{getGrade}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getGrade()}{getGrade()}}
+{\footnotesize\ttfamily double Student\+::get\+Grade (\begin{DoxyParamCaption}\item[{unsigned}]{i,  }\item[{bool}]{is\+Required = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & index of the course\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+grade for that course, returns 0 if the course is not taken or does not exist, returns 2 if the course is taken, but exam is not attended yet 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_student_a1608064f49b3e35536a820c8229cb82d}\label{class_student_a1608064f49b3e35536a820c8229cb82d}} 
 \index{Student@{Student}!getGroup@{getGroup}}
@@ -174,6 +303,34 @@ copies the values of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49
 \begin{DoxyReturn}{Returns}
 the value of \mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{Student\+::name}} 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_student_ad3ae514fdaa1babcc62b46ce179f4192}\label{class_student_ad3ae514fdaa1babcc62b46ce179f4192}} 
+\index{Student@{Student}!getSpecialty@{getSpecialty}}
+\index{getSpecialty@{getSpecialty}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getSpecialty()}{getSpecialty()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_specialty}{Specialty}}\& Student\+::get\+Specialty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the value of \mbox{\hyperlink{class_student_a4b1a1438aaa7d59534c2a7d99c2739ad}{Student\+::specialty}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a7ba305457dcfe987007e4691cf70d99e}\label{class_student_a7ba305457dcfe987007e4691cf70d99e}} 
+\index{Student@{Student}!getSpecName@{getSpecName}}
+\index{getSpecName@{getSpecName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getSpecName()}{getSpecName()}}
+{\footnotesize\ttfamily char$\ast$ Student\+::get\+Spec\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\begin{DoxyReturn}{Returns}
+the name of the program the student has taken
+\end{DoxyReturn}
+
+
+\mbox{\Hypertarget{class_student_a73ccb8c563d4220dbc5b1e03c9f13b4d}\label{class_student_a73ccb8c563d4220dbc5b1e03c9f13b4d}} 
+\index{Student@{Student}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily unsigned Student\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 \mbox{\Hypertarget{class_student_ac4d89290f874aeabde8cea5650da9872}\label{class_student_ac4d89290f874aeabde8cea5650da9872}} 
 \index{Student@{Student}!getYear@{getYear}}
 \index{getYear@{getYear}!Student@{Student}}
@@ -183,6 +340,36 @@ the value of \mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{S
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{class_student_a0f1f9d65c8b42f2b87dab6bfdc536616}{Student\+::year}} 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_student_afc7ac4b6599ab6c946dfdd26f0f87a03}\label{class_student_afc7ac4b6599ab6c946dfdd26f0f87a03}} 
+\index{Student@{Student}!hasElective@{hasElective}}
+\index{hasElective@{hasElective}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{hasElective()}{hasElective()}}
+{\footnotesize\ttfamily bool Student\+::has\+Elective (\begin{DoxyParamCaption}\item[{unsigned}]{sub }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_student_a0f489757d54250ff6ca19a58d4dd03df}\label{class_student_a0f489757d54250ff6ca19a58d4dd03df}} 
+\index{Student@{Student}!hasInterrupted@{hasInterrupted}}
+\index{hasInterrupted@{hasInterrupted}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{hasInterrupted()}{hasInterrupted()}}
+{\footnotesize\ttfamily bool Student\+::has\+Interrupted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_student_acb30312a58d3e5833f25b5939b593689}\label{class_student_acb30312a58d3e5833f25b5939b593689}} 
+\index{Student@{Student}!hasRequired@{hasRequired}}
+\index{hasRequired@{hasRequired}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{hasRequired()}{hasRequired()}}
+{\footnotesize\ttfamily bool Student\+::has\+Required (\begin{DoxyParamCaption}\item[{unsigned}]{sub }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_student_ac8760008499a682d4f05de61c205f1c1}\label{class_student_ac8760008499a682d4f05de61c205f1c1}} 
+\index{Student@{Student}!hasYearForCourse@{hasYearForCourse}}
+\index{hasYearForCourse@{hasYearForCourse}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{hasYearForCourse()}{hasYearForCourse()}}
+{\footnotesize\ttfamily bool Student\+::has\+Year\+For\+Course (\begin{DoxyParamCaption}\item[{unsigned}]{sub,  }\item[{bool}]{is\+Required = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_a41ce9cccf4517305961ee083a2338d57}\label{class_student_a41ce9cccf4517305961ee083a2338d57}} 
+\index{Student@{Student}!isQualifiedForSpecialty@{isQualifiedForSpecialty}}
+\index{isQualifiedForSpecialty@{isQualifiedForSpecialty}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{isQualifiedForSpecialty()}{isQualifiedForSpecialty()}}
+{\footnotesize\ttfamily bool Student\+::is\+Qualified\+For\+Specialty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_specialty}{Specialty}} const \&}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_student_ab8da6ee8345e8b23ea3703e53953c06f}\label{class_student_ab8da6ee8345e8b23ea3703e53953c06f}} 
 \index{Student@{Student}!operator=@{operator=}}
 \index{operator=@{operator=}!Student@{Student}}
@@ -192,6 +379,45 @@ the value of \mbox{\hyperlink{class_student_a7bff7ff985757c54c997bd970bbb63c8}{S
 Checks if this and other differ and if so, calls \mbox{\hyperlink{class_student_a6293c83b991793958386bb24a386340c}{Student\+::copy()}}. \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{class_student_a6293c83b991793958386bb24a386340c}{Student\+::copy()}} 
 \end{DoxySeeAlso}
+\mbox{\Hypertarget{class_student_abdbb14cd83ef23c09f811bd1e30ddd4f}\label{class_student_abdbb14cd83ef23c09f811bd1e30ddd4f}} 
+\index{Student@{Student}!print@{print}}
+\index{print@{print}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Student\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_student_a6217cd7c790c0b320365a4b347ffc4d4}\label{class_student_a6217cd7c790c0b320365a4b347ffc4d4}} 
+\index{Student@{Student}!printProtocolCourse@{printProtocolCourse}}
+\index{printProtocolCourse@{printProtocolCourse}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{printProtocolCourse()}{printProtocolCourse()}}
+{\footnotesize\ttfamily void Student\+::print\+Protocol\+Course (\begin{DoxyParamCaption}\item[{unsigned}]{sub,  }\item[{bool}]{is\+Required = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+
+
+prints protocol for that student given a course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub} & \\
+\hline
+{\em is\+Required} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a6f19f67544a0b9613ed18f7e405b40b7}\label{class_student_a6f19f67544a0b9613ed18f7e405b40b7}} 
+\index{Student@{Student}!printStatus@{printStatus}}
+\index{printStatus@{printStatus}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{printStatus()}{printStatus()}}
+{\footnotesize\ttfamily void Student\+::print\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+0-\/studying 1-\/interrupted 2-\/graduated 
+
+\mbox{\Hypertarget{class_student_a3261b9188bf1122b5fba5cbd4ac322eb}\label{class_student_a3261b9188bf1122b5fba5cbd4ac322eb}} 
+\index{Student@{Student}!report@{report}}
+\index{report@{report}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily void Student\+::report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 \mbox{\Hypertarget{class_student_aebe71e3678dd8fb6c42383f90922be4a}\label{class_student_aebe71e3678dd8fb6c42383f90922be4a}} 
 \index{Student@{Student}!setName@{setName}}
 \index{setName@{setName}!Student@{Student}}
@@ -214,16 +440,31 @@ Sets Students\+::status true and position \char`\"{}index\char`\"{}. Nullifies a
 
 
 
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_student_aa678dcfbe00efe5fd516c6b133e6b17b}\label{class_student_aa678dcfbe00efe5fd516c6b133e6b17b}} 
+\index{Student@{Student}!SUSI@{SUSI}}
+\index{SUSI@{SUSI}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{SUSI}{SUSI}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_s_u_s_i}{S\+U\+SI}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_student_a6caf904e589557bc906802dc03c75f4e}\label{class_student_a6caf904e589557bc906802dc03c75f4e}} 
-\index{Student@{Student}!avarege\_grade@{avarege\_grade}}
-\index{avarege\_grade@{avarege\_grade}!Student@{Student}}
-\doxysubsubsection{\texorpdfstring{avarege\_grade}{avarege\_grade}}
-{\footnotesize\ttfamily double Student\+::avarege\+\_\+grade\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_student_adb0c153a57432bff60f90233db6728c2}\label{class_student_adb0c153a57432bff60f90233db6728c2}} 
+\index{Student@{Student}!elective\_grades@{elective\_grades}}
+\index{elective\_grades@{elective\_grades}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{elective\_grades}{elective\_grades}}
+{\footnotesize\ttfamily double Student\+::elective\+\_\+grades\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]} = \{ 0.\+0, \}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_student_a1cad59cb49c74c7a2c00b7d9d24787cd}\label{class_student_a1cad59cb49c74c7a2c00b7d9d24787cd}} 
+\index{Student@{Student}!electives@{electives}}
+\index{electives@{electives}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{electives}{electives}}
+{\footnotesize\ttfamily bool Student\+::electives\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]} = \{ false, \}\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Avarege grade of all taken exams. 
+Elective subjects for that student. 
 
 \mbox{\Hypertarget{class_student_a33b9fc53d027a39df5aaed647762cfdf}\label{class_student_a33b9fc53d027a39df5aaed647762cfdf}} 
 \index{Student@{Student}!f\_num@{f\_num}}
@@ -231,11 +472,7 @@ Avarege grade of all taken exams.
 \doxysubsubsection{\texorpdfstring{f\_num}{f\_num}}
 {\footnotesize\ttfamily unsigned Student\+::f\+\_\+num\hspace{0.3cm}{\ttfamily [private]}}
 
-
-
-\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s faculty number. 
-
-\mbox{\Hypertarget{class_student_a579cb0583df0335f8cede1dd1d4dd490}\label{class_student_a579cb0583df0335f8cede1dd1d4dd490}} 
+\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s faculty number by default it is 0 and this is invalid value for the application \mbox{\Hypertarget{class_student_a579cb0583df0335f8cede1dd1d4dd490}\label{class_student_a579cb0583df0335f8cede1dd1d4dd490}} 
 \index{Student@{Student}!group@{group}}
 \index{group@{group}!Student@{Student}}
 \doxysubsubsection{\texorpdfstring{group}{group}}
@@ -255,6 +492,28 @@ Indicates what group the student has joined.
 
 \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s personal name. 
 
+\mbox{\Hypertarget{class_student_a09dc126e77054d9210d4e2917b379b4b}\label{class_student_a09dc126e77054d9210d4e2917b379b4b}} 
+\index{Student@{Student}!required@{required}}
+\index{required@{required}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{required}{required}}
+{\footnotesize\ttfamily bool Student\+::required\mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]} = \{ false, \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elective subjects for that student. 
+
+\mbox{\Hypertarget{class_student_a9cd85e355f7c51731785c9a32125af10}\label{class_student_a9cd85e355f7c51731785c9a32125af10}} 
+\index{Student@{Student}!required\_grades@{required\_grades}}
+\index{required\_grades@{required\_grades}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{required\_grades}{required\_grades}}
+{\footnotesize\ttfamily double Student\+::required\+\_\+grades\mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]} = \{ 0.\+0, \}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_student_a4b1a1438aaa7d59534c2a7d99c2739ad}\label{class_student_a4b1a1438aaa7d59534c2a7d99c2739ad}} 
+\index{Student@{Student}!specialty@{specialty}}
+\index{specialty@{specialty}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{specialty}{specialty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_specialty}{Specialty}} Student\+::specialty\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_student_a08071336409ac508f42cbb74f3f842dc}\label{class_student_a08071336409ac508f42cbb74f3f842dc}} 
 \index{Student@{Student}!status@{status}}
 \index{status@{status}!Student@{Student}}
@@ -264,36 +523,6 @@ Indicates what group the student has joined.
 
 
 Only one of the following elements is true (0 -\/ joined, 1-\/interrupted, 2-\/graduated) 
-
-\mbox{\Hypertarget{class_student_a0fedead505a8013d0ac36b1da49a236b}\label{class_student_a0fedead505a8013d0ac36b1da49a236b}} 
-\index{Student@{Student}!subjects@{subjects}}
-\index{subjects@{subjects}!Student@{Student}}
-\doxysubsubsection{\texorpdfstring{subjects}{subjects}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}}$\ast$ Student\+::subjects\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-All subjects the student has taken ever. 
-
-\mbox{\Hypertarget{class_student_a389e0f97eb0c8eecf322f1be4706c53e}\label{class_student_a389e0f97eb0c8eecf322f1be4706c53e}} 
-\index{Student@{Student}!subjects\_capacity@{subjects\_capacity}}
-\index{subjects\_capacity@{subjects\_capacity}!Student@{Student}}
-\doxysubsubsection{\texorpdfstring{subjects\_capacity}{subjects\_capacity}}
-{\footnotesize\ttfamily size\+\_\+t Student\+::subjects\+\_\+capacity\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Capacity of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}}. 
-
-\mbox{\Hypertarget{class_student_aad52cbcd08ab43340cdc53d50cac06ff}\label{class_student_aad52cbcd08ab43340cdc53d50cac06ff}} 
-\index{Student@{Student}!subjects\_size@{subjects\_size}}
-\index{subjects\_size@{subjects\_size}!Student@{Student}}
-\doxysubsubsection{\texorpdfstring{subjects\_size}{subjects\_size}}
-{\footnotesize\ttfamily size\+\_\+t Student\+::subjects\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-current count of elements of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}} 
 
 \mbox{\Hypertarget{class_student_a0f1f9d65c8b42f2b87dab6bfdc536616}\label{class_student_a0f1f9d65c8b42f2b87dab6bfdc536616}} 
 \index{Student@{Student}!year@{year}}

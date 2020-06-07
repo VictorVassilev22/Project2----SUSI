@@ -1,11 +1,9 @@
 \hypertarget{_student_8hpp}{}\doxysection{Project2-\/-\/-\/-\/\+S\+U\+S\+I/\+Student.hpp File Reference}
 \label{_student_8hpp}\index{Project2-\/-\/-\/-\/SUSI/Student.hpp@{Project2-\/-\/-\/-\/SUSI/Student.hpp}}
-{\ttfamily \#include \char`\"{}Program.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specialty.\+hpp\char`\"{}}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_taken_subject}{Taken\+Subject}}
-\begin{DoxyCompactList}\small\item\em This struct is used to store the subjects a student would take. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_student}{Student}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
@@ -13,20 +11,48 @@ class \mbox{\hyperlink{class_student}{Student}}
 \item 
 const size\+\_\+t \mbox{\hyperlink{_student_8hpp_a7bbb584d417d0308b52d9e7ab87931d7}{S\+T\+A\+T\+U\+S\+\_\+\+M\+AX}} = 3
 \begin{DoxyCompactList}\small\item\em Max value for status. We have 3 options, only one of them is marked. \end{DoxyCompactList}\item 
-const unsigned \mbox{\hyperlink{_student_8hpp_ab588e43a85c0716df9ff6483de251cc7}{D\+E\+F\+\_\+\+C\+A\+P\+A\+C\+I\+TY}} = 8
-\begin{DoxyCompactList}\small\item\em Default capacity of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}}, there are goint to be resizing themselves. \end{DoxyCompactList}\end{DoxyCompactItemize}
+const size\+\_\+t \mbox{\hyperlink{_student_8hpp_a1da4d7267fd347237079b7d781b9e093}{M\+A\+X\+\_\+\+G\+R\+O\+UP}} = 8
+\item 
+const char \mbox{\hyperlink{_student_8hpp_a519d36677f56e85725654401ae360800}{D\+E\+F\+\_\+\+S\+T\+U\+D\+E\+N\+T\+\_\+\+N\+A\+ME}} \mbox{[}10\mbox{]} = \char`\"{}anonymous\char`\"{}
+\item 
+const double \mbox{\hyperlink{_student_8hpp_a2465df77a60bb27a373821017c87fb27}{M\+I\+N\+\_\+\+G\+R\+A\+DE}} = 2.\+0
+\item 
+const double \mbox{\hyperlink{_student_8hpp_a084e1638c19b00a568703ecdd41e5d67}{M\+I\+N\+\_\+\+P\+A\+S\+S\+\_\+\+G\+R\+A\+DE}} = 3.\+0
+\item 
+const double \mbox{\hyperlink{_student_8hpp_a5e451891c2d61d2952fed2f9f807a949}{M\+A\+X\+\_\+\+G\+R\+A\+DE}} = 6.\+0
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{_student_8hpp_ab588e43a85c0716df9ff6483de251cc7}\label{_student_8hpp_ab588e43a85c0716df9ff6483de251cc7}} 
-\index{Student.hpp@{Student.hpp}!DEF\_CAPACITY@{DEF\_CAPACITY}}
-\index{DEF\_CAPACITY@{DEF\_CAPACITY}!Student.hpp@{Student.hpp}}
-\doxysubsubsection{\texorpdfstring{DEF\_CAPACITY}{DEF\_CAPACITY}}
-{\footnotesize\ttfamily const unsigned D\+E\+F\+\_\+\+C\+A\+P\+A\+C\+I\+TY = 8}
+\mbox{\Hypertarget{_student_8hpp_a519d36677f56e85725654401ae360800}\label{_student_8hpp_a519d36677f56e85725654401ae360800}} 
+\index{Student.hpp@{Student.hpp}!DEF\_STUDENT\_NAME@{DEF\_STUDENT\_NAME}}
+\index{DEF\_STUDENT\_NAME@{DEF\_STUDENT\_NAME}!Student.hpp@{Student.hpp}}
+\doxysubsubsection{\texorpdfstring{DEF\_STUDENT\_NAME}{DEF\_STUDENT\_NAME}}
+{\footnotesize\ttfamily const char D\+E\+F\+\_\+\+S\+T\+U\+D\+E\+N\+T\+\_\+\+N\+A\+ME\mbox{[}10\mbox{]} = \char`\"{}anonymous\char`\"{}}
 
+\mbox{\Hypertarget{_student_8hpp_a5e451891c2d61d2952fed2f9f807a949}\label{_student_8hpp_a5e451891c2d61d2952fed2f9f807a949}} 
+\index{Student.hpp@{Student.hpp}!MAX\_GRADE@{MAX\_GRADE}}
+\index{MAX\_GRADE@{MAX\_GRADE}!Student.hpp@{Student.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_GRADE}{MAX\_GRADE}}
+{\footnotesize\ttfamily const double M\+A\+X\+\_\+\+G\+R\+A\+DE = 6.\+0}
 
+\mbox{\Hypertarget{_student_8hpp_a1da4d7267fd347237079b7d781b9e093}\label{_student_8hpp_a1da4d7267fd347237079b7d781b9e093}} 
+\index{Student.hpp@{Student.hpp}!MAX\_GROUP@{MAX\_GROUP}}
+\index{MAX\_GROUP@{MAX\_GROUP}!Student.hpp@{Student.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_GROUP}{MAX\_GROUP}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+G\+R\+O\+UP = 8}
 
-Default capacity of \mbox{\hyperlink{class_student_a0fedead505a8013d0ac36b1da49a236b}{Student\+::subjects}}, there are goint to be resizing themselves. 
+\mbox{\Hypertarget{_student_8hpp_a2465df77a60bb27a373821017c87fb27}\label{_student_8hpp_a2465df77a60bb27a373821017c87fb27}} 
+\index{Student.hpp@{Student.hpp}!MIN\_GRADE@{MIN\_GRADE}}
+\index{MIN\_GRADE@{MIN\_GRADE}!Student.hpp@{Student.hpp}}
+\doxysubsubsection{\texorpdfstring{MIN\_GRADE}{MIN\_GRADE}}
+{\footnotesize\ttfamily const double M\+I\+N\+\_\+\+G\+R\+A\+DE = 2.\+0}
+
+\mbox{\Hypertarget{_student_8hpp_a084e1638c19b00a568703ecdd41e5d67}\label{_student_8hpp_a084e1638c19b00a568703ecdd41e5d67}} 
+\index{Student.hpp@{Student.hpp}!MIN\_PASS\_GRADE@{MIN\_PASS\_GRADE}}
+\index{MIN\_PASS\_GRADE@{MIN\_PASS\_GRADE}!Student.hpp@{Student.hpp}}
+\doxysubsubsection{\texorpdfstring{MIN\_PASS\_GRADE}{MIN\_PASS\_GRADE}}
+{\footnotesize\ttfamily const double M\+I\+N\+\_\+\+P\+A\+S\+S\+\_\+\+G\+R\+A\+DE = 3.\+0}
 
 \mbox{\Hypertarget{_student_8hpp_a7bbb584d417d0308b52d9e7ab87931d7}\label{_student_8hpp_a7bbb584d417d0308b52d9e7ab87931d7}} 
 \index{Student.hpp@{Student.hpp}!STATUS\_MAX@{STATUS\_MAX}}

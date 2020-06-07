@@ -1,32 +1,4 @@
 var main_8cpp =
 [
-    [ "advance", "main_8cpp.html#a4c11113af089a85c2b73252364a1549a", null ],
-    [ "change", "main_8cpp.html#ad29c4d8e55bb382e3bf7be71d9ed2857", null ],
-    [ "changeGroup", "main_8cpp.html#a10a7f6fed732ad176ae1cb111b904058", null ],
-    [ "changeStatus", "main_8cpp.html#a305ff9e31d079d19942122f65b972c66", null ],
-    [ "clear", "main_8cpp.html#a8e807ec2bcac97e18dd900684966faee", null ],
-    [ "commandController", "main_8cpp.html#a130de9e1d5018c30e0a8220f6afeef72", null ],
-    [ "enroll", "main_8cpp.html#a5e89338a3a79f99e1cb625979d7f257e", null ],
-    [ "findStudent", "main_8cpp.html#a55f3d414ab1b37e9c355bc7077edbd01", null ],
-    [ "getName", "main_8cpp.html#a1618c1920a27c4d42ae3b35927f00b26", null ],
-    [ "interrupt", "main_8cpp.html#a2546189052bc3ece89d881e91652ce3e", null ],
-    [ "main", "main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
-    [ "memCheck", "main_8cpp.html#ac069f83fa24c617ad8e43c894afcd4d2", null ],
-    [ "openCommandLine", "main_8cpp.html#aa3eff2ab37724d63209129a8f4f3a8ba", null ],
-    [ "resizeStr", "main_8cpp.html#ab149e92becf583ac940f84c4b713010c", null ],
-    [ "resume", "main_8cpp.html#a24554b7900f397aa8086e275b20d634c", null ],
-    [ "search_Spec_By_Program_Name", "main_8cpp.html#a8117491447a2648e6e63193980bffa1d", null ],
-    [ "setSpecialties", "main_8cpp.html#aea50961bca957711774dda4cab8d72a3", null ],
-    [ "ADVANCE_CMD", "main_8cpp.html#abe335312529630aadec7c374cef19662", null ],
-    [ "CHANGE_CMD", "main_8cpp.html#afff1d791bda8bafebfad1410a1407c62", null ],
-    [ "ENROLL_CMD", "main_8cpp.html#af5b27f36226debc94ef4925a4857daa6", null ],
-    [ "GROUP_OPT", "main_8cpp.html#a308725d435524b00d307c6ac7c4acb09", null ],
-    [ "INTERRUPT_CMD", "main_8cpp.html#ad6b58d9c352856e4ac44478340a204b6", null ],
-    [ "MAX_COMMAND", "main_8cpp.html#af1df77c325cd61874d65c5d224904f55", null ],
-    [ "MAX_OPTION", "main_8cpp.html#a2d35d29ec35bb4d4135d65bb7b9955f7", null ],
-    [ "MAX_SPEC", "main_8cpp.html#a816816446b5d9c903623d74f3cc99d50", null ],
-    [ "PROGRAM_OPT", "main_8cpp.html#afce438671c698f9ce52afb6f8df46830", null ],
-    [ "RESUME_CMD", "main_8cpp.html#aaacb3b6276bc2ca16fd66e9b5dc04da9", null ],
-    [ "STOP_CMD", "main_8cpp.html#a7e259c6fe99b2eb4a097afe75fe42972", null ],
-    [ "YEAR_OPT", "main_8cpp.html#aaf0664e6b8bc06093c1e8d363177f8f7", null ]
+    [ "main", "main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ]
 ];

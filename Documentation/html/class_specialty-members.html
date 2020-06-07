@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.bmp"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUSI
-   &#160;<span id="projectnumber">Първа защита</span>
+   &#160;<span id="projectnumber">Втора защите</span>
    </div>
    <div id="projectbrief">My second project for OOP class in FMI</div>
   </td>
@@ -101,17 +101,24 @@ $(document).ready(function(){initNavTree('class_specialty.html',''); initResizab
 
 <p>This is the complete list of members for <a class="el" href="class_specialty.html">Specialty</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#abadf2874ea834418d31cd93d155c6745">addStudent</a>(Student const &amp;s, size_t year, size_t groupNum)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_specialty.html#ace4a4e6ca67d87489b6ff5c0f53c6034">changeStudentStatus</a>(unsigned fn, size_t index)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#aa1a2128242274db6bd0e38f0af5c5898">deleteStudent</a>(unsigned fn, size_t year, size_t groupNum)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_specialty.html#a3b334f6aed28e4bb10a28c070db22c6b">enrollStudent</a>(Student const &amp;s, size_t groupNum)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#a4f350879065084245b0c37507872ce22">findStudent</a>(unsigned fn, size_t &amp;year, size_t &amp;groupNum, char *&amp;name) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_specialty.html#a7be71e80f1fcf1d8b7b32dfc18b31080">findStudent</a>(unsigned fn) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#a02231e365a120a088237886479c79594">getProgramName</a>()</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_specialty.html#a13eab871332225faf87f07928fab5f5e">groups</a></td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90">program</a></td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#ac084dce21c54881e508b0160648c53b6">copy</a>(Specialty const &amp;other)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#a156da9b1d0f5c77f4e4410b597d79c42">electives</a></td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#ad202275e80396c40ef9ea16c158473bb">getElectiveSubject</a>(const char *name) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#a5cb909a0d52ac9cd3609100bc822edbe">getName</a>() const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#aef0efd60344f953fe31bb465925d7336">getRequiredSubject</a>(const char *name) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#abefa3681b0fd98ef04e18eae63ea9831">getSubjectName</a>(size_t i, bool isRequired=true) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#a86583cecb7771b1e8cef84592ae19276">getSubjectYear</a>(bool isRequired, size_t index) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#a0421b74b32e00997285cff21f7ebe8df">hasSubject</a>(unsigned sub, bool isRequired=true) const</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c">name</a></td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#afcdcb962774043aa45a38440300fa263">operator=</a>(Specialty const &amp;other)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#a503f9e4d320025a3a1d288c667d2b5f0">required</a></td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#a9400eb91c623ace2f3396c308ff259ab">setElectives</a>(const unsigned origin[], size_t size)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#a89236c019907dca0f3640d969cd999f3">setName</a>(char const *other)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#a8784b678490fb6ab20075c6e90914050">setRequired</a>(const unsigned origin[], size_t size)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#ae39a4757fc99b5e39c545f03aa9dcea1">Specialty</a>(char const *name, const unsigned required[], size_t size_r, const unsigned electives[], size_t size_e)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_specialty.html#a5b2113cf9371151336a3add9c2619fe8">Specialty</a>()</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#a225f367475f86b6130381a5570bd2aa0">Specialty</a>(const char name[], const char program_path[])</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_specialty.html#aa0b48d43b5b48a22badffc920dc6cd1e">Specialty</a>(Specialty const &amp;other)</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_specialty.html#a3df3452846f482ddf6ef1fef20450594">~Specialty</a>()</td><td class="entry"><a class="el" href="class_specialty.html">Specialty</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

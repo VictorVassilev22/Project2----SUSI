@@ -1,73 +1,172 @@
 #include "Specialty.hpp"
-#include <cstring>
+
+void Specialty::setRequired(const unsigned origin[], size_t size)
+{
+	for (size_t i = 0; i < size; i++)
+	{
+		unsigned index = origin[i];
+		required[index] = true;
+	}
+}
+
+void Specialty::setElectives(const unsigned origin[], size_t size)
+{
+	for (size_t i = 0; i < size; i++)
+	{
+		unsigned index = origin[i];
+		electives[index] = true;
+	}
+}
+
+void Specialty::setName(char const* other_name)
+{
+	if (name) {
+		delete[] name;
+		name = nullptr;
+	}
+
+	if (!other_name) {
+		name = nullptr;
+		return;
+	}
+
+	if (other_name[0] == '#') {
+		std::cout << "# symbol is reserved and cannot be used! Program name is not set, try again!" << std::endl;
+		return;
+	}
+
+	name = new(std::nothrow) char[strlen(other_name) + 1];
+
+	if (!name) {
+		std::cout << "could not allocate memory" << std::endl;
+		return;
+	}
+
+	strcpy(name, other_name);
+}
+
+void Specialty::copy(Specialty const& other)
+{
+	setName(other.name);
+	for (size_t i = 0; i < MAX_E_SUB; i++)
+	{
+		electives[i] = other.electives[i];
+	}
+
+	for (size_t i = 0; i < MAX_R_SUB; i++)
+	{
+		required[i] = other.required[i];
+	}
+}
+
+bool Specialty::hasSubject(unsigned sub, bool isRequired) const
+{
+	if (isRequired) {
+		return required[sub];
+	}
+	else {
+		return electives[sub];
+	}
+}
+
+char* Specialty::getName() const
+{
+	if (!name) {
+		std::cout << "Error getting name!" << std::endl;
+		return nullptr;
+	}
+	char* name_cpy = new(std::nothrow) char[strlen(name) + 1];
+	if (!name_cpy) {
+		std::cout << "Error getting name!" << std::endl;
+		return nullptr;
+	}
+	strcpy(name_cpy, name);
+	return name_cpy;
+
+}
+
+Specialty& Specialty::operator=(Specialty const& other)
+{
+	if (this != &other) {
+		copy(other);
+	}
+	return *this;
+}
+
+const char* Specialty::getSubjectName(size_t i, bool isRequired) const
+{
+	if (isRequired) {
+		if (i >= MAX_R_SUB) {
+			std::cout << "No such subject!" << std::endl;
+			return nullptr;
+		}
+		return all_required_subjects[i];
+	}
+	else {
+		if (i >= MAX_E_SUB) {
+			std::cout << "No such subject!" << std::endl;
+			return nullptr;
+		}
+		return all_elective_subjects[i];
+	}
+}
+
+int Specialty::getRequiredSubject(const char* name) const
+{
+	int index = -1;
+	for (size_t i = 0; i < MAX_R_SUB; i++)
+	{
+		if (strcmp(name, all_required_subjects[i])==0) {
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+
+int Specialty::getElectiveSubject(const char* name) const
+{
+	int index = -1;
+	for (size_t i = 0; i < MAX_E_SUB; i++)
+	{
+		if (strcmp(name, all_elective_subjects[i])==0) {
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+
+Specialty::Specialty(char const* name, const unsigned required[], size_t size_r, const unsigned electives[], size_t size_e) : name(nullptr)
+{
+	setName(name);
+	setRequired(required, size_r);
+	setElectives(electives, size_e);
+}
 
 Specialty::Specialty()
 {
-	Program p("", "");
-	this->program = p;
+	//setName(DEF_NAME);
+	name = nullptr;
 }
 
-Specialty::Specialty(const char n[], const char pth[])
+Specialty::Specialty(Specialty const& other)
 {
-	Program p(n, pth);
-	this->program = p;
+	copy(other);
 }
 
-bool Specialty::enrollStudent(Student const& s, size_t groupNum)
-{		
-	return groups[0][groupNum-1].addStudent(s);
-}
-
-bool Specialty::addStudent(Student const& s, size_t year, size_t groupNum)
+Specialty::~Specialty()
 {
-	return groups[year - 1][groupNum - 1].addStudent(s);
-}
-
-void Specialty::deleteStudent(unsigned fn, size_t year, size_t groupNum)
-{
-	groups[year - 1][groupNum-1].deleteStudent(fn);
-}
-
-bool Specialty::findStudent(unsigned fn, size_t& year, size_t& groupNum, char*& name) const
-{
-	for (year = 0; year < MAX_YEARS; year++)
-	{
-		for (groupNum = 0; groupNum < MAX_GROUPS; groupNum++)
-		{
-			if (groups[year][groupNum].isStudentInGroup(fn, name)) {
-				year++;
-				groupNum++;
-				return true;
-			}
-		}
+	if (name) {
+		delete[] name;
+		name = nullptr;
 	}
-	return false;
 }
 
-Student Specialty::findStudent(unsigned fn) const
+unsigned Specialty::getSubjectYear(bool isRequired, size_t index) const
 {
-	Student s;
-	for (size_t year = 0; year < MAX_YEARS; year++)
-	{
-		for (size_t groupNum = 0; groupNum < MAX_GROUPS; groupNum++)
-		{
-			s = groups[year][groupNum].findStudent(fn);
-			if (s.getFn() == fn)
-				break;
-		}
-	}
-	return s;
-}
-
-bool Specialty::changeStudentStatus(unsigned fn, size_t index)
-{
-	for (size_t i = 0; i < MAX_YEARS; i++)
-	{
-		for (size_t j = 0; j < MAX_GROUPS; j++)
-		{
-			if (groups[i][j].changeStudentStatus(fn, index))
-				return true;
-		}
-	}
-	return false;
+	if (isRequired)
+		return year_to_take_rs[index];
+	else
+		return year_to_take_es[index];
 }

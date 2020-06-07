@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.bmp"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUSI
-   &#160;<span id="projectnumber">Първа защита</span>
+   &#160;<span id="projectnumber">Втора защите</span>
    </div>
    <div id="projectbrief">My second project for OOP class in FMI</div>
   </td>
@@ -96,12 +96,14 @@ $(document).ready(function(){initNavTree('_specialty_8hpp.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Specialty.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_group_8hpp_source.html">Group.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div>
 <p><a href="_specialty_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,26 +112,174 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_specialty.html">Specialty</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a200a7e6ac070fb65c2298951e831ffcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a200a7e6ac070fb65c2298951e831ffcd">SPECIALTY_H</a></td></tr>
+<tr class="separator:a200a7e6ac070fb65c2298951e831ffcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8d225eb052cc05d13282cfdf4918ec31"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a8d225eb052cc05d13282cfdf4918ec31">MAX_YEARS</a> = 4</td></tr>
-<tr class="memdesc:a8d225eb052cc05d13282cfdf4918ec31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates how many years of studying a <a class="el" href="class_student.html">Student</a> could take.  <a href="_specialty_8hpp.html#a8d225eb052cc05d13282cfdf4918ec31">More...</a><br /></td></tr>
-<tr class="separator:a8d225eb052cc05d13282cfdf4918ec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebc33671ecd9d6f49874bc339b67214"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a> = 40</td></tr>
+<tr class="separator:acebc33671ecd9d6f49874bc339b67214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa3483f3665f70db005f6a2c6a8192a"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a> = 20</td></tr>
+<tr class="separator:a8aa3483f3665f70db005f6a2c6a8192a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24483652f2a87e1ae7c1d9c6db06a9f5"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a24483652f2a87e1ae7c1d9c6db06a9f5">MAX_NAME</a> = 40</td></tr>
+<tr class="separator:a24483652f2a87e1ae7c1d9c6db06a9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6641a37a4f6fb237bcebfdf970c03d13"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a6641a37a4f6fb237bcebfdf970c03d13">DEF_NAME</a> [18] = &quot;Default <a class="el" href="class_specialty.html">Specialty</a>&quot;</td></tr>
+<tr class="memdesc:a6641a37a4f6fb237bcebfdf970c03d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default constructor assignes the name of the program with this  <a href="_specialty_8hpp.html#a6641a37a4f6fb237bcebfdf970c03d13">More...</a><br /></td></tr>
+<tr class="separator:a6641a37a4f6fb237bcebfdf970c03d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5764652ddf0129eaa8915f769050ce1"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#ae5764652ddf0129eaa8915f769050ce1">all_required_subjects</a> [<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>][<a class="el" href="_specialty_8hpp.html#a24483652f2a87e1ae7c1d9c6db06a9f5">MAX_NAME</a>]</td></tr>
+<tr class="memdesc:ae5764652ddf0129eaa8915f769050ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">here are all the names of the required courses  <a href="_specialty_8hpp.html#ae5764652ddf0129eaa8915f769050ce1">More...</a><br /></td></tr>
+<tr class="separator:ae5764652ddf0129eaa8915f769050ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82624e968896ac864519d0f99feef884"><td class="memItemLeft" align="right" valign="top">const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a82624e968896ac864519d0f99feef884">year_to_take_rs</a> [<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>]</td></tr>
+<tr class="memdesc:a82624e968896ac864519d0f99feef884"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicates in which year you can take the desired course  <a href="_specialty_8hpp.html#a82624e968896ac864519d0f99feef884">More...</a><br /></td></tr>
+<tr class="separator:a82624e968896ac864519d0f99feef884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5faa32b58cacfbf0989c70d5301f7f7"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#af5faa32b58cacfbf0989c70d5301f7f7">all_elective_subjects</a> [<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>][<a class="el" href="_specialty_8hpp.html#a24483652f2a87e1ae7c1d9c6db06a9f5">MAX_NAME</a>] = { &quot;I1&quot;,&quot;I2&quot;,&quot;I3&quot;,&quot;I4&quot;,&quot;I5&quot;,&quot;I6&quot;,&quot;I7&quot;,&quot;I8&quot;,&quot;I9&quot;,&quot;I10&quot;,&quot;I11&quot;,&quot;I12&quot;,&quot;I13&quot;,&quot;I14&quot;,&quot;I15&quot;,&quot;I16&quot;,&quot;I17&quot;,&quot;I18&quot;,&quot;I19&quot;,&quot;I20&quot;}</td></tr>
+<tr class="memdesc:af5faa32b58cacfbf0989c70d5301f7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">here are all the names of the elective courses  <a href="_specialty_8hpp.html#af5faa32b58cacfbf0989c70d5301f7f7">More...</a><br /></td></tr>
+<tr class="separator:af5faa32b58cacfbf0989c70d5301f7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8d2249d4b71d7bb0362e0b9cf1c3f2"><td class="memItemLeft" align="right" valign="top">const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_specialty_8hpp.html#a5e8d2249d4b71d7bb0362e0b9cf1c3f2">year_to_take_es</a> [<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = { 1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4 }</td></tr>
+<tr class="memdesc:a5e8d2249d4b71d7bb0362e0b9cf1c3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicates in which year you can take the desired elective course  <a href="_specialty_8hpp.html#a5e8d2249d4b71d7bb0362e0b9cf1c3f2">More...</a><br /></td></tr>
+<tr class="separator:a5e8d2249d4b71d7bb0362e0b9cf1c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a8d225eb052cc05d13282cfdf4918ec31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d225eb052cc05d13282cfdf4918ec31">&#9670;&nbsp;</a></span>MAX_YEARS</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a200a7e6ac070fb65c2298951e831ffcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200a7e6ac070fb65c2298951e831ffcd">&#9670;&nbsp;</a></span>SPECIALTY_H</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t MAX_YEARS = 4</td>
+          <td class="memname">#define SPECIALTY_H</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Indicates how many years of studying a <a class="el" href="class_student.html">Student</a> could take. </p>
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="af5faa32b58cacfbf0989c70d5301f7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5faa32b58cacfbf0989c70d5301f7f7">&#9670;&nbsp;</a></span>all_elective_subjects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char all_elective_subjects[<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>][<a class="el" href="_specialty_8hpp.html#a24483652f2a87e1ae7c1d9c6db06a9f5">MAX_NAME</a>] = { &quot;I1&quot;,&quot;I2&quot;,&quot;I3&quot;,&quot;I4&quot;,&quot;I5&quot;,&quot;I6&quot;,&quot;I7&quot;,&quot;I8&quot;,&quot;I9&quot;,&quot;I10&quot;,&quot;I11&quot;,&quot;I12&quot;,&quot;I13&quot;,&quot;I14&quot;,&quot;I15&quot;,&quot;I16&quot;,&quot;I17&quot;,&quot;I18&quot;,&quot;I19&quot;,&quot;I20&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>here are all the names of the elective courses </p>
+
+</div>
+</div>
+<a id="ae5764652ddf0129eaa8915f769050ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5764652ddf0129eaa8915f769050ce1">&#9670;&nbsp;</a></span>all_required_subjects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char all_required_subjects[<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>][<a class="el" href="_specialty_8hpp.html#a24483652f2a87e1ae7c1d9c6db06a9f5">MAX_NAME</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= { <span class="stringliteral">&quot;AG&quot;</span>, <span class="stringliteral">&quot;DIS1&quot;</span>, <span class="stringliteral">&quot;LA&quot;</span>, <span class="stringliteral">&quot;UP&quot;</span>,<span class="stringliteral">&quot;VA&quot;</span>, <span class="stringliteral">&quot;DS&quot;</span>, <span class="stringliteral">&quot;DIS2&quot;</span>, <span class="stringliteral">&quot;OOP&quot;</span>,<span class="stringliteral">&quot;AE1&quot;</span>,<span class="stringliteral">&quot;DUPR&quot;</span>,<span class="stringliteral">&quot;EAI&quot;</span>,<span class="stringliteral">&quot;IO&quot;</span>,<span class="stringliteral">&quot;SDP&quot;</span>,<span class="stringliteral">&quot;AE2&quot;</span>,<span class="stringliteral">&quot;DAA&quot;</span>,<span class="stringliteral">&quot;KA&quot;</span>,<span class="stringliteral">&quot;LP&quot;</span>,<span class="stringliteral">&quot;CHM&quot;</span>,<span class="stringliteral">&quot;KM&quot;</span>,<span class="stringliteral">&quot;OS&quot;</span>,<span class="stringliteral">&quot;VS&quot;</span>,<span class="stringliteral">&quot;FP&quot;</span>,<span class="stringliteral">&quot;BD&quot;</span>,</div>
+<div class="line"><span class="stringliteral">&quot;GEOM&quot;</span>,<span class="stringliteral">&quot;AI&quot;</span>,<span class="stringliteral">&quot;MP&quot;</span>,<span class="stringliteral">&quot;SEP&quot;</span>,<span class="stringliteral">&quot;KG&quot;</span>,<span class="stringliteral">&quot;ST&quot;</span>,<span class="stringliteral">&quot;CHMDU&quot;</span>,<span class="stringliteral">&quot;TCH&quot;</span>,<span class="stringliteral">&quot;MA1&quot;</span>, <span class="stringliteral">&quot;DU&quot;</span>, <span class="stringliteral">&quot;DM1&quot;</span>, <span class="stringliteral">&quot;MA2&quot;</span>, <span class="stringliteral">&quot;DG&quot;</span>,<span class="stringliteral">&quot;LO&quot;</span>,<span class="stringliteral">&quot;AM&quot;</span>, <span class="stringliteral">&quot;KAN&quot;</span>, <span class="stringliteral">&quot;ML&quot;</span>}</div>
+</div><!-- fragment -->
+<p>here are all the names of the required courses </p>
+
+</div>
+</div>
+<a id="a6641a37a4f6fb237bcebfdf970c03d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6641a37a4f6fb237bcebfdf970c03d13">&#9670;&nbsp;</a></span>DEF_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char DEF_NAME[18] = &quot;Default <a class="el" href="class_specialty.html">Specialty</a>&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the default constructor assignes the name of the program with this </p>
+
+</div>
+</div>
+<a id="a8aa3483f3665f70db005f6a2c6a8192a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa3483f3665f70db005f6a2c6a8192a">&#9670;&nbsp;</a></span>MAX_E_SUB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MAX_E_SUB = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24483652f2a87e1ae7c1d9c6db06a9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24483652f2a87e1ae7c1d9c6db06a9f5">&#9670;&nbsp;</a></span>MAX_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MAX_NAME = 40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acebc33671ecd9d6f49874bc339b67214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebc33671ecd9d6f49874bc339b67214">&#9670;&nbsp;</a></span>MAX_R_SUB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MAX_R_SUB = 40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e8d2249d4b71d7bb0362e0b9cf1c3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8d2249d4b71d7bb0362e0b9cf1c3f2">&#9670;&nbsp;</a></span>year_to_take_es</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned year_to_take_es[<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = { 1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>indicates in which year you can take the desired elective course </p>
+
+</div>
+</div>
+<a id="a82624e968896ac864519d0f99feef884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82624e968896ac864519d0f99feef884">&#9670;&nbsp;</a></span>year_to_take_rs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned year_to_take_rs[<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= { 1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,</div>
+<div class="line">    3,3,3,3,3,3,3,4,4,4,2,2,2,2,2,2,2,3,3,3}</div>
+</div><!-- fragment -->
+<p>indicates in which year you can take the desired course </p>
 
 </div>
 </div>

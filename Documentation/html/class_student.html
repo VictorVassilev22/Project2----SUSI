@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.bmp"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUSI
-   &#160;<span id="projectnumber">Първа защита</span>
+   &#160;<span id="projectnumber">Втора защите</span>
    </div>
    <div id="projectbrief">My second project for OOP class in FMI</div>
   </td>
@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('class_student.html',''); initResizable
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_student-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Student Class Reference</div>  </div>
@@ -110,12 +111,12 @@ $(document).ready(function(){initNavTree('class_student.html',''); initResizable
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af9168cedbfa5565cf0b20c1a9d3f5c9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#af9168cedbfa5565cf0b20c1a9d3f5c9d">Student</a> ()</td></tr>
 <tr class="separator:af9168cedbfa5565cf0b20c1a9d3f5c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a3cafd003dd6b51df9124faa2d3aa8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a62a3cafd003dd6b51df9124faa2d3aa8">Student</a> (char *<a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8">name</a>, unsigned <a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf">f_num</a>, unsigned <a class="el" href="class_student.html#a579cb0583df0335f8cede1dd1d4dd490">group</a>, unsigned <a class="el" href="class_student.html#a0f1f9d65c8b42f2b87dab6bfdc536616">year</a>=1)</td></tr>
-<tr class="separator:a62a3cafd003dd6b51df9124faa2d3aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7521d3684837b6533abe13ed16ce40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a2f7521d3684837b6533abe13ed16ce40">Student</a> (const char *<a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8">name</a>, unsigned <a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf">f_num</a>, size_t <a class="el" href="class_student.html#a579cb0583df0335f8cede1dd1d4dd490">group</a>, <a class="el" href="class_specialty.html">Specialty</a> &amp;sp, unsigned <a class="el" href="class_student.html#a0f1f9d65c8b42f2b87dab6bfdc536616">year</a>=1)</td></tr>
+<tr class="separator:a2f7521d3684837b6533abe13ed16ce40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f53fdab7c28cd2b9d8c2311c1b05275"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a4f53fdab7c28cd2b9d8c2311c1b05275">Student</a> (<a class="el" href="class_student.html">Student</a> const &amp;other)</td></tr>
 <tr class="separator:a4f53fdab7c28cd2b9d8c2311c1b05275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a8ea060d6cd04222c3a2f89829f105"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a54a8ea060d6cd04222c3a2f89829f105">~Student</a> ()</td></tr>
-<tr class="memdesc:a54a8ea060d6cd04222c3a2f89829f105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes dynamically located memory reom the heap. (<a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8" title="Student&#39;s personal name.">Student::name</a>, <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>)  <a href="class_student.html#a54a8ea060d6cd04222c3a2f89829f105">More...</a><br /></td></tr>
+<tr class="memdesc:a54a8ea060d6cd04222c3a2f89829f105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes dynamically located memory reom the heap. (<a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8" title="Student&#39;s personal name.">Student::name</a>, Student::subjects)  <a href="class_student.html#a54a8ea060d6cd04222c3a2f89829f105">More...</a><br /></td></tr>
 <tr class="separator:a54a8ea060d6cd04222c3a2f89829f105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8da6ee8345e8b23ea3703e53953c06f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_student.html">Student</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#ab8da6ee8345e8b23ea3703e53953c06f">operator=</a> (<a class="el" href="class_student.html">Student</a> const &amp;other)</td></tr>
 <tr class="separator:ab8da6ee8345e8b23ea3703e53953c06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,27 +129,74 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a69ff1f8e547eb9c7562436dd78d0fb06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a69ff1f8e547eb9c7562436dd78d0fb06">setStatus</a> (size_t index)</td></tr>
 <tr class="memdesc:a69ff1f8e547eb9c7562436dd78d0fb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets Students::status true and position "index". Nullifies at all other positions.  <a href="class_student.html#a69ff1f8e547eb9c7562436dd78d0fb06">More...</a><br /></td></tr>
 <tr class="separator:a69ff1f8e547eb9c7562436dd78d0fb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f489757d54250ff6ca19a58d4dd03df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a0f489757d54250ff6ca19a58d4dd03df">hasInterrupted</a> () const</td></tr>
+<tr class="separator:a0f489757d54250ff6ca19a58d4dd03df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8760008499a682d4f05de61c205f1c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#ac8760008499a682d4f05de61c205f1c1">hasYearForCourse</a> (unsigned sub, bool isRequired=true)</td></tr>
+<tr class="separator:ac8760008499a682d4f05de61c205f1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084b69da372ef24c9b2292eb847b14af"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a084b69da372ef24c9b2292eb847b14af">getName</a> () const</td></tr>
 <tr class="separator:a084b69da372ef24c9b2292eb847b14af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ae514fdaa1babcc62b46ce179f4192"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_specialty.html">Specialty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#ad3ae514fdaa1babcc62b46ce179f4192">getSpecialty</a> () const</td></tr>
+<tr class="separator:ad3ae514fdaa1babcc62b46ce179f4192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba305457dcfe987007e4691cf70d99e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a7ba305457dcfe987007e4691cf70d99e">getSpecName</a> () const</td></tr>
+<tr class="memdesc:a7ba305457dcfe987007e4691cf70d99e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>the name of the program the student has taken</dd></dl>
+ <a href="class_student.html#a7ba305457dcfe987007e4691cf70d99e">More...</a><br /></td></tr>
+<tr class="separator:a7ba305457dcfe987007e4691cf70d99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da08c4b8533512d0b78dffdbe462aa0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a7da08c4b8533512d0b78dffdbe462aa0">getGrade</a> (unsigned i, bool isRequired=true) const</td></tr>
+<tr class="separator:a7da08c4b8533512d0b78dffdbe462aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa02280d692358fa8378765f07f6aa6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a5fa02280d692358fa8378765f07f6aa6">getAverageGrade</a> () const</td></tr>
+<tr class="memdesc:a5fa02280d692358fa8378765f07f6aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the average grade of the student  <a href="class_student.html#a5fa02280d692358fa8378765f07f6aa6">More...</a><br /></td></tr>
+<tr class="separator:a5fa02280d692358fa8378765f07f6aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f19f67544a0b9613ed18f7e405b40b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a6f19f67544a0b9613ed18f7e405b40b7">printStatus</a> () const</td></tr>
+<tr class="memdesc:a6f19f67544a0b9613ed18f7e405b40b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">0-studying 1-interrupted 2-graduated  <a href="class_student.html#a6f19f67544a0b9613ed18f7e405b40b7">More...</a><br /></td></tr>
+<tr class="separator:a6f19f67544a0b9613ed18f7e405b40b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ccb8c563d4220dbc5b1e03c9f13b4d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a73ccb8c563d4220dbc5b1e03c9f13b4d">getStatus</a> () const</td></tr>
+<tr class="separator:a73ccb8c563d4220dbc5b1e03c9f13b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3261b9188bf1122b5fba5cbd4ac322eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a3261b9188bf1122b5fba5cbd4ac322eb">report</a> () const</td></tr>
+<tr class="separator:a3261b9188bf1122b5fba5cbd4ac322eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbb14cd83ef23c09f811bd1e30ddd4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#abdbb14cd83ef23c09f811bd1e30ddd4f">print</a> () const</td></tr>
+<tr class="separator:abdbb14cd83ef23c09f811bd1e30ddd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34492643a249fd5923789c8cfa2fc55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#af34492643a249fd5923789c8cfa2fc55">enrollinElective</a> (unsigned index)</td></tr>
+<tr class="separator:af34492643a249fd5923789c8cfa2fc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae093b4b2bac09013c15527b33e9b36c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#aae093b4b2bac09013c15527b33e9b36c">enrollinRequired</a> (unsigned index)</td></tr>
+<tr class="separator:aae093b4b2bac09013c15527b33e9b36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56659cf5bb55f051fe63acff24423d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#ac56659cf5bb55f051fe63acff24423d1">addGrade</a> (double grade, size_t subject, bool isRequired=true)</td></tr>
+<tr class="separator:ac56659cf5bb55f051fe63acff24423d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb30312a58d3e5833f25b5939b593689"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#acb30312a58d3e5833f25b5939b593689">hasRequired</a> (unsigned sub) const</td></tr>
+<tr class="separator:acb30312a58d3e5833f25b5939b593689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7ac4b6599ab6c946dfdd26f0f87a03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#afc7ac4b6599ab6c946dfdd26f0f87a03">hasElective</a> (unsigned sub) const</td></tr>
+<tr class="separator:afc7ac4b6599ab6c946dfdd26f0f87a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6217cd7c790c0b320365a4b347ffc4d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a6217cd7c790c0b320365a4b347ffc4d4">printProtocolCourse</a> (unsigned sub, bool isRequired=true) const</td></tr>
+<tr class="memdesc:a6217cd7c790c0b320365a4b347ffc4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints protocol for that student given a course  <a href="class_student.html#a6217cd7c790c0b320365a4b347ffc4d4">More...</a><br /></td></tr>
+<tr class="separator:a6217cd7c790c0b320365a4b347ffc4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af5182526ef4819908ac77c07efc2c9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#af5182526ef4819908ac77c07efc2c9c6">copyStatus</a> (bool const src[])</td></tr>
 <tr class="memdesc:af5182526ef4819908ac77c07efc2c9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies the values of <a class="el" href="class_student.html#a08071336409ac508f42cbb74f3f842dc" title="Only one of the following elements is true (0 - joined, 1-interrupted, 2-graduated)">Student::status</a> to a new bool array  <a href="class_student.html#af5182526ef4819908ac77c07efc2c9c6">More...</a><br /></td></tr>
 <tr class="separator:af5182526ef4819908ac77c07efc2c9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73172a8c5625bdc33c78d226c5e3f52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a73172a8c5625bdc33c78d226c5e3f52d">copySubjects</a> (<a class="el" href="struct_taken_subject.html">TakenSubject</a> const *src)</td></tr>
-<tr class="memdesc:a73172a8c5625bdc33c78d226c5e3f52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies the values of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a> to a new <a class="el" href="struct_taken_subject.html" title="This struct is used to store the subjects a student would take.">TakenSubject</a> list  <a href="class_student.html#a73172a8c5625bdc33c78d226c5e3f52d">More...</a><br /></td></tr>
-<tr class="separator:a73172a8c5625bdc33c78d226c5e3f52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6293c83b991793958386bb24a386340c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c">copy</a> (<a class="el" href="class_student.html">Student</a> const &amp;other)</td></tr>
-<tr class="memdesc:a6293c83b991793958386bb24a386340c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Help function used in copy constructors.  <a href="class_student.html#a6293c83b991793958386bb24a386340c">More...</a><br /></td></tr>
+<tr class="memdesc:a6293c83b991793958386bb24a386340c"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies the values of Student::subjects to a new TakenSubject list  <a href="class_student.html#a6293c83b991793958386bb24a386340c">More...</a><br /></td></tr>
 <tr class="separator:a6293c83b991793958386bb24a386340c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa83a6bf22d9810822f0985e4e51cd7d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afa83a6bf22d9810822f0985e4e51cd7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_student.html#afa83a6bf22d9810822f0985e4e51cd7d">clear</a> (T *str)</td></tr>
-<tr class="memdesc:afa83a6bf22d9810822f0985e4e51cd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template function which clears dynamically located data from heap of a random type object.  <a href="class_student.html#afa83a6bf22d9810822f0985e4e51cd7d">More...</a><br /></td></tr>
-<tr class="separator:afa83a6bf22d9810822f0985e4e51cd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af060c99d055c3f8b2f9b7f1205cf5a47"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af060c99d055c3f8b2f9b7f1205cf5a47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_student.html#af060c99d055c3f8b2f9b7f1205cf5a47">clear</a> (T *&amp;str)</td></tr>
+<tr class="memdesc:af060c99d055c3f8b2f9b7f1205cf5a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template function which clears dynamically located data from heap of a random type object.  <a href="class_student.html#af060c99d055c3f8b2f9b7f1205cf5a47">More...</a><br /></td></tr>
+<tr class="separator:af060c99d055c3f8b2f9b7f1205cf5a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe71e3678dd8fb6c42383f90922be4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#aebe71e3678dd8fb6c42383f90922be4a">setName</a> (const char *other_name)</td></tr>
 <tr class="memdesc:aebe71e3678dd8fb6c42383f90922be4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8" title="Student&#39;s personal name.">Student::name</a>, deletes and allocates it's memory first.  <a href="class_student.html#aebe71e3678dd8fb6c42383f90922be4a">More...</a><br /></td></tr>
 <tr class="separator:aebe71e3678dd8fb6c42383f90922be4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60363d8c57d556d2af4822415813b59a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a60363d8c57d556d2af4822415813b59a">changeGroup</a> (size_t new_group)</td></tr>
+<tr class="memdesc:a60363d8c57d556d2af4822415813b59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">changes Sudent::group  <a href="class_student.html#a60363d8c57d556d2af4822415813b59a">More...</a><br /></td></tr>
+<tr class="separator:a60363d8c57d556d2af4822415813b59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa0d0dffc4ae6d36aad584279dbdcfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a9aa0d0dffc4ae6d36aad584279dbdcfb">changeYear</a> (unsigned new_year)</td></tr>
+<tr class="memdesc:a9aa0d0dffc4ae6d36aad584279dbdcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes year.  <a href="class_student.html#a9aa0d0dffc4ae6d36aad584279dbdcfb">More...</a><br /></td></tr>
+<tr class="separator:a9aa0d0dffc4ae6d36aad584279dbdcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb2e03a15c86f6b5b9198b2c8d2f373"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a5eb2e03a15c86f6b5b9198b2c8d2f373">checkIfPassed</a> (unsigned subject, bool isRequired=true)</td></tr>
+<tr class="separator:a5eb2e03a15c86f6b5b9198b2c8d2f373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ce9cccf4517305961ee083a2338d57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a41ce9cccf4517305961ee083a2338d57">isQualifiedForSpecialty</a> (<a class="el" href="class_specialty.html">Specialty</a> const &amp;spec)</td></tr>
+<tr class="separator:a41ce9cccf4517305961ee083a2338d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3c6ebe0baac797b555ca673f2d6974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a0d3c6ebe0baac797b555ca673f2d6974">copyRequired</a> ()</td></tr>
+<tr class="memdesc:a0d3c6ebe0baac797b555ca673f2d6974"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies required courses from the program to this <a class="el" href="class_student.html#a09dc126e77054d9210d4e2917b379b4b" title="Elective subjects for that student.">Student::required</a>[MAX_R_SUB]  <a href="class_student.html#a0d3c6ebe0baac797b555ca673f2d6974">More...</a><br /></td></tr>
+<tr class="separator:a0d3c6ebe0baac797b555ca673f2d6974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -156,7 +204,6 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a7bff7ff985757c54c997bd970bbb63c8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_student.html">Student</a>'s personal name.  <a href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8">More...</a><br /></td></tr>
 <tr class="separator:a7bff7ff985757c54c997bd970bbb63c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33b9fc53d027a39df5aaed647762cfdf"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf">f_num</a></td></tr>
-<tr class="memdesc:a33b9fc53d027a39df5aaed647762cfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_student.html">Student</a>'s faculty number.  <a href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf">More...</a><br /></td></tr>
 <tr class="separator:a33b9fc53d027a39df5aaed647762cfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579cb0583df0335f8cede1dd1d4dd490"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a579cb0583df0335f8cede1dd1d4dd490">group</a></td></tr>
 <tr class="memdesc:a579cb0583df0335f8cede1dd1d4dd490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates what group the student has joined.  <a href="class_student.html#a579cb0583df0335f8cede1dd1d4dd490">More...</a><br /></td></tr>
@@ -167,18 +214,23 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a08071336409ac508f42cbb74f3f842dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a08071336409ac508f42cbb74f3f842dc">status</a> [<a class="el" href="_student_8hpp.html#a7bbb584d417d0308b52d9e7ab87931d7">STATUS_MAX</a>]</td></tr>
 <tr class="memdesc:a08071336409ac508f42cbb74f3f842dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only one of the following elements is true (0 - joined, 1-interrupted, 2-graduated)  <a href="class_student.html#a08071336409ac508f42cbb74f3f842dc">More...</a><br /></td></tr>
 <tr class="separator:a08071336409ac508f42cbb74f3f842dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6caf904e589557bc906802dc03c75f4e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a6caf904e589557bc906802dc03c75f4e">avarege_grade</a></td></tr>
-<tr class="memdesc:a6caf904e589557bc906802dc03c75f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avarege grade of all taken exams.  <a href="class_student.html#a6caf904e589557bc906802dc03c75f4e">More...</a><br /></td></tr>
-<tr class="separator:a6caf904e589557bc906802dc03c75f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fedead505a8013d0ac36b1da49a236b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_taken_subject.html">TakenSubject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b">subjects</a></td></tr>
-<tr class="memdesc:a0fedead505a8013d0ac36b1da49a236b"><td class="mdescLeft">&#160;</td><td class="mdescRight">All subjects the student has taken ever.  <a href="class_student.html#a0fedead505a8013d0ac36b1da49a236b">More...</a><br /></td></tr>
-<tr class="separator:a0fedead505a8013d0ac36b1da49a236b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389e0f97eb0c8eecf322f1be4706c53e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a389e0f97eb0c8eecf322f1be4706c53e">subjects_capacity</a></td></tr>
-<tr class="memdesc:a389e0f97eb0c8eecf322f1be4706c53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capacity of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>.  <a href="class_student.html#a389e0f97eb0c8eecf322f1be4706c53e">More...</a><br /></td></tr>
-<tr class="separator:a389e0f97eb0c8eecf322f1be4706c53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad52cbcd08ab43340cdc53d50cac06ff"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#aad52cbcd08ab43340cdc53d50cac06ff">subjects_size</a></td></tr>
-<tr class="memdesc:aad52cbcd08ab43340cdc53d50cac06ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">current count of elements of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>  <a href="class_student.html#aad52cbcd08ab43340cdc53d50cac06ff">More...</a><br /></td></tr>
-<tr class="separator:aad52cbcd08ab43340cdc53d50cac06ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1a1438aaa7d59534c2a7d99c2739ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_specialty.html">Specialty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a4b1a1438aaa7d59534c2a7d99c2739ad">specialty</a></td></tr>
+<tr class="separator:a4b1a1438aaa7d59534c2a7d99c2739ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cad59cb49c74c7a2c00b7d9d24787cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a1cad59cb49c74c7a2c00b7d9d24787cd">electives</a> [<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = { false, }</td></tr>
+<tr class="memdesc:a1cad59cb49c74c7a2c00b7d9d24787cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elective subjects for that student.  <a href="class_student.html#a1cad59cb49c74c7a2c00b7d9d24787cd">More...</a><br /></td></tr>
+<tr class="separator:a1cad59cb49c74c7a2c00b7d9d24787cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dc126e77054d9210d4e2917b379b4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a09dc126e77054d9210d4e2917b379b4b">required</a> [<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>] = { false, }</td></tr>
+<tr class="memdesc:a09dc126e77054d9210d4e2917b379b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elective subjects for that student.  <a href="class_student.html#a09dc126e77054d9210d4e2917b379b4b">More...</a><br /></td></tr>
+<tr class="separator:a09dc126e77054d9210d4e2917b379b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd85e355f7c51731785c9a32125af10"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#a9cd85e355f7c51731785c9a32125af10">required_grades</a> [<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>] = { 0.0, }</td></tr>
+<tr class="separator:a9cd85e355f7c51731785c9a32125af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0c153a57432bff60f90233db6728c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#adb0c153a57432bff60f90233db6728c2">elective_grades</a> [<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = { 0.0, }</td></tr>
+<tr class="separator:adb0c153a57432bff60f90233db6728c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aa678dcfbe00efe5fd516c6b133e6b17b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html#aa678dcfbe00efe5fd516c6b133e6b17b">SUSI</a></td></tr>
+<tr class="separator:aa678dcfbe00efe5fd516c6b133e6b17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Realization of <a class="el" href="class_student.html">Student</a> class</p>
@@ -198,12 +250,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor initializes <a class="el" href="class_student.html">Student</a> with initial values. View source code. </p><dl class="section note"><dt>Note</dt><dd>We assume if <a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf" title="Student&#39;s faculty number.">Student::f_num</a> is 0, there is no such <a class="el" href="class_student.html">Student</a>. </dd></dl>
+<p>Default constructor initializes <a class="el" href="class_student.html">Student</a> with initial values. View source code. </p><dl class="section note"><dt>Note</dt><dd>We assume if <a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf">Student::f_num</a> is 0, there is no such <a class="el" href="class_student.html">Student</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a62a3cafd003dd6b51df9124faa2d3aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a3cafd003dd6b51df9124faa2d3aa8">&#9670;&nbsp;</a></span>Student() <span class="overload">[2/3]</span></h2>
+<a id="a2f7521d3684837b6533abe13ed16ce40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7521d3684837b6533abe13ed16ce40">&#9670;&nbsp;</a></span>Student() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +263,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Student::Student </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -223,8 +275,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_specialty.html">Specialty</a> &amp;&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -257,7 +315,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy constructor. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c" title="Help function used in copy constructors.">Student::copy()</a> </dd></dl>
+<p>Copy constructor. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c" title="copies the values of Student::subjects to a new TakenSubject list">Student::copy()</a> </dd></dl>
 
 </div>
 </div>
@@ -276,13 +334,143 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deletes dynamically located memory reom the heap. (<a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8" title="Student&#39;s personal name.">Student::name</a>, <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>) </p>
+<p>Deletes dynamically located memory reom the heap. (<a class="el" href="class_student.html#a7bff7ff985757c54c997bd970bbb63c8" title="Student&#39;s personal name.">Student::name</a>, Student::subjects) </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afa83a6bf22d9810822f0985e4e51cd7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa83a6bf22d9810822f0985e4e51cd7d">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="ac56659cf5bb55f051fe63acff24423d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac56659cf5bb55f051fe63acff24423d1">&#9670;&nbsp;</a></span>addGrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::addGrade </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>grade</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60363d8c57d556d2af4822415813b59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60363d8c57d556d2af4822415813b59a">&#9670;&nbsp;</a></span>changeGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::changeGroup </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>new_group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>changes Sudent::group </p>
+
+</div>
+</div>
+<a id="a9aa0d0dffc4ae6d36aad584279dbdcfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa0d0dffc4ae6d36aad584279dbdcfb">&#9670;&nbsp;</a></span>changeYear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::changeYear </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>new_year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes year. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if year is not the next year. </dd></dl>
+
+</div>
+</div>
+<a id="a5eb2e03a15c86f6b5b9198b2c8d2f373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb2e03a15c86f6b5b9198b2c8d2f373">&#9670;&nbsp;</a></span>checkIfPassed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::checkIfPassed </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the subject is not taken, </dd>
+<dd>
+true if the subject is taken and has grade &gt;3.00 </dd></dl>
+
+</div>
+</div>
+<a id="af060c99d055c3f8b2f9b7f1205cf5a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af060c99d055c3f8b2f9b7f1205cf5a47">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +483,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void Student::clear </td>
           <td>(</td>
-          <td class="paramtype">T *&#160;</td>
+          <td class="paramtype">T *&amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
@@ -335,7 +523,35 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>copies the values of Student::subjects to a new TakenSubject list </p>
 <p>Help function used in copy constructors. </p>
+
+</div>
+</div>
+<a id="a0d3c6ebe0baac797b555ca673f2d6974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3c6ebe0baac797b555ca673f2d6974">&#9670;&nbsp;</a></span>copyRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::copyRequired </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>copies required courses from the program to this <a class="el" href="class_student.html#a09dc126e77054d9210d4e2917b379b4b" title="Elective subjects for that student.">Student::required</a>[MAX_R_SUB] </p>
 
 </div>
 </div>
@@ -367,31 +583,59 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a73172a8c5625bdc33c78d226c5e3f52d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73172a8c5625bdc33c78d226c5e3f52d">&#9670;&nbsp;</a></span>copySubjects()</h2>
+<a id="af34492643a249fd5923789c8cfa2fc55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34492643a249fd5923789c8cfa2fc55">&#9670;&nbsp;</a></span>enrollinElective()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Student::copySubjects </td>
+          <td class="memname">bool Student::enrollinElective </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_taken_subject.html">TakenSubject</a> const *&#160;</td>
-          <td class="paramname"><em>src</em></td><td>)</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>copies the values of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a> to a new <a class="el" href="struct_taken_subject.html" title="This struct is used to store the subjects a student would take.">TakenSubject</a> list </p>
+</div>
+</div>
+<a id="aae093b4b2bac09013c15527b33e9b36c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae093b4b2bac09013c15527b33e9b36c">&#9670;&nbsp;</a></span>enrollinRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::enrollinRequired </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fa02280d692358fa8378765f07f6aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa02280d692358fa8378765f07f6aa6">&#9670;&nbsp;</a></span>getAverageGrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Student::getAverageGrade </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates the average grade of the student </p>
+<dl class="section return"><dt>Returns</dt><dd>double</dd></dl>
 
 </div>
 </div>
@@ -417,7 +661,42 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf" title="Student&#39;s faculty number.">Student::f_num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_student.html#a33b9fc53d027a39df5aaed647762cfdf">Student::f_num</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7da08c4b8533512d0b78dffdbe462aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da08c4b8533512d0b78dffdbe462aa0">&#9670;&nbsp;</a></span>getGrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Student::getGrade </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>index of the course</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>grade for that course, returns 0 if the course is not taken or does not exist, returns 2 if the course is taken, but exam is not attended yet </dd></dl>
 
 </div>
 </div>
@@ -465,6 +744,77 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ad3ae514fdaa1babcc62b46ce179f4192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ae514fdaa1babcc62b46ce179f4192">&#9670;&nbsp;</a></span>getSpecialty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_specialty.html">Specialty</a>&amp; Student::getSpecialty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the value of <a class="el" href="class_student.html#a4b1a1438aaa7d59534c2a7d99c2739ad">Student::specialty</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7ba305457dcfe987007e4691cf70d99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba305457dcfe987007e4691cf70d99e">&#9670;&nbsp;</a></span>getSpecName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* Student::getSpecName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><dl class="section return"><dt>Returns</dt><dd>the name of the program the student has taken</dd></dl>
+</p>
+
+</div>
+</div>
+<a id="a73ccb8c563d4220dbc5b1e03c9f13b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ccb8c563d4220dbc5b1e03c9f13b4d">&#9670;&nbsp;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Student::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac4d89290f874aeabde8cea5650da9872"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4d89290f874aeabde8cea5650da9872">&#9670;&nbsp;</a></span>getYear()</h2>
 
@@ -491,6 +841,137 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="afc7ac4b6599ab6c946dfdd26f0f87a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7ac4b6599ab6c946dfdd26f0f87a03">&#9670;&nbsp;</a></span>hasElective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::hasElective </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>sub</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f489757d54250ff6ca19a58d4dd03df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f489757d54250ff6ca19a58d4dd03df">&#9670;&nbsp;</a></span>hasInterrupted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::hasInterrupted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb30312a58d3e5833f25b5939b593689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb30312a58d3e5833f25b5939b593689">&#9670;&nbsp;</a></span>hasRequired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::hasRequired </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>sub</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8760008499a682d4f05de61c205f1c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8760008499a682d4f05de61c205f1c1">&#9670;&nbsp;</a></span>hasYearForCourse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::hasYearForCourse </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41ce9cccf4517305961ee083a2338d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41ce9cccf4517305961ee083a2338d57">&#9670;&nbsp;</a></span>isQualifiedForSpecialty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::isQualifiedForSpecialty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_specialty.html">Specialty</a> const &amp;&#160;</td>
+          <td class="paramname"><em>spec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab8da6ee8345e8b23ea3703e53953c06f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8da6ee8345e8b23ea3703e53953c06f">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -506,7 +987,97 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks if this and other differ and if so, calls <a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c" title="Help function used in copy constructors.">Student::copy()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c" title="Help function used in copy constructors.">Student::copy()</a> </dd></dl>
+<p>Checks if this and other differ and if so, calls <a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c" title="copies the values of Student::subjects to a new TakenSubject list">Student::copy()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_student.html#a6293c83b991793958386bb24a386340c" title="copies the values of Student::subjects to a new TakenSubject list">Student::copy()</a> </dd></dl>
+
+</div>
+</div>
+<a id="abdbb14cd83ef23c09f811bd1e30ddd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdbb14cd83ef23c09f811bd1e30ddd4f">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6217cd7c790c0b320365a4b347ffc4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6217cd7c790c0b320365a4b347ffc4d4">&#9670;&nbsp;</a></span>printProtocolCourse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::printProtocolCourse </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRequired</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prints protocol for that student given a course </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sub</td><td></td></tr>
+    <tr><td class="paramname">isRequired</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f19f67544a0b9613ed18f7e405b40b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f19f67544a0b9613ed18f7e405b40b7">&#9670;&nbsp;</a></span>printStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::printStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>0-studying 1-interrupted 2-graduated </p>
+
+</div>
+</div>
+<a id="a3261b9188bf1122b5fba5cbd4ac322eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3261b9188bf1122b5fba5cbd4ac322eb">&#9670;&nbsp;</a></span>report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Student::report </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -558,9 +1129,9 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6caf904e589557bc906802dc03c75f4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6caf904e589557bc906802dc03c75f4e">&#9670;&nbsp;</a></span>avarege_grade</h2>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aa678dcfbe00efe5fd516c6b133e6b17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa678dcfbe00efe5fd516c6b133e6b17b">&#9670;&nbsp;</a></span>SUSI</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,7 +1140,30 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Student::avarege_grade</td>
+          <td class="memname">friend class <a class="el" href="class_s_u_s_i.html">SUSI</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="adb0c153a57432bff60f90233db6728c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0c153a57432bff60f90233db6728c2">&#9670;&nbsp;</a></span>elective_grades</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Student::elective_grades[<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = { 0.0, }</td>
         </tr>
       </table>
   </td>
@@ -579,7 +1173,29 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Avarege grade of all taken exams. </p>
+</div>
+</div>
+<a id="a1cad59cb49c74c7a2c00b7d9d24787cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cad59cb49c74c7a2c00b7d9d24787cd">&#9670;&nbsp;</a></span>electives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::electives[<a class="el" href="_specialty_8hpp.html#a8aa3483f3665f70db005f6a2c6a8192a">MAX_E_SUB</a>] = { false, }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Elective subjects for that student. </p>
 
 </div>
 </div>
@@ -602,8 +1218,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="class_student.html">Student</a>'s faculty number. </p>
+<p><a class="el" href="class_student.html">Student</a>'s faculty number by default it is 0 and this is invalid value for the application </p>
 
 </div>
 </div>
@@ -655,6 +1270,74 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a09dc126e77054d9210d4e2917b379b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09dc126e77054d9210d4e2917b379b4b">&#9670;&nbsp;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::required[<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>] = { false, }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Elective subjects for that student. </p>
+
+</div>
+</div>
+<a id="a9cd85e355f7c51731785c9a32125af10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd85e355f7c51731785c9a32125af10">&#9670;&nbsp;</a></span>required_grades</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Student::required_grades[<a class="el" href="_specialty_8hpp.html#acebc33671ecd9d6f49874bc339b67214">MAX_R_SUB</a>] = { 0.0, }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b1a1438aaa7d59534c2a7d99c2739ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1a1438aaa7d59534c2a7d99c2739ad">&#9670;&nbsp;</a></span>specialty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_specialty.html">Specialty</a> Student::specialty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a08071336409ac508f42cbb74f3f842dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08071336409ac508f42cbb74f3f842dc">&#9670;&nbsp;</a></span>status</h2>
 
@@ -676,78 +1359,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Only one of the following elements is true (0 - joined, 1-interrupted, 2-graduated) </p>
-
-</div>
-</div>
-<a id="a0fedead505a8013d0ac36b1da49a236b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fedead505a8013d0ac36b1da49a236b">&#9670;&nbsp;</a></span>subjects</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_taken_subject.html">TakenSubject</a>* Student::subjects</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>All subjects the student has taken ever. </p>
-
-</div>
-</div>
-<a id="a389e0f97eb0c8eecf322f1be4706c53e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a389e0f97eb0c8eecf322f1be4706c53e">&#9670;&nbsp;</a></span>subjects_capacity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Student::subjects_capacity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Capacity of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>. </p>
-
-</div>
-</div>
-<a id="aad52cbcd08ab43340cdc53d50cac06ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad52cbcd08ab43340cdc53d50cac06ff">&#9670;&nbsp;</a></span>subjects_size</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Student::subjects_size</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>current count of elements of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a> </p>
 
 </div>
 </div>

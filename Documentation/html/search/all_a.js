@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opencommandline_55',['openCommandLine',['../main_8cpp.html#aa3eff2ab37724d63209129a8f4f3a8ba',1,'main.cpp']]],
-  ['operator_3d_56',['operator=',['../class_program.html#af05441a6da696c82ae0e632822638289',1,'Program::operator=()'],['../class_student.html#ab8da6ee8345e8b23ea3703e53953c06f',1,'Student::operator=()'],['../class_subject.html#a4f8a123bd002248b324de164d345c4a8',1,'Subject::operator=()']]]
+  ['name_92',['name',['../class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c',1,'Specialty::name()'],['../class_student.html#a7bff7ff985757c54c997bd970bbb63c8',1,'Student::name()'],['../class_subject.html#af0e959d83c4efa176c10cf7970d20dd2',1,'Subject::name()']]]
 ];

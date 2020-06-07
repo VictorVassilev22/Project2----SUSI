@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['path_176',['path',['../class_program.html#a89c022e6ee6f0a1c38540e4cfde16987',1,'Program']]],
-  ['program_177',['program',['../class_specialty.html#ab3a3421ce5ba5907c508679ddc6a0a90',1,'Specialty']]],
-  ['program_5fopt_178',['PROGRAM_OPT',['../main_8cpp.html#afce438671c698f9ce52afb6f8df46830',1,'main.cpp']]]
+  ['name_289',['name',['../class_specialty.html#ae77b6a29d49b4be7910ed380623a1b5c',1,'Specialty::name()'],['../class_student.html#a7bff7ff985757c54c997bd970bbb63c8',1,'Student::name()'],['../class_subject.html#af0e959d83c4efa176c10cf7970d20dd2',1,'Subject::name()']]]
 ];

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.bmp"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUSI
-   &#160;<span id="projectnumber">Първа защита</span>
+   &#160;<span id="projectnumber">Втора защите</span>
    </div>
    <div id="projectbrief">My second project for OOP class in FMI</div>
   </td>
@@ -101,15 +101,12 @@ $(document).ready(function(){initNavTree('_student_8hpp.html',''); initResizable
 <div class="title">Student.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_program_8hpp_source.html">Program.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_specialty_8hpp_source.html">Specialty.hpp</a>&quot;</code><br />
 </div>
 <p><a href="_student_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_taken_subject.html">TakenSubject</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used to store the subjects a student would take.  <a href="struct_taken_subject.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_student.html">Student</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -118,24 +115,85 @@ Variables</h2></td></tr>
 <tr class="memitem:a7bbb584d417d0308b52d9e7ab87931d7"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#a7bbb584d417d0308b52d9e7ab87931d7">STATUS_MAX</a> = 3</td></tr>
 <tr class="memdesc:a7bbb584d417d0308b52d9e7ab87931d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max value for status. We have 3 options, only one of them is marked.  <a href="_student_8hpp.html#a7bbb584d417d0308b52d9e7ab87931d7">More...</a><br /></td></tr>
 <tr class="separator:a7bbb584d417d0308b52d9e7ab87931d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab588e43a85c0716df9ff6483de251cc7"><td class="memItemLeft" align="right" valign="top">const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#ab588e43a85c0716df9ff6483de251cc7">DEF_CAPACITY</a> = 8</td></tr>
-<tr class="memdesc:ab588e43a85c0716df9ff6483de251cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default capacity of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>, there are goint to be resizing themselves.  <a href="_student_8hpp.html#ab588e43a85c0716df9ff6483de251cc7">More...</a><br /></td></tr>
-<tr class="separator:ab588e43a85c0716df9ff6483de251cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da4d7267fd347237079b7d781b9e093"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#a1da4d7267fd347237079b7d781b9e093">MAX_GROUP</a> = 8</td></tr>
+<tr class="separator:a1da4d7267fd347237079b7d781b9e093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519d36677f56e85725654401ae360800"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#a519d36677f56e85725654401ae360800">DEF_STUDENT_NAME</a> [10] = &quot;anonymous&quot;</td></tr>
+<tr class="separator:a519d36677f56e85725654401ae360800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2465df77a60bb27a373821017c87fb27"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#a2465df77a60bb27a373821017c87fb27">MIN_GRADE</a> = 2.0</td></tr>
+<tr class="separator:a2465df77a60bb27a373821017c87fb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084e1638c19b00a568703ecdd41e5d67"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#a084e1638c19b00a568703ecdd41e5d67">MIN_PASS_GRADE</a> = 3.0</td></tr>
+<tr class="separator:a084e1638c19b00a568703ecdd41e5d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e451891c2d61d2952fed2f9f807a949"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_student_8hpp.html#a5e451891c2d61d2952fed2f9f807a949">MAX_GRADE</a> = 6.0</td></tr>
+<tr class="separator:a5e451891c2d61d2952fed2f9f807a949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ab588e43a85c0716df9ff6483de251cc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab588e43a85c0716df9ff6483de251cc7">&#9670;&nbsp;</a></span>DEF_CAPACITY</h2>
+<a id="a519d36677f56e85725654401ae360800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519d36677f56e85725654401ae360800">&#9670;&nbsp;</a></span>DEF_STUDENT_NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const unsigned DEF_CAPACITY = 8</td>
+          <td class="memname">const char DEF_STUDENT_NAME[10] = &quot;anonymous&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default capacity of <a class="el" href="class_student.html#a0fedead505a8013d0ac36b1da49a236b" title="All subjects the student has taken ever.">Student::subjects</a>, there are goint to be resizing themselves. </p>
+</div>
+</div>
+<a id="a5e451891c2d61d2952fed2f9f807a949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e451891c2d61d2952fed2f9f807a949">&#9670;&nbsp;</a></span>MAX_GRADE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double MAX_GRADE = 6.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1da4d7267fd347237079b7d781b9e093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da4d7267fd347237079b7d781b9e093">&#9670;&nbsp;</a></span>MAX_GROUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MAX_GROUP = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2465df77a60bb27a373821017c87fb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2465df77a60bb27a373821017c87fb27">&#9670;&nbsp;</a></span>MIN_GRADE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double MIN_GRADE = 2.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a084e1638c19b00a568703ecdd41e5d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084e1638c19b00a568703ecdd41e5d67">&#9670;&nbsp;</a></span>MIN_PASS_GRADE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double MIN_PASS_GRADE = 3.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

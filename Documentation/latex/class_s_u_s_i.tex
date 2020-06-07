@@ -1,0 +1,470 @@
+\hypertarget{class_s_u_s_i}{}\doxysection{S\+U\+SI Class Reference}
+\label{class_s_u_s_i}\index{SUSI@{SUSI}}
+
+
+realization of \mbox{\hyperlink{class_s_u_s_i}{S\+U\+SI}} class, the powrhouse of the application. Executes all commands.  
+
+
+
+
+{\ttfamily \#include $<$S\+U\+S\+I.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_u_s_i_aacf22f2d6543c83d0ef6d9f00bbdf0f1}{S\+U\+SI}} ()
+\begin{DoxyCompactList}\small\item\em calls \mbox{\hyperlink{class_s_u_s_i_a1b12b2f768106e8a91796fee6e9f42f7}{S\+U\+S\+I\+::set\+Specialties()}} and \mbox{\hyperlink{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}{S\+U\+S\+I\+::load\+Students()}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_s_u_s_i_a9c7b88bfb2b93ec587c56ce423856813}{$\sim$\+S\+U\+SI}} ()
+\begin{DoxyCompactList}\small\item\em calls \mbox{\hyperlink{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}{S\+U\+S\+I\+::load\+Students()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a17d923fbf2a36c5df461a431eaa2e23a}{enroll}} (unsigned f\+\_\+num, const char $\ast$specialty\+\_\+name, size\+\_\+t group, const char $\ast$student\+\_\+name)
+\begin{DoxyCompactList}\small\item\em enroll and the following functions are command that do as pointed in the paper \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_aa6af6f4f195deacef3a3048f20bbc43c}{advance}} (unsigned f\+\_\+num)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_aabc238d1b7385460c841588717db5d82}{change\+Group}} (unsigned fn, size\+\_\+t new\+\_\+group)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a7b5611f66d4fdc877db5dd4e7185722c}{change\+Specialty}} (unsigned fn, const char $\ast$spec)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_ae44887d9e0fb1e664a5c3d1b3e9eba3f}{change\+Year}} (unsigned fn, unsigned year)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a933dc03f9805afc09e1dd0b593dbe2d1}{graduate}} (unsigned fn)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a3f4e21757c1eec5db423c9349fd7d96e}{interrupt}} (unsigned fn)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a7d69be0df6b7df3ca2295db9abda3a15}{resume}} (unsigned fn)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_ac62ae5d82842b31af1b088eea15ccecd}{report}} (unsigned fn) const
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a438222b580ba2dcd8308c7a6a71e052b}{print}} (unsigned fn) const
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a79b22460a314dba23c9d5b3d2913e3e5}{print\+All}} (const char $\ast$name, unsigned year) const
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a35270c129166064c562cdb916083da07}{enrollin}} (unsigned fn, const char $\ast$subject)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_ae79bb764c2d3c98cd9b2a924851b3c23}{add\+Grade}} (unsigned fn, const char $\ast$subject, double grade)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_addca88457bef72469a1631cdbe438f39}{protocol}} (const char $\ast$course, const \mbox{\hyperlink{class_specialty}{Specialty}} \&program, const unsigned year)
+\begin{DoxyCompactList}\small\item\em calls \mbox{\hyperlink{class_s_u_s_i_af49d588b451553f83cd45f00ec5ea7bb}{S\+U\+S\+I\+::sort\+Students(const unsigned year)}} and then prints the protocol for the course and year \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a1b348e3811a1d1d88ceddc209dfab78e}{protocol\+All}} (const char $\ast$course)
+\begin{DoxyCompactList}\small\item\em calls \mbox{\hyperlink{class_s_u_s_i_addca88457bef72469a1631cdbe438f39}{S\+U\+S\+I\+::protocol(const char$\ast$ course, const Specialty\& program, const unsigned year)}} for every program and every year \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a6690e73b087516b7c3bbd18aa1868ee4}{save}} () const
+\begin{DoxyCompactList}\small\item\em saves the currently loaded data in the file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_aeb34bb6b08cc54a80cb338cfe7c88663}{save\+As}} () const
+\begin{DoxyCompactList}\small\item\em saves the data in a file of desired name, however the program does not load from this file at start if not explicitly said \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_s_u_s_i_aa5928c31e83749d77a7f02fd74af5654}{is\+Fn\+Free}} (unsigned fn) const
+\begin{DoxyCompactList}\small\item\em checks if a student with such fn alredy exists \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a1b12b2f768106e8a91796fee6e9f42f7}{set\+Specialties}} ()
+\begin{DoxyCompactList}\small\item\em setting the data from the previously hardcoded arrays with the subjects. when adding more programs, firts add similar arrays for the new programs, then change M\+A\+X\+\_\+\+S\+P\+E\+CS and then open this function and follow the example to load the new programs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a57f05f077a4618e2a401f3b152df7540}{add\+Student}} (\mbox{\hyperlink{class_student}{Student}} const \&s, unsigned year=1)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a24cdefff3bb10e8e5a079134ea66ec40}{remove\+Student}} (unsigned fn)
+\begin{DoxyCompactList}\small\item\em sets the student back to default \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_s_u_s_i_a26448a1dcf2ae9ebefc303aaa86006c1}{get\+Specialty\+Index}} (char const $\ast$name) const
+\item 
+\mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_s_u_s_i_adc67214b7468dfcfd3adebae8e7ea2b3}{get\+Student}} (unsigned fn) const
+\item 
+int \mbox{\hyperlink{class_s_u_s_i_a1ee092739eabfde0fadd40c66ae00212}{get\+Student}} (unsigned fn, int \&year) const
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_a29e1940c2a4082465ce789e6cb9bf1ba}{swap\+Students}} (size\+\_\+t s1, size\+\_\+t s2, const unsigned year)
+\item 
+void \mbox{\hyperlink{class_s_u_s_i_af49d588b451553f83cd45f00ec5ea7bb}{sort\+Students}} (const unsigned year)
+\begin{DoxyCompactList}\small\item\em implementing simple bubble sort from smaller to bigger fn \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a24e63cd1736000a8ce2343a4312a7d69}{save\+Students}} (const char $\ast$filename=\mbox{\hyperlink{_s_u_s_i_8hpp_aa86bd5c868cdcab1534507a2919264fa}{F\+I\+L\+E\+\_\+\+N\+A\+ME}}) const
+\begin{DoxyCompactList}\small\item\em saves students to a file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}{load\+Students}} ()
+\begin{DoxyCompactList}\small\item\em reads students from the file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_s_u_s_i_af1d9f4419a27fb445a6ed109ca3cf977}{read\+Student}} (std\+::ifstream \&in, unsigned year, \mbox{\hyperlink{class_student}{Student}} \&s)
+\begin{DoxyCompactList}\small\item\em reading one student from the file \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_s_u_s_i_a2892a2630ee000d1533e1770fd31abe9}{read\+Str\+S\+U\+SI}} (std\+::istream \&in, bool has\+Spaces, size\+\_\+t size) const
+\begin{DoxyCompactList}\small\item\em reads a symbol string \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_s_u_s_i_a52d878682903f1ff82758d0da4480814}{check\+Txt\+File\+Format}} (char const $\ast$filename) const
+\begin{DoxyCompactList}\small\item\em File format (the last symbols of the file name) must be .txt, if not the file is not accepted and the data is not saved \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_specialty}{Specialty}} \mbox{\hyperlink{class_s_u_s_i_a2968cca6ba51d5b0f9ea2709324e76b9}{specialties}} \mbox{[}\mbox{\hyperlink{_s_u_s_i_8hpp_aa6255f5378de96a55addfc99744f741e}{M\+A\+X\+\_\+\+S\+P\+E\+CS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em list of programs \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_s_u_s_i_ac587c27d2bd66b92de53a7b7081fb4c0}{students}} \mbox{[}\mbox{\hyperlink{_s_u_s_i_8hpp_a8d225eb052cc05d13282cfdf4918ec31}{M\+A\+X\+\_\+\+Y\+E\+A\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_s_u_s_i_8hpp_a28892dbb1f338e5e7688781c03bfb104}{M\+A\+X\+\_\+\+S\+T\+U\+D\+E\+N\+TS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em list of students basically an array for every year \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+realization of \mbox{\hyperlink{class_s_u_s_i}{S\+U\+SI}} class, the powrhouse of the application. Executes all commands. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_u_s_i_aacf22f2d6543c83d0ef6d9f00bbdf0f1}\label{class_s_u_s_i_aacf22f2d6543c83d0ef6d9f00bbdf0f1}} 
+\index{SUSI@{SUSI}!SUSI@{SUSI}}
+\index{SUSI@{SUSI}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{SUSI()}{SUSI()}}
+{\footnotesize\ttfamily S\+U\+S\+I\+::\+S\+U\+SI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calls \mbox{\hyperlink{class_s_u_s_i_a1b12b2f768106e8a91796fee6e9f42f7}{S\+U\+S\+I\+::set\+Specialties()}} and \mbox{\hyperlink{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}{S\+U\+S\+I\+::load\+Students()}} 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_u_s_i_a9c7b88bfb2b93ec587c56ce423856813}\label{class_s_u_s_i_a9c7b88bfb2b93ec587c56ce423856813}} 
+\index{SUSI@{SUSI}!````~SUSI@{$\sim$SUSI}}
+\index{````~SUSI@{$\sim$SUSI}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{$\sim$SUSI()}{~SUSI()}}
+{\footnotesize\ttfamily S\+U\+S\+I\+::$\sim$\+S\+U\+SI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calls \mbox{\hyperlink{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}{S\+U\+S\+I\+::load\+Students()}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_u_s_i_ae79bb764c2d3c98cd9b2a924851b3c23}\label{class_s_u_s_i_ae79bb764c2d3c98cd9b2a924851b3c23}} 
+\index{SUSI@{SUSI}!addGrade@{addGrade}}
+\index{addGrade@{addGrade}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{addGrade()}{addGrade()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::add\+Grade (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{const char $\ast$}]{subject,  }\item[{double}]{grade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_a57f05f077a4618e2a401f3b152df7540}\label{class_s_u_s_i_a57f05f077a4618e2a401f3b152df7540}} 
+\index{SUSI@{SUSI}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::add\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} const \&}]{s,  }\item[{unsigned}]{year = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_s_u_s_i_aa6af6f4f195deacef3a3048f20bbc43c}\label{class_s_u_s_i_aa6af6f4f195deacef3a3048f20bbc43c}} 
+\index{SUSI@{SUSI}!advance@{advance}}
+\index{advance@{advance}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::advance (\begin{DoxyParamCaption}\item[{unsigned}]{f\+\_\+num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_aabc238d1b7385460c841588717db5d82}\label{class_s_u_s_i_aabc238d1b7385460c841588717db5d82}} 
+\index{SUSI@{SUSI}!changeGroup@{changeGroup}}
+\index{changeGroup@{changeGroup}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{changeGroup()}{changeGroup()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::change\+Group (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{size\+\_\+t}]{new\+\_\+group }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_a7b5611f66d4fdc877db5dd4e7185722c}\label{class_s_u_s_i_a7b5611f66d4fdc877db5dd4e7185722c}} 
+\index{SUSI@{SUSI}!changeSpecialty@{changeSpecialty}}
+\index{changeSpecialty@{changeSpecialty}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{changeSpecialty()}{changeSpecialty()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::change\+Specialty (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{const char $\ast$}]{spec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_ae44887d9e0fb1e664a5c3d1b3e9eba3f}\label{class_s_u_s_i_ae44887d9e0fb1e664a5c3d1b3e9eba3f}} 
+\index{SUSI@{SUSI}!changeYear@{changeYear}}
+\index{changeYear@{changeYear}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{changeYear()}{changeYear()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::change\+Year (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{unsigned}]{year }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_a52d878682903f1ff82758d0da4480814}\label{class_s_u_s_i_a52d878682903f1ff82758d0da4480814}} 
+\index{SUSI@{SUSI}!checkTxtFileFormat@{checkTxtFileFormat}}
+\index{checkTxtFileFormat@{checkTxtFileFormat}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{checkTxtFileFormat()}{checkTxtFileFormat()}}
+{\footnotesize\ttfamily bool S\+U\+S\+I\+::check\+Txt\+File\+Format (\begin{DoxyParamCaption}\item[{char const $\ast$}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+File format (the last symbols of the file name) must be .txt, if not the file is not accepted and the data is not saved 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the name of the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the format is as desired or not
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_u_s_i_a17d923fbf2a36c5df461a431eaa2e23a}\label{class_s_u_s_i_a17d923fbf2a36c5df461a431eaa2e23a}} 
+\index{SUSI@{SUSI}!enroll@{enroll}}
+\index{enroll@{enroll}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{enroll()}{enroll()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::enroll (\begin{DoxyParamCaption}\item[{unsigned}]{f\+\_\+num,  }\item[{const char $\ast$}]{specialty\+\_\+name,  }\item[{size\+\_\+t}]{group,  }\item[{const char $\ast$}]{student\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+enroll and the following functions are command that do as pointed in the paper 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+num} & \\
+\hline
+{\em specialty\+\_\+name} & \\
+\hline
+{\em group} & \\
+\hline
+{\em student\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_s_i_a35270c129166064c562cdb916083da07}\label{class_s_u_s_i_a35270c129166064c562cdb916083da07}} 
+\index{SUSI@{SUSI}!enrollin@{enrollin}}
+\index{enrollin@{enrollin}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{enrollin()}{enrollin()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::enrollin (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{const char $\ast$}]{subject }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_a26448a1dcf2ae9ebefc303aaa86006c1}\label{class_s_u_s_i_a26448a1dcf2ae9ebefc303aaa86006c1}} 
+\index{SUSI@{SUSI}!getSpecialtyIndex@{getSpecialtyIndex}}
+\index{getSpecialtyIndex@{getSpecialtyIndex}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{getSpecialtyIndex()}{getSpecialtyIndex()}}
+{\footnotesize\ttfamily int S\+U\+S\+I\+::get\+Specialty\+Index (\begin{DoxyParamCaption}\item[{char const $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_s_u_s_i_adc67214b7468dfcfd3adebae8e7ea2b3}\label{class_s_u_s_i_adc67214b7468dfcfd3adebae8e7ea2b3}} 
+\index{SUSI@{SUSI}!getStudent@{getStudent}}
+\index{getStudent@{getStudent}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{getStudent()}{getStudent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} S\+U\+S\+I\+::get\+Student (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_s_u_s_i_a1ee092739eabfde0fadd40c66ae00212}\label{class_s_u_s_i_a1ee092739eabfde0fadd40c66ae00212}} 
+\index{SUSI@{SUSI}!getStudent@{getStudent}}
+\index{getStudent@{getStudent}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{getStudent()}{getStudent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int S\+U\+S\+I\+::get\+Student (\begin{DoxyParamCaption}\item[{unsigned}]{fn,  }\item[{int \&}]{year }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_s_u_s_i_a933dc03f9805afc09e1dd0b593dbe2d1}\label{class_s_u_s_i_a933dc03f9805afc09e1dd0b593dbe2d1}} 
+\index{SUSI@{SUSI}!graduate@{graduate}}
+\index{graduate@{graduate}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{graduate()}{graduate()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::graduate (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_a3f4e21757c1eec5db423c9349fd7d96e}\label{class_s_u_s_i_a3f4e21757c1eec5db423c9349fd7d96e}} 
+\index{SUSI@{SUSI}!interrupt@{interrupt}}
+\index{interrupt@{interrupt}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{interrupt()}{interrupt()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::interrupt (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_aa5928c31e83749d77a7f02fd74af5654}\label{class_s_u_s_i_aa5928c31e83749d77a7f02fd74af5654}} 
+\index{SUSI@{SUSI}!isFnFree@{isFnFree}}
+\index{isFnFree@{isFnFree}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{isFnFree()}{isFnFree()}}
+{\footnotesize\ttfamily bool S\+U\+S\+I\+::is\+Fn\+Free (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+checks if a student with such fn alredy exists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & desired fn\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if doeasnt exist
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}\label{class_s_u_s_i_a945b71eb001005c6b852a265fc30b25b}} 
+\index{SUSI@{SUSI}!loadStudents@{loadStudents}}
+\index{loadStudents@{loadStudents}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{loadStudents()}{loadStudents()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::load\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+reads students from the file 
+
+\mbox{\Hypertarget{class_s_u_s_i_a438222b580ba2dcd8308c7a6a71e052b}\label{class_s_u_s_i_a438222b580ba2dcd8308c7a6a71e052b}} 
+\index{SUSI@{SUSI}!print@{print}}
+\index{print@{print}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::print (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_s_u_s_i_a79b22460a314dba23c9d5b3d2913e3e5}\label{class_s_u_s_i_a79b22460a314dba23c9d5b3d2913e3e5}} 
+\index{SUSI@{SUSI}!printAll@{printAll}}
+\index{printAll@{printAll}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{printAll()}{printAll()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::print\+All (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{unsigned}]{year }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_s_u_s_i_addca88457bef72469a1631cdbe438f39}\label{class_s_u_s_i_addca88457bef72469a1631cdbe438f39}} 
+\index{SUSI@{SUSI}!protocol@{protocol}}
+\index{protocol@{protocol}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::protocol (\begin{DoxyParamCaption}\item[{const char $\ast$}]{course,  }\item[{const \mbox{\hyperlink{class_specialty}{Specialty}} \&}]{program,  }\item[{const unsigned}]{year }\end{DoxyParamCaption})}
+
+
+
+calls \mbox{\hyperlink{class_s_u_s_i_af49d588b451553f83cd45f00ec5ea7bb}{S\+U\+S\+I\+::sort\+Students(const unsigned year)}} and then prints the protocol for the course and year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & \\
+\hline
+{\em program} & \\
+\hline
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_s_i_a1b348e3811a1d1d88ceddc209dfab78e}\label{class_s_u_s_i_a1b348e3811a1d1d88ceddc209dfab78e}} 
+\index{SUSI@{SUSI}!protocolAll@{protocolAll}}
+\index{protocolAll@{protocolAll}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{protocolAll()}{protocolAll()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::protocol\+All (\begin{DoxyParamCaption}\item[{const char $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+calls \mbox{\hyperlink{class_s_u_s_i_addca88457bef72469a1631cdbe438f39}{S\+U\+S\+I\+::protocol(const char$\ast$ course, const Specialty\& program, const unsigned year)}} for every program and every year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_s_i_a2892a2630ee000d1533e1770fd31abe9}\label{class_s_u_s_i_a2892a2630ee000d1533e1770fd31abe9}} 
+\index{SUSI@{SUSI}!readStrSUSI@{readStrSUSI}}
+\index{readStrSUSI@{readStrSUSI}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{readStrSUSI()}{readStrSUSI()}}
+{\footnotesize\ttfamily char $\ast$ S\+U\+S\+I\+::read\+Str\+S\+U\+SI (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{bool}]{has\+Spaces,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+reads a symbol string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the stream\\
+\hline
+{\em has\+Spaces} & if the stream has spaces, if so reads until new line, if not, reads until space\\
+\hline
+{\em size} & the maximum size of the string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_u_s_i_af1d9f4419a27fb445a6ed109ca3cf977}\label{class_s_u_s_i_af1d9f4419a27fb445a6ed109ca3cf977}} 
+\index{SUSI@{SUSI}!readStudent@{readStudent}}
+\index{readStudent@{readStudent}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{readStudent()}{readStudent()}}
+{\footnotesize\ttfamily bool S\+U\+S\+I\+::read\+Student (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{in,  }\item[{unsigned}]{year,  }\item[{\mbox{\hyperlink{class_student}{Student}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+reading one student from the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the stream\\
+\hline
+{\em year} & the year the student is currently in\\
+\hline
+{\em s} & the student is saved here\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the student has beed read successfuly or not
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_u_s_i_a24cdefff3bb10e8e5a079134ea66ec40}\label{class_s_u_s_i_a24cdefff3bb10e8e5a079134ea66ec40}} 
+\index{SUSI@{SUSI}!removeStudent@{removeStudent}}
+\index{removeStudent@{removeStudent}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{removeStudent()}{removeStudent()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::remove\+Student (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sets the student back to default 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & desired fn\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_s_i_ac62ae5d82842b31af1b088eea15ccecd}\label{class_s_u_s_i_ac62ae5d82842b31af1b088eea15ccecd}} 
+\index{SUSI@{SUSI}!report@{report}}
+\index{report@{report}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::report (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_s_u_s_i_a7d69be0df6b7df3ca2295db9abda3a15}\label{class_s_u_s_i_a7d69be0df6b7df3ca2295db9abda3a15}} 
+\index{SUSI@{SUSI}!resume@{resume}}
+\index{resume@{resume}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::resume (\begin{DoxyParamCaption}\item[{unsigned}]{fn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_u_s_i_a6690e73b087516b7c3bbd18aa1868ee4}\label{class_s_u_s_i_a6690e73b087516b7c3bbd18aa1868ee4}} 
+\index{SUSI@{SUSI}!save@{save}}
+\index{save@{save}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+saves the currently loaded data in the file 
+
+\mbox{\Hypertarget{class_s_u_s_i_aeb34bb6b08cc54a80cb338cfe7c88663}\label{class_s_u_s_i_aeb34bb6b08cc54a80cb338cfe7c88663}} 
+\index{SUSI@{SUSI}!saveAs@{saveAs}}
+\index{saveAs@{saveAs}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{saveAs()}{saveAs()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::save\+As (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+saves the data in a file of desired name, however the program does not load from this file at start if not explicitly said 
+
+\mbox{\Hypertarget{class_s_u_s_i_a24e63cd1736000a8ce2343a4312a7d69}\label{class_s_u_s_i_a24e63cd1736000a8ce2343a4312a7d69}} 
+\index{SUSI@{SUSI}!saveStudents@{saveStudents}}
+\index{saveStudents@{saveStudents}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{saveStudents()}{saveStudents()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::save\+Students (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename = {\ttfamily \mbox{\hyperlink{_s_u_s_i_8hpp_aa86bd5c868cdcab1534507a2919264fa}{F\+I\+L\+E\+\_\+\+N\+A\+ME}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+saves students to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of the file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_s_i_a1b12b2f768106e8a91796fee6e9f42f7}\label{class_s_u_s_i_a1b12b2f768106e8a91796fee6e9f42f7}} 
+\index{SUSI@{SUSI}!setSpecialties@{setSpecialties}}
+\index{setSpecialties@{setSpecialties}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{setSpecialties()}{setSpecialties()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::set\+Specialties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+setting the data from the previously hardcoded arrays with the subjects. when adding more programs, firts add similar arrays for the new programs, then change M\+A\+X\+\_\+\+S\+P\+E\+CS and then open this function and follow the example to load the new programs 
+
+\mbox{\Hypertarget{class_s_u_s_i_af49d588b451553f83cd45f00ec5ea7bb}\label{class_s_u_s_i_af49d588b451553f83cd45f00ec5ea7bb}} 
+\index{SUSI@{SUSI}!sortStudents@{sortStudents}}
+\index{sortStudents@{sortStudents}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{sortStudents()}{sortStudents()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::sort\+Students (\begin{DoxyParamCaption}\item[{const unsigned}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+implementing simple bubble sort from smaller to bigger fn 
+
+\mbox{\Hypertarget{class_s_u_s_i_a29e1940c2a4082465ce789e6cb9bf1ba}\label{class_s_u_s_i_a29e1940c2a4082465ce789e6cb9bf1ba}} 
+\index{SUSI@{SUSI}!swapStudents@{swapStudents}}
+\index{swapStudents@{swapStudents}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{swapStudents()}{swapStudents()}}
+{\footnotesize\ttfamily void S\+U\+S\+I\+::swap\+Students (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{s1,  }\item[{size\+\_\+t}]{s2,  }\item[{const unsigned}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_u_s_i_a2968cca6ba51d5b0f9ea2709324e76b9}\label{class_s_u_s_i_a2968cca6ba51d5b0f9ea2709324e76b9}} 
+\index{SUSI@{SUSI}!specialties@{specialties}}
+\index{specialties@{specialties}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{specialties}{specialties}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_specialty}{Specialty}} S\+U\+S\+I\+::specialties\mbox{[}\mbox{\hyperlink{_s_u_s_i_8hpp_aa6255f5378de96a55addfc99744f741e}{M\+A\+X\+\_\+\+S\+P\+E\+CS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+list of programs 
+
+\mbox{\Hypertarget{class_s_u_s_i_ac587c27d2bd66b92de53a7b7081fb4c0}\label{class_s_u_s_i_ac587c27d2bd66b92de53a7b7081fb4c0}} 
+\index{SUSI@{SUSI}!students@{students}}
+\index{students@{students}!SUSI@{SUSI}}
+\doxysubsubsection{\texorpdfstring{students}{students}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} S\+U\+S\+I\+::students\mbox{[}\mbox{\hyperlink{_s_u_s_i_8hpp_a8d225eb052cc05d13282cfdf4918ec31}{M\+A\+X\+\_\+\+Y\+E\+A\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_s_u_s_i_8hpp_a28892dbb1f338e5e7688781c03bfb104}{M\+A\+X\+\_\+\+S\+T\+U\+D\+E\+N\+TS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+list of students basically an array for every year 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_s_u_s_i_8hpp}{S\+U\+S\+I.\+hpp}}\item 
+Project2-\/-\/-\/-\/\+S\+U\+S\+I/\mbox{\hyperlink{_s_u_s_i_8cpp}{S\+U\+S\+I.\+cpp}}\end{DoxyCompactItemize}

@@ -1,26 +1,125 @@
 \hypertarget{_specialty_8hpp}{}\doxysection{Project2-\/-\/-\/-\/\+S\+U\+S\+I/\+Specialty.hpp File Reference}
 \label{_specialty_8hpp}\index{Project2-\/-\/-\/-\/SUSI/Specialty.hpp@{Project2-\/-\/-\/-\/SUSI/Specialty.hpp}}
-{\ttfamily \#include \char`\"{}Group.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_specialty}{Specialty}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_specialty_8hpp_a200a7e6ac070fb65c2298951e831ffcd}{S\+P\+E\+C\+I\+A\+L\+T\+Y\+\_\+H}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const size\+\_\+t \mbox{\hyperlink{_specialty_8hpp_a8d225eb052cc05d13282cfdf4918ec31}{M\+A\+X\+\_\+\+Y\+E\+A\+RS}} = 4
-\begin{DoxyCompactList}\small\item\em Indicates how many years of studying a \mbox{\hyperlink{class_student}{Student}} could take. \end{DoxyCompactList}\end{DoxyCompactItemize}
+const size\+\_\+t \mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}} = 40
+\item 
+const size\+\_\+t \mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}} = 20
+\item 
+const size\+\_\+t \mbox{\hyperlink{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}} = 40
+\item 
+const char \mbox{\hyperlink{_specialty_8hpp_a6641a37a4f6fb237bcebfdf970c03d13}{D\+E\+F\+\_\+\+N\+A\+ME}} \mbox{[}18\mbox{]} = \char`\"{}Default \mbox{\hyperlink{class_specialty}{Specialty}}\char`\"{}
+\begin{DoxyCompactList}\small\item\em the default constructor assignes the name of the program with this \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{_specialty_8hpp_ae5764652ddf0129eaa8915f769050ce1}{all\+\_\+required\+\_\+subjects}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]}\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em here are all the names of the required courses \end{DoxyCompactList}\item 
+const unsigned \mbox{\hyperlink{_specialty_8hpp_a82624e968896ac864519d0f99feef884}{year\+\_\+to\+\_\+take\+\_\+rs}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em indicates in which year you can take the desired course \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{_specialty_8hpp_af5faa32b58cacfbf0989c70d5301f7f7}{all\+\_\+elective\+\_\+subjects}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]}\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}}\mbox{]} = \{ \char`\"{}I1\char`\"{},\char`\"{}I2\char`\"{},\char`\"{}I3\char`\"{},\char`\"{}I4\char`\"{},\char`\"{}I5\char`\"{},\char`\"{}I6\char`\"{},\char`\"{}I7\char`\"{},\char`\"{}I8\char`\"{},\char`\"{}I9\char`\"{},\char`\"{}I10\char`\"{},\char`\"{}I11\char`\"{},\char`\"{}I12\char`\"{},\char`\"{}I13\char`\"{},\char`\"{}I14\char`\"{},\char`\"{}I15\char`\"{},\char`\"{}I16\char`\"{},\char`\"{}I17\char`\"{},\char`\"{}I18\char`\"{},\char`\"{}I19\char`\"{},\char`\"{}I20\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em here are all the names of the elective courses \end{DoxyCompactList}\item 
+const unsigned \mbox{\hyperlink{_specialty_8hpp_a5e8d2249d4b71d7bb0362e0b9cf1c3f2}{year\+\_\+to\+\_\+take\+\_\+es}} \mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]} = \{ 1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4 \}
+\begin{DoxyCompactList}\small\item\em indicates in which year you can take the desired elective course \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_specialty_8hpp_a200a7e6ac070fb65c2298951e831ffcd}\label{_specialty_8hpp_a200a7e6ac070fb65c2298951e831ffcd}} 
+\index{Specialty.hpp@{Specialty.hpp}!SPECIALTY\_H@{SPECIALTY\_H}}
+\index{SPECIALTY\_H@{SPECIALTY\_H}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{SPECIALTY\_H}{SPECIALTY\_H}}
+{\footnotesize\ttfamily \#define S\+P\+E\+C\+I\+A\+L\+T\+Y\+\_\+H}
+
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{_specialty_8hpp_a8d225eb052cc05d13282cfdf4918ec31}\label{_specialty_8hpp_a8d225eb052cc05d13282cfdf4918ec31}} 
-\index{Specialty.hpp@{Specialty.hpp}!MAX\_YEARS@{MAX\_YEARS}}
-\index{MAX\_YEARS@{MAX\_YEARS}!Specialty.hpp@{Specialty.hpp}}
-\doxysubsubsection{\texorpdfstring{MAX\_YEARS}{MAX\_YEARS}}
-{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+Y\+E\+A\+RS = 4}
+\mbox{\Hypertarget{_specialty_8hpp_af5faa32b58cacfbf0989c70d5301f7f7}\label{_specialty_8hpp_af5faa32b58cacfbf0989c70d5301f7f7}} 
+\index{Specialty.hpp@{Specialty.hpp}!all\_elective\_subjects@{all\_elective\_subjects}}
+\index{all\_elective\_subjects@{all\_elective\_subjects}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{all\_elective\_subjects}{all\_elective\_subjects}}
+{\footnotesize\ttfamily const char all\+\_\+elective\+\_\+subjects\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]}\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}}\mbox{]} = \{ \char`\"{}I1\char`\"{},\char`\"{}I2\char`\"{},\char`\"{}I3\char`\"{},\char`\"{}I4\char`\"{},\char`\"{}I5\char`\"{},\char`\"{}I6\char`\"{},\char`\"{}I7\char`\"{},\char`\"{}I8\char`\"{},\char`\"{}I9\char`\"{},\char`\"{}I10\char`\"{},\char`\"{}I11\char`\"{},\char`\"{}I12\char`\"{},\char`\"{}I13\char`\"{},\char`\"{}I14\char`\"{},\char`\"{}I15\char`\"{},\char`\"{}I16\char`\"{},\char`\"{}I17\char`\"{},\char`\"{}I18\char`\"{},\char`\"{}I19\char`\"{},\char`\"{}I20\char`\"{}\}}
 
 
 
-Indicates how many years of studying a \mbox{\hyperlink{class_student}{Student}} could take. 
+here are all the names of the elective courses 
+
+\mbox{\Hypertarget{_specialty_8hpp_ae5764652ddf0129eaa8915f769050ce1}\label{_specialty_8hpp_ae5764652ddf0129eaa8915f769050ce1}} 
+\index{Specialty.hpp@{Specialty.hpp}!all\_required\_subjects@{all\_required\_subjects}}
+\index{all\_required\_subjects@{all\_required\_subjects}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{all\_required\_subjects}{all\_required\_subjects}}
+{\footnotesize\ttfamily const char all\+\_\+required\+\_\+subjects\mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]}\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}{M\+A\+X\+\_\+\+N\+A\+ME}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ \textcolor{stringliteral}{"AG"}, \textcolor{stringliteral}{"DIS1"}, \textcolor{stringliteral}{"LA"}, \textcolor{stringliteral}{"UP"},\textcolor{stringliteral}{"VA"}, \textcolor{stringliteral}{"DS"}, \textcolor{stringliteral}{"DIS2"}, \textcolor{stringliteral}{"OOP"},\textcolor{stringliteral}{"AE1"},\textcolor{stringliteral}{"DUPR"},\textcolor{stringliteral}{"EAI"},\textcolor{stringliteral}{"IO"},\textcolor{stringliteral}{"SDP"},\textcolor{stringliteral}{"AE2"},\textcolor{stringliteral}{"DAA"},\textcolor{stringliteral}{"KA"},\textcolor{stringliteral}{"LP"},\textcolor{stringliteral}{"CHM"},\textcolor{stringliteral}{"KM"},\textcolor{stringliteral}{"OS"},\textcolor{stringliteral}{"VS"},\textcolor{stringliteral}{"FP"},\textcolor{stringliteral}{"BD"},}
+\DoxyCodeLine{\textcolor{stringliteral}{"GEOM"},\textcolor{stringliteral}{"AI"},\textcolor{stringliteral}{"MP"},\textcolor{stringliteral}{"SEP"},\textcolor{stringliteral}{"KG"},\textcolor{stringliteral}{"ST"},\textcolor{stringliteral}{"CHMDU"},\textcolor{stringliteral}{"TCH"},\textcolor{stringliteral}{"MA1"}, \textcolor{stringliteral}{"DU"}, \textcolor{stringliteral}{"DM1"}, \textcolor{stringliteral}{"MA2"}, \textcolor{stringliteral}{"DG"},\textcolor{stringliteral}{"LO"},\textcolor{stringliteral}{"AM"}, \textcolor{stringliteral}{"KAN"}, \textcolor{stringliteral}{"ML"}\}}
+
+\end{DoxyCode}
+
+
+here are all the names of the required courses 
+
+\mbox{\Hypertarget{_specialty_8hpp_a6641a37a4f6fb237bcebfdf970c03d13}\label{_specialty_8hpp_a6641a37a4f6fb237bcebfdf970c03d13}} 
+\index{Specialty.hpp@{Specialty.hpp}!DEF\_NAME@{DEF\_NAME}}
+\index{DEF\_NAME@{DEF\_NAME}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{DEF\_NAME}{DEF\_NAME}}
+{\footnotesize\ttfamily const char D\+E\+F\+\_\+\+N\+A\+ME\mbox{[}18\mbox{]} = \char`\"{}Default \mbox{\hyperlink{class_specialty}{Specialty}}\char`\"{}}
+
+
+
+the default constructor assignes the name of the program with this 
+
+\mbox{\Hypertarget{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}\label{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}} 
+\index{Specialty.hpp@{Specialty.hpp}!MAX\_E\_SUB@{MAX\_E\_SUB}}
+\index{MAX\_E\_SUB@{MAX\_E\_SUB}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_E\_SUB}{MAX\_E\_SUB}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+E\+\_\+\+S\+UB = 20}
+
+\mbox{\Hypertarget{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}\label{_specialty_8hpp_a24483652f2a87e1ae7c1d9c6db06a9f5}} 
+\index{Specialty.hpp@{Specialty.hpp}!MAX\_NAME@{MAX\_NAME}}
+\index{MAX\_NAME@{MAX\_NAME}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_NAME}{MAX\_NAME}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+N\+A\+ME = 40}
+
+\mbox{\Hypertarget{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}\label{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}} 
+\index{Specialty.hpp@{Specialty.hpp}!MAX\_R\_SUB@{MAX\_R\_SUB}}
+\index{MAX\_R\_SUB@{MAX\_R\_SUB}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_R\_SUB}{MAX\_R\_SUB}}
+{\footnotesize\ttfamily const size\+\_\+t M\+A\+X\+\_\+\+R\+\_\+\+S\+UB = 40}
+
+\mbox{\Hypertarget{_specialty_8hpp_a5e8d2249d4b71d7bb0362e0b9cf1c3f2}\label{_specialty_8hpp_a5e8d2249d4b71d7bb0362e0b9cf1c3f2}} 
+\index{Specialty.hpp@{Specialty.hpp}!year\_to\_take\_es@{year\_to\_take\_es}}
+\index{year\_to\_take\_es@{year\_to\_take\_es}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{year\_to\_take\_es}{year\_to\_take\_es}}
+{\footnotesize\ttfamily const unsigned year\+\_\+to\+\_\+take\+\_\+es\mbox{[}\mbox{\hyperlink{_specialty_8hpp_a8aa3483f3665f70db005f6a2c6a8192a}{M\+A\+X\+\_\+\+E\+\_\+\+S\+UB}}\mbox{]} = \{ 1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4 \}}
+
+
+
+indicates in which year you can take the desired elective course 
+
+\mbox{\Hypertarget{_specialty_8hpp_a82624e968896ac864519d0f99feef884}\label{_specialty_8hpp_a82624e968896ac864519d0f99feef884}} 
+\index{Specialty.hpp@{Specialty.hpp}!year\_to\_take\_rs@{year\_to\_take\_rs}}
+\index{year\_to\_take\_rs@{year\_to\_take\_rs}!Specialty.hpp@{Specialty.hpp}}
+\doxysubsubsection{\texorpdfstring{year\_to\_take\_rs}{year\_to\_take\_rs}}
+{\footnotesize\ttfamily const unsigned year\+\_\+to\+\_\+take\+\_\+rs\mbox{[}\mbox{\hyperlink{_specialty_8hpp_acebc33671ecd9d6f49874bc339b67214}{M\+A\+X\+\_\+\+R\+\_\+\+S\+UB}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ 1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,}
+\DoxyCodeLine{    3,3,3,3,3,3,3,4,4,4,2,2,2,2,2,2,2,3,3,3\}}
+
+\end{DoxyCode}
+
+
+indicates in which year you can take the desired course 
 

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['f_5fnum_20',['f_num',['../class_student.html#a33b9fc53d027a39df5aaed647762cfdf',1,'Student']]],
-  ['findstudent_21',['findStudent',['../class_group.html#a296a1e53258946ffdd7c34a405411e89',1,'Group::findStudent()'],['../class_specialty.html#a4f350879065084245b0c37507872ce22',1,'Specialty::findStudent(unsigned fn, size_t &amp;year, size_t &amp;groupNum, char *&amp;name) const'],['../class_specialty.html#a7be71e80f1fcf1d8b7b32dfc18b31080',1,'Specialty::findStudent(unsigned fn) const'],['../main_8cpp.html#a55f3d414ab1b37e9c355bc7077edbd01',1,'findStudent():&#160;main.cpp']]]
+  ['f_5fnum_29',['f_num',['../class_student.html#a33b9fc53d027a39df5aaed647762cfdf',1,'Student']]],
+  ['file_2etxt_30',['file.txt',['../file_8txt.html',1,'']]],
+  ['file_5fname_31',['FILE_NAME',['../_s_u_s_i_8hpp.html#aa86bd5c868cdcab1534507a2919264fa',1,'SUSI.hpp']]]
 ];

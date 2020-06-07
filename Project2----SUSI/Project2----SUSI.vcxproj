@@ -138,19 +138,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Group.hpp" />
-    <ClInclude Include="Program.hpp" />
     <ClInclude Include="Specialty.hpp" />
     <ClInclude Include="Student.hpp" />
-    <ClInclude Include="Subject.hpp" />
+    <ClInclude Include="SUSI.hpp" />
+    <ClInclude Include="UserInterface.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Group.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Program.cpp" />
     <ClCompile Include="Specialty.cpp" />
     <ClCompile Include="Student.cpp" />
-    <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="SUSI.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mainPage.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
